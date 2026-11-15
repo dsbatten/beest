@@ -2,11 +2,13 @@
  {
   "title": "Total Emissions",
   "file": "index.html",
+  "icon": "leaf",
   "description": "Bitcoin network total, mitigated and net emissions since 2019"
  },
  {
   "title": "Methodology",
   "file": "methodology.html",
+  "icon": "doc",
   "description": "Every input, calculation and assumption, with sources"
  }
 ]
