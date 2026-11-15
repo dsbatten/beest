@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>BEEST 2 since Dec 2025</title>
+<title>BEEST 2</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.35.0/plotly.min.js"></script>
 <style>img{max-width:100%}[hidden]{display:none!important}</style>
@@ -64,15 +64,29 @@
     #chart { height: 560px; }
   }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+  .site { display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 28px; max-width: 1540px; margin: 0 auto; }
+  .site > .wrap { max-width: none; margin: 0; min-width: 0; }
+  .nav { padding-top: 10px; border-left: 2px dotted rgba(238,238,238,0.25); padding-left: 22px; align-self: start; position: sticky; top: 16px; }
+  .nav h2 { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); margin: 8px 0 14px; }
+  .nav a { display: block; color: var(--link); text-decoration: none; font-size: 19px; font-weight: 300; line-height: 1.35; padding: 9px 0; }
+  .nav a:hover, .nav a:focus { text-decoration: underline; }
+  .nav a[aria-current="page"] { color: var(--ink); font-weight: 400; }
+  @media (max-width: 900px) {
+    .site { grid-template-columns: 1fr; gap: 10px; }
+    .nav { border-left: 0; padding-left: 0; position: static; border-top: 1px solid rgba(238,238,238,0.14); margin-top: 18px; padding-top: 14px; }
+    .nav a { display: inline-block; margin-right: 22px; font-size: 16px; padding: 6px 0; }
+  }
 </style>
 
+<div class="site">
 <div class="wrap">
   <h1>Bitcoin Network Total Emissions</h1>
   <div class="source" id="source">
     <b>author:</b> <a href="https://x.com/dsbatten" target="_blank" rel="noopener">@dsbatten</a> <span class="sep">|</span>
-    <b>source:</b> <a href="methodology.html" target="_blank" rel="noopener">BEEST 2</a> <span class="sep">|</span>
+    <b>source:</b> <a href="methodology.html#history-before-december-2025" target="_blank" rel="noopener">BEEST 2</a> <span class="sep">|</span>
     <b>data:</b> <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/" target="_blank" rel="noopener">Cambridge CCAF</a>, <a href="https://mempool.space/docs/api/rest#get-mining-hashrate" target="_blank" rel="noopener">mempool.space</a>
-    <span class="sep">|</span> <a href="history.html">since 2019</a> <span class="sep">|</span> <b>updated:</b> <span id="updated">–</span>
+    <span class="sep">|</span> <b>updated:</b> <span id="updated">–</span>
   </div>
 
   <div id="chart" role="img" aria-label="Bitcoin network gross, mitigated and net emissions in megatonnes CO2e a year from December 2025, with network hashrate and bitcoin price on their own axes"></div>
@@ -105,7 +119,7 @@
       { name: "Emission mitigation (flare)", x, y: mitigation, mode: "lines", visible: "legendonly", line: { color: css("--gas"), width: 1.7, dash: "dash" },
         hovertemplate: "%{y:.1f} MtCO2e/yr<extra>Emission mitigation (flare)</extra>" },
       { name: "Net emissions", x, y: rows.map((r) => r.net_mt), mode: "lines", line: { color: css("--net"), width: 2.2 },
-        hovertemplate: "%{y:.1f} MtCO2e/yr<extra>Net emissions</extra>" },
+        customdata: rows.map((r) => [r.basis || ""]), hovertemplate: "%{y:.1f} MtCO2e/yr<br><span style='font-size:11px'>%{customdata[0]}</span><extra>Net emissions</extra>" },
       { name: "Hashrate (7d avg)", x, y: rows.map((r) => r.hashrate_ehs_7d), yaxis: "y2", mode: "lines", line: { color: css("--hash"), width: 2 },
         customdata: rows.map((r) => [r.power_gw, r.efficiency_jth]),
         hovertemplate: "%{y:,.0f} EH/s · %{customdata[0]:.1f} GW at %{customdata[1]:.1f} J/TH<extra>Hashrate</extra>" },
@@ -162,7 +176,7 @@
     });
   }
 
-  fetch("series.json", { cache: "no-store" })
+  fetch("history.json", { cache: "no-store" })
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((d) => { window.__beest = d; render(d); })
     .catch((e) => { $("status").hidden = false; $("status").textContent = "The series could not be loaded (" + e.message + "). The page is rebuilt daily; try again shortly."; });
@@ -170,5 +184,7 @@
   let t; window.addEventListener("resize", () => { clearTimeout(t); t = setTimeout(() => { if (window.__beest) render(window.__beest); }, 250); });
 })();
 </script>
-
+<aside class="nav" id="nav" aria-label="Charts"></aside>
+</div>
+<script src="nav.js"></script>
 </body></html>

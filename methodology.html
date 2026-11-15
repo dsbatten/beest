@@ -18,8 +18,24 @@ th, td { text-align:left; vertical-align:top; padding:8px 12px; border-bottom:1p
 th { color:var(--ink-muted); font-weight:600; letter-spacing:0.02em; }
 ul { padding-left:22px; } li { margin:0 0 8px; }
 .back { display:inline-block; margin-bottom:18px; font-size:15px; }
-</style></head><body><main>
-<a class="back" href="index.html">&larr; Back to the chart</a>
+
+  .site { display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 28px; max-width: 1540px; margin: 0 auto; }
+  .site > .wrap { max-width: none; margin: 0; min-width: 0; }
+  .nav { padding-top: 10px; border-left: 2px dotted rgba(238,238,238,0.25); padding-left: 22px; align-self: start; position: sticky; top: 16px; }
+  .nav h2 { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); margin: 8px 0 14px; }
+  .nav a { display: block; color: var(--link); text-decoration: none; font-size: 19px; font-weight: 300; line-height: 1.35; padding: 9px 0; }
+  .nav a:hover, .nav a:focus { text-decoration: underline; }
+  .nav a[aria-current="page"] { color: var(--ink); font-weight: 400; }
+  @media (max-width: 900px) {
+    .site { grid-template-columns: 1fr; gap: 10px; }
+    .nav { border-left: 0; padding-left: 0; position: static; border-top: 1px solid rgba(238,238,238,0.14); margin-top: 18px; padding-top: 14px; }
+    .nav a { display: inline-block; margin-right: 22px; font-size: 16px; padding: 6px 0; }
+  }
+
+.site > main { max-width: 860px; }
+</style></head><body><div class="site">
+<main>
+<a class="back" href="index.html">&larr; Back to the charts</a>
 <h1 id="beest-2-methodology">BEEST 2 methodology</h1>
 <p>BEEST 2 turns live network hashrate into Bitcoin's total, mitigated and net emissions, every day. This page sets out every input, every calculation and every assumption behind it, with the source for each. The live chart starts on 1 December 2025, the date of the Cambridge energy-mix survey behind its carbon intensity. The long chart runs the same chain back to September 2019. Last updated 15 November 2026.</p>
 <h2 id="the-chain">The chain</h2>
@@ -345,4 +361,7 @@ ul { padding-left:22px; } li { margin:0 0 8px; }
 </ul>
 <h2 id="check-values">Check values</h2>
 <p>Cambridge's own points, for testing the chain: 190 TWh and 48.0 MtCO2e at December 2025; 138.8 TWh and 35.0 MtCO2e at August 2026 (885 EH/s, 16.3 J/TH, 1.10 overhead, 252 gCO2e/kWh). Reproducing these with Cambridge's inputs confirms the arithmetic before the tracker's own inputs are substituted.</p>
-</main></body></html>
+</main>
+<aside class="nav" id="nav" aria-label="Charts"></aside>
+</div>
+<script src="nav.js"></script></body></html>
