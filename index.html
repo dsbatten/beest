@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BEEST 2 since Dec 2025</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.35.0/plotly.min.js"></script>
+<style>img{max-width:100%}[hidden]{display:none!important}</style>
+</head><body>
+<style>
+  /* Layout: navy canvas in the woocharts manner. Centred light headline, one line of sources beneath it, one Plotly chart with three overlaid axes and a clickable legend, a footnote. Single-theme by design. */
+  :root {
+    --bg: #092142;
+    --ink: #EEEEEE;
+    --ink-title: #CCCCCC;
+    --ink-muted: #B8C0CC;
+    --link: #3B86C6;
+    --grid: rgba(238,238,238,0.09);
+    --gross: #BB271A;
+    --gas: #5CC971;
+    --net: #CC43D6;
+    --hash: #F19E4B;
+    --price: #4397C7;
+    --font: "Open Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    color-scheme: dark;
+  }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font);
+    font-weight: 400;
+    margin: 0;
+    padding-block: 26px 22px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    font-variant-numeric: tabular-nums;
+  }
+  .wrap { max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; }
+  h1 {
+    font-size: clamp(30px, 4.8vw, 58px);
+    line-height: 1.1;
+    font-weight: 300;
+    color: var(--ink-title);
+    margin: 0;
+    text-align: center;
+    text-wrap: balance;
+    letter-spacing: 0.005em;
+  }
+  .source { text-align: center; font-size: 15px; color: var(--ink); margin-top: 16px; line-height: 1.6; }
+  .source b { font-weight: 600; }
+  .source a { color: var(--link); text-decoration: none; }
+  .source a:hover, .source a:focus { text-decoration: underline; }
+  .source .sep { color: var(--ink-muted); margin: 0 8px; }
+  #chart { width: 100%; height: 720px; margin-top: 22px; min-width: 0; }
+  .status { font-size: 15px; color: var(--ink-muted); margin-top: 12px; text-align: center; }
+  .footnote { font-size: 13px; color: var(--ink-muted); margin-top: 10px; text-align: center; line-height: 1.5; }
+  .footnote a { color: var(--link); text-decoration: none; }
+  .footnote a:hover, .footnote a:focus { text-decoration: underline; }
+  .js-plotly-plot .plotly .modebar { opacity: 0.35; }
+  .js-plotly-plot .plotly .modebar:hover { opacity: 1; }
+  @media (max-width: 640px) {
+    .source { font-size: 13px; }
+    .source .sep { margin: 0 5px; }
+    #chart { height: 560px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <h1>Bitcoin Network Total Emissions</h1>
+  <div class="source" id="source">
+    <b>author:</b> <a href="https://x.com/dsbatten" target="_blank" rel="noopener">@dsbatten</a> <span class="sep">|</span>
+    <b>source:</b> <a href="methodology.html" target="_blank" rel="noopener">BEEST 2</a> <span class="sep">|</span>
+    <b>data:</b> <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/" target="_blank" rel="noopener">Cambridge CCAF</a>, <a href="https://mempool.space/docs/api/rest#get-mining-hashrate" target="_blank" rel="noopener">mempool.space</a>
+    <span class="sep">|</span> <a href="history.html">since 2019</a> <span class="sep">|</span> <b>updated:</b> <span id="updated">–</span>
+  </div>
+
+  <div id="chart" role="img" aria-label="Bitcoin network gross, mitigated and net emissions in megatonnes CO2e a year from December 2025, with network hashrate and bitcoin price on their own axes"></div>
+
+  <div class="status" id="status" hidden></div>
+  <div class="footnote">Flare-gas calculations use <a href="https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/" target="_blank" rel="noopener">IPCC AR6</a> for the warming potential of methane (GWP20) and <a href="https://www.science.org/doi/10.1126/science.abq0385" target="_blank" rel="noopener">Plant et al. 2022</a> for flare efficiency (91.1%).</div>
+</div>
+
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+  const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const MINUS = "−";
+
+  function render(data) {
+    const rows = data.rows;
+    const x = rows.map((r) => r.date);
+    const upd = new Date(data.generated + "T00:00:00Z");
+    $("updated").textContent = upd.getUTCDate() + " " + MONTHS[upd.getUTCMonth()] + " " + upd.getUTCFullYear();
+
+    const narrow = window.innerWidth < 700;
+    const font = { family: css("--font"), color: css("--ink"), size: narrow ? 12 : 15 };
+    const hasPrice = rows.some((r) => r.price_usd);
+    const mitigation = rows.map((r) => -r.mitigation_gas_mt);
+
+    const traces = [
+      { name: "Total emissions", x, y: rows.map((r) => r.gross_mt), mode: "lines", visible: "legendonly", line: { color: css("--gross"), width: 1.7, dash: "dash" },
+        hovertemplate: "%{y:.1f} MtCO2e/yr<extra>Total emissions</extra>" },
+      { name: "Emission mitigation (flare)", x, y: mitigation, mode: "lines", visible: "legendonly", line: { color: css("--gas"), width: 1.7, dash: "dash" },
+        hovertemplate: "%{y:.1f} MtCO2e/yr<extra>Emission mitigation (flare)</extra>" },
+      { name: "Net emissions", x, y: rows.map((r) => r.net_mt), mode: "lines", line: { color: css("--net"), width: 2.2 },
+        hovertemplate: "%{y:.1f} MtCO2e/yr<extra>Net emissions</extra>" },
+      { name: "Hashrate (7d avg)", x, y: rows.map((r) => r.hashrate_ehs_7d), yaxis: "y2", mode: "lines", line: { color: css("--hash"), width: 2 },
+        customdata: rows.map((r) => [r.power_gw, r.efficiency_jth]),
+        hovertemplate: "%{y:,.0f} EH/s · %{customdata[0]:.1f} GW at %{customdata[1]:.1f} J/TH<extra>Hashrate</extra>" },
+    ];
+    if (hasPrice) traces.push({ name: "BTC price", x, y: rows.map((r) => r.price_usd), yaxis: "y3", mode: "lines", line: { color: css("--price"), width: 2 },
+        hovertemplate: "$%{y:,.0f}<extra>BTC price</extra>" });
+
+    const emMax = Math.max(...rows.map((r) => r.gross_mt));
+    // The left axis names what is showing: "Net emissions" when only the net line is on, "Total emissions" when only total is, "Emissions" for any mix.
+    function axisTitle(ts) {
+      const on = ts.filter((s) => s.yaxis === undefined && s.visible !== "legendonly" && s.visible !== false).map((s) => s.name);
+      const kind = on.length === 1 && on[0] === "Net emissions" ? "Net emissions" : on.length === 1 && on[0] === "Total emissions" ? "Total emissions" : "Emissions";
+      return kind + ": megatonnes CO2e a year";
+    }
+    // Side axes are banded so their lines stay clear of the emissions lines: hashrate in the bottom fifth, price in the top fifth.
+    function band(values, fracTop, fracBottom) {
+      const logs = values.filter((v) => v > 0).map((v) => Math.log10(v));
+      const lo = Math.min(...logs), hi = Math.max(...logs), span = Math.max(hi - lo, 0.05);
+      const full = span / (fracTop - fracBottom);           // axis length in log units
+      const bottom = lo - fracBottom * full;
+      return [bottom, bottom + full];
+    }
+    const hashVals = rows.map((r) => r.hashrate_ehs_7d);
+    const priceVals = rows.map((r) => r.price_usd || 0).filter((v) => v > 0);
+    const hashRange = band(hashVals, 0.32, 0.13);
+    const priceRange = hasPrice ? band(priceVals, 0.98, 0.80) : [0, 1];
+    // Tick marks only where the data is, so the labels sit beside the line they describe.
+    const within = (cands, vals) => { const lo = Math.min(...vals) * 0.97, hi = Math.max(...vals) * 1.03; return cands.filter((v) => v >= lo && v <= hi); };
+    const nice = (lo, hi, steps) => { const out = []; for (let k = 0; k <= 7; k++) for (const s of steps) { const v = s * Math.pow(10, k); if (v >= lo && v <= hi) out.push(v); } return out; };
+    const spread = (vals) => Math.max(...vals) / Math.min(...vals);
+    const hashTicks = within(nice(1, 1e7, spread(hashVals) > 3 ? [1, 2, 5] : [1, 1.1, 1.2, 1.3, 1.5, 1.75, 2, 2.5, 3, 4, 5, 6, 7, 8, 9]), hashVals);
+    const priceTicks = hasPrice ? within(nice(1, 1e7, spread(priceVals) > 3 ? [1, 2, 5] : [1, 2, 3, 4, 5, 6, 7, 8, 9]), priceVals) : [];
+    // Secondary axes stay quiet: no axis titles (the legend names the series, the hover gives units), small pale tick labels only.
+    const sideTick = { family: css("--font"), color: "rgba(184,192,204,0.7)", size: narrow ? 10 : 11, weight: 300 };
+    const layout = {
+      paper_bgcolor: css("--bg"), plot_bgcolor: css("--bg"), font,
+      margin: { l: narrow ? 52 : 80, r: narrow ? 70 : 90, t: 20, b: narrow ? 90 : 80 },
+      hovermode: "x unified",
+      hoverlabel: { bgcolor: "#0D2B55", bordercolor: "rgba(238,238,238,0.2)", font: { family: css("--font"), color: css("--ink"), size: narrow ? 12 : 14 } },
+      legend: { orientation: "h", x: 0.5, xanchor: "center", y: narrow ? -0.28 : -0.16, yanchor: "top", font: { size: narrow ? 12 : 15, color: css("--ink-muted") }, itemclick: "toggle", itemdoubleclick: "toggleothers", traceorder: "normal" },
+      xaxis: { type: "date", showgrid: false, zeroline: false, tickformat: "%b %Y", ticks: "outside", tickcolor: css("--ink-muted"), tickfont: { color: css("--ink-muted") }, linecolor: css("--grid"), hoverformat: "%-d %b %Y" },
+      yaxis: { title: { text: axisTitle(traces), font: { color: css("--ink-muted") } }, gridcolor: css("--grid"), zeroline: true, zerolinecolor: "rgba(238,238,238,0.4)", zerolinewidth: 1.5,
+        tickfont: { color: css("--ink-muted") }, range: [-10, Math.ceil(emMax * 1.4 / 10) * 10], fixedrange: narrow },
+      yaxis2: { type: "log", overlaying: "y", side: "right", showgrid: false, zeroline: false, showline: false, ticks: "",
+        tickfont: sideTick, range: hashRange, tickvals: hashTicks, ticktext: hashTicks.map((v) => v.toLocaleString("en-US") + " EH/s"), fixedrange: narrow },
+      yaxis3: { type: "log", overlaying: "y", side: "right", anchor: "free", position: 1, autoshift: true, shift: narrow ? 40 : 10, showgrid: false, zeroline: false, showline: false, ticks: "",
+        tickfont: sideTick, range: priceRange, tickvals: priceTicks, ticktext: priceTicks.map((v) => v >= 1000 ? "$" + (v / 1000) + "k" : "$" + v), fixedrange: narrow, visible: hasPrice && !narrow },
+    };
+    const config = { responsive: true, displaylogo: false, modeBarButtonsToRemove: ["select2d", "lasso2d", "autoScale2d", "toggleSpikelines"], toImageButtonOptions: { filename: "beest2-bitcoin-network-emissions", scale: 2 } };
+    Plotly.react("chart", traces, layout, config).then((gd) => {
+      if (gd.__beestTitled) return;
+      gd.__beestTitled = true;
+      gd.on("plotly_restyle", () => { Plotly.relayout(gd, { "yaxis.title.text": axisTitle(gd.data) }); });
+    });
+  }
+
+  fetch("series.json", { cache: "no-store" })
+    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then((d) => { window.__beest = d; render(d); })
+    .catch((e) => { $("status").hidden = false; $("status").textContent = "The series could not be loaded (" + e.message + "). The page is rebuilt daily; try again shortly."; });
+
+  let t; window.addEventListener("resize", () => { clearTimeout(t); t = setTimeout(() => { if (window.__beest) render(window.__beest); }, 250); });
+})();
+</script>
+
+</body></html>
