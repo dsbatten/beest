@@ -68,14 +68,15 @@
   .site { display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 28px; max-width: 1540px; margin: 0 auto; }
   .site > .wrap { max-width: none; margin: 0; min-width: 0; }
   .nav { padding-top: 10px; border-left: 2px dotted rgba(238,238,238,0.25); padding-left: 22px; align-self: start; position: sticky; top: 16px; }
-  .nav h2 { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); margin: 8px 0 14px; }
-  .nav a { display: block; color: var(--link); text-decoration: none; font-size: 19px; font-weight: 300; line-height: 1.35; padding: 9px 0; }
+  .nav h2 { font-size: 13px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); margin: 8px 0 14px; }
+  .nav a { display: flex; align-items: center; gap: 10px; color: var(--link); text-decoration: none; font-size: 22px; font-weight: 300; line-height: 1.3; padding: 10px 0; }
+  .nav a svg { width: 22px; height: 22px; flex: none; fill: none; stroke: var(--link); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
   .nav a:hover, .nav a:focus { text-decoration: underline; }
-  .nav a[aria-current="page"] { color: var(--ink); font-weight: 400; }
   @media (max-width: 900px) {
     .site { grid-template-columns: 1fr; gap: 10px; }
     .nav { border-left: 0; padding-left: 0; position: static; border-top: 1px solid rgba(238,238,238,0.14); margin-top: 18px; padding-top: 14px; }
-    .nav a { display: inline-block; margin-right: 22px; font-size: 16px; padding: 6px 0; }
+    .nav a { display: inline-flex; margin-right: 22px; font-size: 17px; padding: 6px 0; }
+    .nav a svg { width: 18px; height: 18px; }
   }
 </style>
 
@@ -89,7 +90,7 @@
     <span class="sep">|</span> <b>updated:</b> <span id="updated">–</span>
   </div>
 
-  <div id="chart" role="img" aria-label="Bitcoin network gross, mitigated and net emissions in megatonnes CO2e a year from December 2025, with network hashrate and bitcoin price on their own axes"></div>
+  <div id="chart" role="img" aria-label="Bitcoin network total, mitigated and net emissions in megatonnes CO2e a year since September 2019, with network hashrate and bitcoin price on their own axes"></div>
 
   <div class="status" id="status" hidden></div>
   <div class="footnote">Flare-gas calculations use <a href="https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/" target="_blank" rel="noopener">IPCC AR6</a> for the warming potential of methane (GWP20) and <a href="https://www.science.org/doi/10.1126/science.abq0385" target="_blank" rel="noopener">Plant et al. 2022</a> for flare efficiency (91.1%).</div>
