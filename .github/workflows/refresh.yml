@@ -1,0 +1,45 @@
+name: Daily data refresh
+
+on:
+  schedule:
+    - cron: "38 9 * * *"   # 03:38 America/Tegucigalpa (UTC-6), every day
+  workflow_dispatch:        # also lets the refresh be run by hand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild the two data files
+        run: |
+          python3 build_series.py --print
+          python3 build_history.py --print
+      - name: Check the new files before committing
+        run: |
+          python3 - <<'PY'
+          import json, datetime as dt
+          s = json.load(open("series.json")); h = json.load(open("history.json"))
+          today = dt.datetime.now(dt.timezone.utc).date()
+          for name, d in (("series", s), ("history", h)):
+              last = d["rows"][-1]
+              assert (today - dt.date.fromisoformat(last["date"])).days <= 1, f"{name}: last row {last['date']} is stale"
+              assert 300 <= last["hashrate_ehs_7d"] <= 3000, f"{name}: hashrate {last['hashrate_ehs_7d']} out of range"
+          sm = {r["date"]: r for r in s["rows"]}
+          for r in h["rows"]:
+              if r["date"] in sm:
+                  assert abs(r["gross_mt"] - sm[r["date"]]["gross_mt"]) < 0.02 and abs(r["net_mt"] - sm[r["date"]]["net_mt"]) < 0.02, f"mismatch on {r['date']}"
+          print("checks passed")
+          PY
+      - name: Commit the data
+        run: |
+          git config user.name "beest-refresh"
+          git config user.email "beest-refresh@users.noreply.github.com"
+          git add series.json history.json
+          git diff --cached --quiet || git commit -m "Data refresh $(date -u +%Y-%m-%d)"
+          git push
