@@ -59,9 +59,12 @@
   .js-plotly-plot .plotly .modebar { opacity: 0.35; }
   .js-plotly-plot .plotly .modebar:hover { opacity: 1; }
   @media (max-width: 640px) {
-    .source { font-size: 13px; }
-    .source .sep { margin: 0 5px; }
-    #chart { height: 560px; }
+    body { padding-left: max(8px, env(safe-area-inset-left, 0px)); padding-right: max(8px, env(safe-area-inset-right, 0px)); padding-top: 16px; }
+    h1 { font-size: 21px; }
+    .source { font-size: 11.5px; margin-top: 10px; line-height: 1.5; }
+    .source .sep { margin: 0 4px; }
+    #chart { height: 520px; margin-top: 12px; }
+    .footnote { font-size: 11px; }
   }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 
@@ -112,20 +115,21 @@
     const narrow = window.innerWidth < 700;
     const font = { family: css("--font"), color: css("--ink"), size: narrow ? 12 : 15 };
     const hasPrice = rows.some((r) => r.price_usd);
+    const lw = (w) => narrow ? Math.round(w * 0.55 * 10) / 10 : w; // thinner lines on phones; desktop widths unchanged
     const mitigation = rows.map((r) => -r.mitigation_gas_mt);
 
     const traces = [
-      { name: "Total emissions", x, y: rows.map((r) => r.gross_mt), mode: "lines", visible: "legendonly", line: { color: css("--gross"), width: 1.7, dash: "dash" },
+      { name: "Total emissions", x, y: rows.map((r) => r.gross_mt), mode: "lines", visible: "legendonly", line: { color: css("--gross"), width: lw(1.7), dash: "dash" },
         hovertemplate: "%{y:.1f} MtCO2e/yr<extra>Total emissions</extra>" },
-      { name: "Emission mitigation (flare)", x, y: mitigation, mode: "lines", visible: "legendonly", line: { color: css("--gas"), width: 1.7, dash: "dash" },
+      { name: "Emission mitigation (flare)", x, y: mitigation, mode: "lines", visible: "legendonly", line: { color: css("--gas"), width: lw(1.7), dash: "dash" },
         hovertemplate: "%{y:.1f} MtCO2e/yr<extra>Emission mitigation (flare)</extra>" },
-      { name: "Net emissions", x, y: rows.map((r) => r.net_mt), mode: "lines", line: { color: css("--net"), width: 2.2 },
+      { name: "Net emissions", x, y: rows.map((r) => r.net_mt), mode: "lines", line: { color: css("--net"), width: lw(2.2) },
         customdata: rows.map((r) => [r.basis || ""]), hovertemplate: "%{y:.1f} MtCO2e/yr<br><span style='font-size:11px'>%{customdata[0]}</span><extra>Net emissions</extra>" },
-      { name: "Hashrate (7d avg)", x, y: rows.map((r) => r.hashrate_ehs_7d), yaxis: "y2", mode: "lines", line: { color: css("--hash"), width: 2 },
+      { name: "Hashrate (7d avg)", x, y: rows.map((r) => r.hashrate_ehs_7d), yaxis: "y2", mode: "lines", line: { color: css("--hash"), width: lw(2) },
         customdata: rows.map((r) => [r.power_gw, r.efficiency_jth]),
         hovertemplate: "%{y:,.0f} EH/s · %{customdata[0]:.1f} GW at %{customdata[1]:.1f} J/TH<extra>Hashrate</extra>" },
     ];
-    if (hasPrice) traces.push({ name: "BTC price", x, y: rows.map((r) => r.price_usd), yaxis: "y3", mode: "lines", line: { color: css("--price"), width: 2 },
+    if (hasPrice) traces.push({ name: "BTC price", x, y: rows.map((r) => r.price_usd), yaxis: "y3", mode: "lines", line: { color: css("--price"), width: lw(2) },
         hovertemplate: "$%{y:,.0f}<extra>BTC price</extra>" });
 
     const emMax = Math.max(...rows.map((r) => r.gross_mt));
@@ -133,7 +137,7 @@
     function axisTitle(ts) {
       const on = ts.filter((s) => s.yaxis === undefined && s.visible !== "legendonly" && s.visible !== false).map((s) => s.name);
       const kind = on.length === 1 && on[0] === "Net emissions" ? "Net emissions" : on.length === 1 && on[0] === "Total emissions" ? "Total emissions" : "Emissions";
-      return kind + ": megatonnes CO2e a year";
+      return narrow ? kind + ", MtCO2e/yr" : kind + ": megatonnes CO2e a year";
     }
     // Side axes are banded so their lines stay clear of the emissions lines: hashrate in the bottom fifth, price in the top fifth.
     function band(values, fracTop, fracBottom) {
@@ -157,19 +161,19 @@
     const sideTick = { family: css("--font"), color: "rgba(184,192,204,0.7)", size: narrow ? 10 : 11, weight: 300 };
     const layout = {
       paper_bgcolor: css("--bg"), plot_bgcolor: css("--bg"), font,
-      margin: { l: narrow ? 52 : 80, r: narrow ? 70 : 90, t: 20, b: narrow ? 90 : 80 },
+      margin: { l: narrow ? 44 : 80, r: narrow ? 12 : 90, t: narrow ? 12 : 20, b: narrow ? 70 : 80 },
       hovermode: "x unified",
       hoverlabel: { bgcolor: "#0D2B55", bordercolor: "rgba(238,238,238,0.2)", font: { family: css("--font"), color: css("--ink"), size: narrow ? 12 : 14 } },
-      legend: { orientation: "h", x: 0.5, xanchor: "center", y: narrow ? -0.28 : -0.16, yanchor: "top", font: { size: narrow ? 12 : 15, color: css("--ink-muted") }, itemclick: "toggle", itemdoubleclick: "toggleothers", traceorder: "normal" },
+      legend: { orientation: "h", x: 0.5, xanchor: "center", y: narrow ? -0.13 : -0.16, yanchor: "top", font: { size: narrow ? 12 : 15, color: css("--ink-muted") }, itemclick: "toggle", itemdoubleclick: "toggleothers", traceorder: "normal" },
       xaxis: { type: "date", showgrid: false, zeroline: false, tickformat: "%b %Y", ticks: "outside", tickcolor: css("--ink-muted"), tickfont: { color: css("--ink-muted") }, linecolor: css("--grid"), hoverformat: "%-d %b %Y" },
-      yaxis: { title: { text: axisTitle(traces), font: { color: css("--ink-muted") } }, gridcolor: css("--grid"), zeroline: true, zerolinecolor: "rgba(238,238,238,0.4)", zerolinewidth: 1.5,
+      yaxis: { title: { text: axisTitle(traces), font: { color: css("--ink-muted"), size: narrow ? 11 : 15 }, standoff: narrow ? 4 : 10 }, gridcolor: css("--grid"), zeroline: true, zerolinecolor: "rgba(238,238,238,0.4)", zerolinewidth: 1.5,
         tickfont: { color: css("--ink-muted") }, range: [-10, Math.ceil(emMax * 1.4 / 10) * 10], fixedrange: narrow },
       yaxis2: { type: "log", overlaying: "y", side: "right", showgrid: false, zeroline: false, showline: false, ticks: "",
-        tickfont: sideTick, range: hashRange, tickvals: hashTicks, ticktext: hashTicks.map((v) => v.toLocaleString("en-US") + " EH/s"), fixedrange: narrow },
+        tickfont: sideTick, range: hashRange, tickvals: hashTicks, ticktext: hashTicks.map((v) => v.toLocaleString("en-US") + " EH/s"), fixedrange: narrow, showticklabels: !narrow },
       yaxis3: { type: "log", overlaying: "y", side: "right", anchor: "free", position: 1, autoshift: true, shift: narrow ? 40 : 10, showgrid: false, zeroline: false, showline: false, ticks: "",
         tickfont: sideTick, range: priceRange, tickvals: priceTicks, ticktext: priceTicks.map((v) => v >= 1000 ? "$" + (v / 1000) + "k" : "$" + v), fixedrange: narrow, visible: hasPrice && !narrow },
     };
-    const config = { responsive: true, displaylogo: false, modeBarButtonsToRemove: ["select2d", "lasso2d", "autoScale2d", "toggleSpikelines"], toImageButtonOptions: { filename: "beest2-bitcoin-network-emissions", scale: 2 } };
+    const config = { responsive: true, displaylogo: false, displayModeBar: !narrow, modeBarButtonsToRemove: ["select2d", "lasso2d", "autoScale2d", "toggleSpikelines"], toImageButtonOptions: { filename: "beest2-bitcoin-network-emissions", scale: 2 } };
     Plotly.react("chart", traces, layout, config).then((gd) => {
       if (gd.__beestTitled) return;
       gd.__beestTitled = true;
