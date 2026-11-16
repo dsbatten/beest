@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15",
+ "generated": "2026-11-16",
  "hashrate_source": "mempool.space",
  "price_source": "Coin Metrics community API (PriceUSD), fallback blockchain.com",
  "inputs": {
@@ -4209,7 +4209,19 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 33.36,
-   "price_usd": 63821
+   "price_usd": 65189
+  },
+  {
+   "date": "2026-11-16",
+   "hashrate_ehs_7d": 939.6,
+   "efficiency_jth": 19.29,
+   "power_gw": 18.12,
+   "electricity_twh_yr": 158.8,
+   "gross_mt": 40.01,
+   "mitigation_gas_mt": 4.69,
+   "mitigation_landfill_mt": null,
+   "net_mt": 35.32,
+   "price_usd": 65189
   }
  ]
 }
