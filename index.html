@@ -61,25 +61,25 @@
   @media (max-width: 640px) {
     body { padding-left: max(8px, env(safe-area-inset-left, 0px)); padding-right: max(8px, env(safe-area-inset-right, 0px)); padding-top: 16px; }
     h1 { font-size: 21px; }
-    .source { font-size: 11.5px; margin-top: 10px; line-height: 1.5; }
+    .source { font-size: 10px; margin-top: 8px; line-height: 1.45; }
     .source .sep { margin: 0 4px; }
     #chart { height: 520px; margin-top: 12px; }
-    .footnote { font-size: 11px; }
+    .footnote { font-size: 9.5px; line-height: 1.4; }
   }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 
-  .site { display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 28px; max-width: 1540px; margin: 0 auto; }
+  .site { display: grid; grid-template-columns: minmax(0, 1fr) 160px; gap: 20px; max-width: 1480px; margin: 0 auto; }
   .site > .wrap { max-width: none; margin: 0; min-width: 0; }
-  .nav { padding-top: 10px; border-left: 2px dotted rgba(238,238,238,0.25); padding-left: 22px; align-self: start; position: sticky; top: 16px; }
-  .nav h2 { font-size: 13px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); margin: 8px 0 14px; }
-  .nav a { display: flex; align-items: center; gap: 10px; color: var(--link); text-decoration: none; font-size: 20px; font-weight: 300; line-height: 1.3; padding: 10px 0; }
-  .nav a svg { width: 20px; height: 20px; flex: none; fill: none; stroke: var(--link); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .nav { padding-top: 10px; border-left: 2px dotted rgba(238,238,238,0.25); padding-left: 16px; align-self: start; position: sticky; top: 16px; }
+  .nav h2 { font-size: 11px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); margin: 8px 0 14px; }
+  .nav a { display: flex; align-items: center; gap: 8px; color: var(--link); text-decoration: none; font-size: 15px; font-weight: 300; line-height: 1.3; padding: 7px 0; }
+  .nav a svg { width: 15px; height: 15px; flex: none; fill: none; stroke: var(--link); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
   .nav a:hover, .nav a:focus { text-decoration: underline; }
   @media (max-width: 900px) {
     .site { grid-template-columns: 1fr; gap: 10px; }
     .nav { border-left: 0; padding-left: 0; position: static; border-top: 1px solid rgba(238,238,238,0.14); margin-top: 18px; padding-top: 14px; }
-    .nav a { display: inline-flex; margin-right: 22px; font-size: 15px; padding: 6px 0; }
-    .nav a svg { width: 16px; height: 16px; }
+    .nav a { display: inline-flex; margin-right: 18px; font-size: 13px; padding: 6px 0; }
+    .nav a svg { width: 13px; height: 13px; }
   }
 </style>
 
@@ -162,7 +162,7 @@
     const layout = {
       paper_bgcolor: css("--bg"), plot_bgcolor: css("--bg"), font,
       margin: { l: narrow ? 44 : 80, r: narrow ? 12 : 90, t: narrow ? 12 : 20, b: narrow ? 70 : 80 },
-      hovermode: "x unified",
+      hovermode: narrow ? false : "x unified",
       hoverlabel: { bgcolor: "#0D2B55", bordercolor: "rgba(238,238,238,0.2)", font: { family: css("--font"), color: css("--ink"), size: narrow ? 12 : 14 } },
       legend: { orientation: "h", x: 0.5, xanchor: "center", y: narrow ? -0.13 : -0.16, yanchor: "top", font: { size: narrow ? 12 : 15, color: css("--ink-muted") }, itemclick: "toggle", itemdoubleclick: "toggleothers", traceorder: "normal" },
       xaxis: { type: "date", showgrid: false, zeroline: false, tickformat: "%b %Y", ticks: "outside", tickcolor: css("--ink-muted"), tickfont: { color: css("--ink-muted") }, linecolor: css("--grid"), hoverformat: "%-d %b %Y" },
