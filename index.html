@@ -126,7 +126,7 @@
       { name: "Emission mitigation (flare)", x, y: mitigation, mode: "lines", visible: "legendonly", line: { color: css("--gas"), width: lw(1.7), dash: "dash" },
         hovertemplate: "%{y:.1f} MtCO2e/yr<extra>Emission mitigation (flare)</extra>" },
       { name: "Net emissions", x, y: rows.map((r) => r.net_mt), mode: "lines", line: { color: css("--net"), width: lw(2.2) },
-        customdata: rows.map((r) => [r.basis || ""]), hovertemplate: "%{y:.1f} MtCO2e/yr<br><span style='font-size:11px'>%{customdata[0]}</span><extra>Net emissions</extra>" },
+        customdata: rows.map((r) => [r.intensity_g_kwh, r.basis || ""]), hovertemplate: "%{y:.1f} MtCO2e/yr · %{customdata[0]:.0f} gCO2e/kWh<br><span style='font-size:11px'>%{customdata[1]}</span><extra>Net emissions</extra>" },
       { name: "Hashrate (7d avg)", x, y: rows.map((r) => r.hashrate_ehs_7d), yaxis: "y2", mode: "lines", line: { color: css("--hash"), width: lw(2) },
         customdata: rows.map((r) => [r.power_gw, r.efficiency_jth]),
         hovertemplate: "%{y:,.0f} EH/s · %{customdata[0]:.1f} GW at %{customdata[1]:.1f} J/TH<extra>Hashrate</extra>" },
