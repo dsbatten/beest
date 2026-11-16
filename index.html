@@ -60,11 +60,11 @@
   .js-plotly-plot .plotly .modebar:hover { opacity: 1; }
   @media (max-width: 640px) {
     body { padding-left: max(8px, env(safe-area-inset-left, 0px)); padding-right: max(8px, env(safe-area-inset-right, 0px)); padding-top: 16px; }
-    h1 { font-size: 21px; }
-    .source { font-size: 10px; margin-top: 8px; line-height: 1.45; }
-    .source .sep { margin: 0 4px; }
+    h1 { font-size: 5vw; }
+    .source { font-size: 2.4vw; margin-top: 2vw; line-height: 1.45; }
+    .source .sep { margin: 0 0.8vw; }
     #chart { height: 520px; margin-top: 12px; }
-    .footnote { font-size: 9.5px; line-height: 1.4; }
+    .footnote { font-size: 2.2vw; line-height: 1.4; }
   }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 
@@ -113,7 +113,8 @@
     $("updated").textContent = upd.getUTCDate() + " " + MONTHS[upd.getUTCMonth()] + " " + upd.getUTCFullYear();
 
     const narrow = window.innerWidth < 700;
-    const font = { family: css("--font"), color: css("--ink"), size: narrow ? 12 : 15 };
+    const fs = narrow ? Math.max(7, Math.round(window.innerWidth * 0.029)) : 15; // phone text follows screen width so page zoom does not blow it up
+    const font = { family: css("--font"), color: css("--ink"), size: fs };
     const hasPrice = rows.some((r) => r.price_usd);
     const lw = (w) => narrow ? Math.round(w * 0.55 * 10) / 10 : w; // thinner lines on phones; desktop widths unchanged
     const mitigation = rows.map((r) => -r.mitigation_gas_mt);
@@ -161,12 +162,12 @@
     const sideTick = { family: css("--font"), color: "rgba(184,192,204,0.7)", size: narrow ? 10 : 11, weight: 300 };
     const layout = {
       paper_bgcolor: css("--bg"), plot_bgcolor: css("--bg"), font,
-      margin: { l: narrow ? 44 : 80, r: narrow ? 12 : 90, t: narrow ? 12 : 20, b: narrow ? 70 : 80 },
+      margin: { l: narrow ? Math.round(fs * 3.7) : 80, r: narrow ? 12 : 90, t: narrow ? 12 : 20, b: narrow ? Math.round(fs * 5.8) : 80 },
       hovermode: narrow ? false : "x unified",
       hoverlabel: { bgcolor: "#0D2B55", bordercolor: "rgba(238,238,238,0.2)", font: { family: css("--font"), color: css("--ink"), size: narrow ? 12 : 14 } },
-      legend: { orientation: "h", x: 0.5, xanchor: "center", y: narrow ? -0.13 : -0.16, yanchor: "top", font: { size: narrow ? 12 : 15, color: css("--ink-muted") }, itemclick: "toggle", itemdoubleclick: "toggleothers", traceorder: "normal" },
+      legend: { orientation: "h", x: 0.5, xanchor: "center", y: narrow ? -0.13 : -0.16, yanchor: "top", font: { size: fs, color: css("--ink-muted") }, itemclick: "toggle", itemdoubleclick: "toggleothers", traceorder: "normal" },
       xaxis: { type: "date", showgrid: false, zeroline: false, tickformat: "%b %Y", ticks: "outside", tickcolor: css("--ink-muted"), tickfont: { color: css("--ink-muted") }, linecolor: css("--grid"), hoverformat: "%-d %b %Y" },
-      yaxis: { title: { text: axisTitle(traces), font: { color: css("--ink-muted"), size: narrow ? 11 : 15 }, standoff: narrow ? 4 : 10 }, gridcolor: css("--grid"), zeroline: true, zerolinecolor: "rgba(238,238,238,0.4)", zerolinewidth: 1.5,
+      yaxis: { title: { text: axisTitle(traces), font: { color: css("--ink-muted"), size: narrow ? Math.max(7, fs - 1) : 15 }, standoff: narrow ? 4 : 10 }, gridcolor: css("--grid"), zeroline: true, zerolinecolor: "rgba(238,238,238,0.4)", zerolinewidth: 1.5,
         tickfont: { color: css("--ink-muted") }, range: [-10, Math.ceil(emMax * 1.4 / 10) * 10], fixedrange: narrow },
       yaxis2: { type: "log", overlaying: "y", side: "right", showgrid: false, zeroline: false, showline: false, ticks: "",
         tickfont: sideTick, range: hashRange, tickvals: hashTicks, ticktext: hashTicks.map((v) => v.toLocaleString("en-US") + " EH/s"), fixedrange: narrow, showticklabels: !narrow },
