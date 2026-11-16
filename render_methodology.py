@@ -3,6 +3,8 @@ import markdown, re, sys
 md = open("methodology.md", encoding="utf-8").read()
 body = markdown.markdown(md, extensions=["tables", "sane_lists", "toc"])
 body = re.sub(r'<a href="(http[^"]+)"', r'<a href="\1" target="_blank" rel="noopener"', body)
+# Bare URLs (as in the References list) become links too; only text not already inside a tag or an existing link.
+body = re.sub(r'(?<![="\'>/\w])(https?://[^\s<]+?)(?=[.,;)]?(?:\s|<|$))', r'<a href="\1" target="_blank" rel="noopener">\1</a>', body)
 html = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>BEEST 2 methodology</title>
