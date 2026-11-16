@@ -1,4 +1,4 @@
-# BEEST 1 emission-intensity series, Daniel Batten, from the BEEST 1 spreadsheet (Google Sheets, gid 270821339), extracted 15 November 2026.
+# BEEST 1 emission-intensity series, Daniel Batten, from the BEEST 1 spreadsheet (Google Sheets, gid 270821339), extracted 15 November 2026 (the 13 March 2023 row, which carried data errors, was removed from the sheet the same day and is not in this file).
 # s2_g_per_kwh = Scope 2 (gross) emission intensity of mining electricity; total_g_per_kwh = net of methane mitigation at GWP20 84; clean_share = total sustainable (clean) energy share.
 # The 2026-11-15 row is the model's forward projection, not a measured update (the model was last tuned in October 2024).
 date,s2_g_per_kwh,total_g_per_kwh,clean_share
@@ -22,7 +22,6 @@ date,s2_g_per_kwh,total_g_per_kwh,clean_share
 2023-02-17,358.2028921,340.4073768,0.522785785
 2023-02-26,349.1719946,328.6370766,0.53158129
 2023-03-06,347.4785765,327.5703233,0.530823144
-2023-03-13,340.785684,340.4073768,0.539802884
 2023-03-16,349.4375517,328.6370765,0.541881166
 2023-04-01,325.6671397,305.5153211,0.537477828
 2023-04-22,327.3929739,308.0545864,0.53158
