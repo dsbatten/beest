@@ -21,8 +21,12 @@ Usage:
     python3 hashrate_feed.py            # prints today's 7-day average
     python3 hashrate_feed.py --series   # prints the daily series and rolling average as CSV
 """
+import hashlib
 import json
+import os
 import sys
+import tempfile
+import time
 import urllib.request
 from datetime import datetime, timezone
 
@@ -30,7 +34,12 @@ WINDOW = 7  # days in the moving average
 
 # Each source: URL and a function turning its JSON into [(date, EH/s), ...]
 def _mempool(days):
-    span = "3m" if days <= 90 else "1y"
+    # One endpoint for every span, so the live series and the history are built from the
+    # same response. mempool.space runs several backends whose per-day averages can differ
+    # by a few EH/s between calls (seen 16 November 2026: 946.3 against 940.4 EH/s for
+    # 27 May 2026 on consecutive calls of /all), and two fetches of different spans gave
+    # the two builders different 7-day averages for the same week.
+    span = "3m" if days <= 90 else "all"
     data = _get(f"https://mempool.space/api/v1/mining/hashrate/{span}")
     return [(_day(h["timestamp"]), h["avgHashrate"] / 1e18) for h in data["hashrates"]]
 
@@ -47,9 +56,34 @@ def _coinmetrics(days):
 SOURCES = [("mempool.space", _mempool), ("blockchain.com", _blockchain_com), ("Coin Metrics", _coinmetrics)]
 
 
+CACHE_TTL = 3600  # seconds; one refresh run fetches each URL once and every builder reads the same bytes
+
+
 def _get(url):
-    with urllib.request.urlopen(url, timeout=30) as r:
-        return json.load(r)
+    """GET a JSON URL, caching the response on disk for CACHE_TTL seconds.
+
+    build_series.py and build_history.py run back to back in the daily refresh and both
+    need the same hashrate series; without the cache each makes its own request, and
+    the upstream's backends do not always agree with each other to the last EH/s. The
+    cache makes the two files consistent by construction, which is what the refresh
+    workflow's cross-check asserts."""
+    path = os.path.join(tempfile.gettempdir(), "beest-feed-" + hashlib.sha1(url.encode()).hexdigest() + ".json")
+    try:
+        if time.time() - os.path.getmtime(path) < CACHE_TTL:
+            with open(path) as f:
+                return json.load(f)
+    except OSError:
+        pass
+    with urllib.request.urlopen(url, timeout=60) as r:
+        data = json.load(r)
+    try:
+        tmp = path + ".tmp"
+        with open(tmp, "w") as f:
+            json.dump(data, f)
+        os.replace(tmp, path)
+    except OSError:
+        pass
+    return data
 
 
 def _day(ts):
