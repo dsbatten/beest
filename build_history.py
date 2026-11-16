@@ -136,6 +136,17 @@ def build():
     b1 = load_beest1()
     s2_pts = [(d, s2) for d, s2, _, _ in b1] + [(LIVE_START, CAMBRIDGE_INTENSITY)]
     mit_g_pts = [(d, s2 - tot) for d, s2, tot, _ in b1]            # g/kWh of mitigation, BEEST 1 basis
+    # Data quality: a BEEST 1 row whose net figure equals its gross figure has an unfilled mitigation cell
+    # (13 March 2023: 0.38 g/kWh between neighbours near 20). Such a point is dropped and the offset
+    # interpolated across it; gross intensity and clean share from the same row are kept.
+    kept = []
+    for i, (d, g) in enumerate(mit_g_pts):
+        nb = [mit_g_pts[j][1] for j in (i - 1, i + 1) if 0 <= j < len(mit_g_pts)]
+        if nb and all(g < 0.5 * v for v in nb):
+            print("dropped BEEST 1 mitigation point", d, round(g, 2), "g/kWh; neighbours", [round(v, 2) for v in nb])
+            continue
+        kept.append((d, g))
+    mit_g_pts = kept
     clean_pts = [(d, c) for d, _, _, c in b1] + [(LIVE_START, CAMBRIDGE_CLEAN)]
     b1_last = b1[-1][0]
 
