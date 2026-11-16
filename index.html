@@ -64,6 +64,7 @@
     .source { font-size: 2.4vw; margin-top: 2vw; line-height: 1.45; }
     .source .sep { margin: 0 0.8vw; }
     #chart { height: 520px; margin-top: 12px; }
+    #chart, #chart .draglayer, #chart .nsewdrag, #chart .drag { touch-action: pan-y pinch-zoom !important; cursor: default !important; }
     .footnote { font-size: 2.2vw; line-height: 1.4; }
   }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
@@ -164,6 +165,7 @@
       paper_bgcolor: css("--bg"), plot_bgcolor: css("--bg"), font,
       margin: { l: narrow ? Math.round(fs * 3.7) : 80, r: narrow ? 12 : 90, t: narrow ? 12 : 20, b: narrow ? Math.round(fs * 5.8) : 80 },
       hovermode: narrow ? false : "x unified",
+      dragmode: narrow ? false : "zoom", // on phones a touch on the chart scrolls the page instead of starting a zoom box
       hoverlabel: { bgcolor: "#0D2B55", bordercolor: "rgba(238,238,238,0.2)", font: { family: css("--font"), color: css("--ink"), size: narrow ? 12 : 14 } },
       legend: { orientation: "h", x: 0.5, xanchor: "center", y: narrow ? -0.13 : -0.16, yanchor: "top", font: { size: fs, color: css("--ink-muted") }, itemclick: "toggle", itemdoubleclick: "toggleothers", traceorder: "normal" },
       xaxis: { type: "date", showgrid: false, zeroline: false, tickformat: "%b %Y", ticks: "outside", tickcolor: css("--ink-muted"), tickfont: { color: css("--ink-muted") }, linecolor: css("--grid"), hoverformat: "%-d %b %Y" },
@@ -174,7 +176,7 @@
       yaxis3: { type: "log", overlaying: "y", side: "right", anchor: "free", position: 1, autoshift: true, shift: narrow ? 40 : 10, showgrid: false, zeroline: false, showline: false, ticks: "",
         tickfont: sideTick, range: priceRange, tickvals: priceTicks, ticktext: priceTicks.map((v) => v >= 1000 ? "$" + (v / 1000) + "k" : "$" + v), fixedrange: narrow, visible: hasPrice && !narrow },
     };
-    const config = { responsive: true, displaylogo: false, displayModeBar: !narrow, modeBarButtonsToRemove: ["select2d", "lasso2d", "autoScale2d", "toggleSpikelines"], toImageButtonOptions: { filename: "beest2-bitcoin-network-emissions", scale: 2 } };
+    const config = { responsive: true, displaylogo: false, displayModeBar: !narrow, scrollZoom: false, doubleClick: narrow ? false : "reset", modeBarButtonsToRemove: ["select2d", "lasso2d", "autoScale2d", "toggleSpikelines"], toImageButtonOptions: { filename: "beest2-bitcoin-network-emissions", scale: 2 } };
     Plotly.react("chart", traces, layout, config).then((gd) => {
       if (gd.__beestTitled) return;
       gd.__beestTitled = true;
