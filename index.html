@@ -94,7 +94,7 @@
     <span class="sep">|</span> <b>updated:</b> <span id="updated">–</span>
   </div>
 
-  <div id="chart" role="img" aria-label="Bitcoin network total, mitigated and net emissions in megatonnes CO2e a year since September 2019, with network hashrate and bitcoin price on their own axes"></div>
+  <div id="chart" role="img" aria-label="Bitcoin network total, mitigated and net emissions in MtCO2e a year since September 2019, with network hashrate and bitcoin price on their own axes"></div>
 
   <div class="status" id="status" hidden></div>
   <div class="footnote">Flare-gas calculations use <a href="https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/" target="_blank" rel="noopener">IPCC AR6</a> for the warming potential of methane (GWP20) and <a href="https://www.science.org/doi/10.1126/science.abq0385" target="_blank" rel="noopener">Plant et al. 2022</a> for flare efficiency (91.1%).</div>
@@ -139,7 +139,7 @@
     function axisTitle(ts) {
       const on = ts.filter((s) => s.yaxis === undefined && s.visible !== "legendonly" && s.visible !== false).map((s) => s.name);
       const kind = on.length === 1 && on[0] === "Net emissions" ? "Net emissions" : on.length === 1 && on[0] === "Total emissions" ? "Total emissions" : "Emissions";
-      return narrow ? kind + ", MtCO2e/yr" : kind + ": megatonnes CO2e a year";
+      return kind + (narrow ? ", MtCO2e/yr" : ": MtCO2e per year");
     }
     // Side axes are banded so their lines stay clear of the emissions lines: hashrate in the bottom fifth, price in the top fifth.
     function band(values, fracTop, fracBottom) {
