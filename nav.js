@@ -62,7 +62,7 @@
     var tip = document.createElement("a");
     tip.href = "lightning:" + TIP_ADDRESS;
     tip.style.cssText = "display:block;margin-top:18px;";
-    tip.innerHTML = CHAI_SVG + '<span style="display:block;margin-top:8px;font-size:13px;line-height:1.4;">If you got value from this research, buy me a chai</span>';
+    tip.innerHTML = CHAI_SVG + '<span style="display:block;margin-top:8px;font-size:13px;line-height:1.4;color:#F4F6F8;">If you got value from this research, buy me a chai</span>';
     nav.appendChild(tip);
   }).catch(function () {});
 })();
