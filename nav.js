@@ -1,11 +1,5 @@
 // Draws the chart list on the right of every page from charts.json. Add a chart by adding a line to charts.json.
 (function () {
-  // Panel sizing, shared by every page: a column wide enough that each link fits on one line.
-  var st = document.createElement("style");
-  st.textContent = "@media (min-width: 901px) { .site { grid-template-columns: minmax(0, 1fr) 300px !important; } .nav a.nav-link { font-size: 17px !important; white-space: nowrap; } .nav a.nav-link svg { width: 17px !important; height: 17px !important; } .nav h2 { font-size: 12px !important; } }" +
-    "@media (max-width: 900px) { .nav a.nav-link { font-size: 15px !important; } .nav a.nav-link svg { width: 15px !important; height: 15px !important; } }" +
-    ".nav a.nav-tip svg { width: 100% !important; max-width: 150px !important; height: auto !important; }";
-  document.head.appendChild(st);
   var here = location.pathname.split("/").pop() || "index.html";
   // Line icons, drawn in the link colour. "leaf" for emissions charts, "chart" for other series, "doc" for the methodology.
   var ICONS = {
