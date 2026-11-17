@@ -15,7 +15,7 @@
   var EXTERNAL = [
     { title: "Articles", href: "https://batcoinz.com/", icon: "articles" },
     { title: "Newsletter", href: "https://www.batcoinz.com/", icon: "mail" },
-    { title: "Digital Assets Research Institute", href: "https://www.da-ri.org/", icon: "institute" },
+    { title: "Digital Assets Research", href: "https://www.da-ri.org/", icon: "institute" },
     { title: "Bitcoiner coaching", href: "https://www.danielbatten.co", icon: "person" }
   ];
   var TIP_ADDRESS = "soakedbobcat96@walletofsatoshi.com";
