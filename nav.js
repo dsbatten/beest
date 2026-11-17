@@ -1,5 +1,11 @@
 // Draws the chart list on the right of every page from charts.json. Add a chart by adding a line to charts.json.
 (function () {
+  // Panel sizing, shared by every page: a column wide enough that each link fits on one line.
+  var st = document.createElement("style");
+  st.textContent = "@media (min-width: 901px) { .site { grid-template-columns: minmax(0, 1fr) 300px !important; } .nav a.nav-link { font-size: 17px !important; white-space: nowrap; } .nav a.nav-link svg { width: 17px !important; height: 17px !important; } .nav h2 { font-size: 12px !important; } }" +
+    "@media (max-width: 900px) { .nav a.nav-link { font-size: 15px !important; } .nav a.nav-link svg { width: 15px !important; height: 15px !important; } }" +
+    ".nav a.nav-tip svg { width: 100% !important; max-width: 150px !important; height: auto !important; }";
+  document.head.appendChild(st);
   var here = location.pathname.split("/").pop() || "index.html";
   // Line icons, drawn in the link colour. "leaf" for emissions charts, "chart" for other series, "doc" for the methodology.
   var ICONS = {
@@ -36,6 +42,7 @@
     '<path d="M258 372l-12 22h12l-8 18 22-28h-12l8-12z" fill="#E4F060" stroke="none"/></svg>';
   function link(href, icon, title) {
     var a = document.createElement("a");
+    a.className = "nav-link";
     a.href = href;
     a.innerHTML = ICONS[icon] + "<span></span>";
     a.querySelector("span").textContent = title;
@@ -47,6 +54,7 @@
     var h = document.createElement("h2"); h.textContent = "BEEST 2 charts"; nav.appendChild(h);
     charts.forEach(function (c) {
       var a = document.createElement("a");
+      a.className = "nav-link";
       a.href = c.file; a.title = c.description || "";
       a.innerHTML = (ICONS[c.icon] || ICONS.chart) + "<span></span>";
       a.querySelector("span").textContent = c.title;
@@ -60,6 +68,7 @@
     EXTERNAL.forEach(function (e) { nav.appendChild(link(e.href, e.icon, e.title)); });
     // Lightning tip jar: the cup's QR code encodes the same lightning: address as the link.
     var tip = document.createElement("a");
+    tip.className = "nav-tip";
     tip.href = "lightning:" + TIP_ADDRESS;
     tip.style.cssText = "display:block;margin-top:18px;";
     tip.innerHTML = CHAI_SVG + '<span style="display:block;margin-top:8px;font-size:13px;line-height:1.4;color:#F4F6F8;">If you got value from this research, buy me a chai</span>';
