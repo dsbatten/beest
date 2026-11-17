@@ -1,5 +1,10 @@
 // Draws the chart list on the right of every page from charts.json. Add a chart by adding a line to charts.json.
 (function () {
+  // Link text size, shared by every page. The panel keeps its 160px width; only the text grows.
+  var st = document.createElement("style");
+  st.textContent = ".nav a.nav-link { font-size: 17px !important; } .nav a.nav-link svg { width: 17px !important; height: 17px !important; }" +
+    "@media (max-width: 900px) { .nav a.nav-link { font-size: 15px !important; } .nav a.nav-link svg { width: 15px !important; height: 15px !important; } }";
+  document.head.appendChild(st);
   var here = location.pathname.split("/").pop() || "index.html";
   // Line icons, drawn in the link colour. "leaf" for emissions charts, "chart" for other series, "doc" for the methodology.
   var ICONS = {
@@ -15,7 +20,7 @@
   var EXTERNAL = [
     { title: "Articles", href: "https://batcoinz.com/", icon: "articles" },
     { title: "Newsletter", href: "https://www.batcoinz.com/", icon: "mail" },
-    { title: "Digital Assets Research", href: "https://www.da-ri.org/", icon: "institute" },
+    { title: "DARI", href: "https://www.da-ri.org/", icon: "institute" },
     { title: "Bitcoiner coaching", href: "https://www.danielbatten.co", icon: "person" }
   ];
   var TIP_ADDRESS = "soakedbobcat96@walletofsatoshi.com";
