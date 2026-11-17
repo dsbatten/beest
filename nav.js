@@ -8,12 +8,14 @@
     doc: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M9.5 13h5M9.5 17h5"/></svg>',
     articles: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M7 9h10M7 12h10M7 15h6"/></svg>',
     mail: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>',
+    institute: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-5 9 5"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8"/><path d="M3 20h18"/></svg>',
     person: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1-4 4-6 7-6s6 2 7 6"/></svg>'
   };
   // Links to Daniel's other sites. Kept below a divider so they are not read as more charts.
   var EXTERNAL = [
     { title: "Articles", href: "https://batcoinz.com/", icon: "articles" },
     { title: "Newsletter", href: "https://www.batcoinz.com/", icon: "mail" },
+    { title: "Digital Assets Research Institute", href: "https://www.da-ri.org/", icon: "institute" },
     { title: "Bitcoiner coaching", href: "https://www.danielbatten.co", icon: "person" }
   ];
   function link(href, icon, title) {
