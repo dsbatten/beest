@@ -21,7 +21,7 @@
     { title: "Articles", href: "https://batcoinz.com/", icon: "articles" },
     { title: "Newsletter", href: "https://www.batcoinz.com/", icon: "mail" },
     { title: "DARI", href: "https://www.da-ri.org/", icon: "institute" },
-    { title: "Bitcoiner coaching", href: "https://www.danielbatten.co", icon: "person" }
+    { title: "Coaching", href: "https://www.danielbatten.co", icon: "person" }
   ];
   var TIP_ADDRESS = "soakedbobcat96@walletofsatoshi.com";
   // QR code for "lightning:" + TIP_ADDRESS, one hex string per row of 33 modules (1 = dark).
