@@ -28,11 +28,12 @@ import urllib.request
 from datetime import date
 
 from hashrate_feed import daily_series, moving_average
+from grid_greening import Greening
 
 START = date(2025, 12, 1)
 
 # Static inputs; every value and its source is in tracker-inputs.md
-CARBON_INTENSITY = 252.0      # gCO2e/kWh, Cambridge 2nd edition, December 2025 mix
+CARBON_INTENSITY = 252.0      # gCO2e/kWh, Cambridge 2nd edition, December 2025 mix; moved after that with the world grid (grid_greening.py)
 MITIGATION_GAS = 4.69         # MtCO2e/yr, Cambridge 2nd edition, 44 flare-gas respondents, 91.1% flare efficiency, GWP20
 MITIGATION_LANDFILL = None    # MtCO2e/yr, to be added when a sourced figure exists
 
@@ -81,6 +82,7 @@ def build():
     source, daily = daily_series(days=400)
     prices = price_series()
     last_price = None
+    green = Greening()
     rows = []
     for day, ehs in moving_average(daily):
         d = date.fromisoformat(day)
@@ -89,7 +91,8 @@ def build():
         jth = efficiency_on(d)
         gw = ehs * jth / 1000.0                       # EH/s x J/TH = 1e18 x 1e-12 W = 1e6 W x ... -> GW after /1000
         twh = gw * 8.760                              # GW x 8,760 h = TWh/yr
-        gross = twh * CARBON_INTENSITY / 1000.0       # TWh x g/kWh = Mt / 1000
+        intensity = green.intensity(d)                # gCO2e/kWh: Cambridge December 2025, on-grid part moved with the world grid
+        gross = twh * intensity / 1000.0              # TWh x g/kWh = Mt / 1000
         mit = MITIGATION_GAS + (MITIGATION_LANDFILL or 0.0)
         last_price = prices.get(day, last_price)  # carry the last close forward over a missing day
         rows.append({
@@ -103,6 +106,8 @@ def build():
             "mitigation_landfill_mt": MITIGATION_LANDFILL,
             "net_mt": round(gross - mit, 2),
             "price_usd": round(last_price) if last_price else None,
+            "intensity_g_kwh": round(intensity, 1),
+            "clean_share": round(green.clean(d), 4),
         })
     return {
         "generated": date.today().isoformat(),
@@ -115,6 +120,7 @@ def build():
             "efficiency_jth_start": round(network_jth(E_GRID_START), 2),
             "efficiency_jth_end": round(network_jth(E_GRID_END), 2),
             "efficiency_end_date": E_GRID_END_DATE.isoformat(),
+            "grid_greening_latest_month": green.latest_month,
         },
         "rows": rows,
     }
