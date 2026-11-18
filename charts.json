@@ -6,6 +6,30 @@
   "description": "Bitcoin network total, mitigated and net emissions since 2019"
  },
  {
+  "title": "Mitigated",
+  "file": "mitigated.html",
+  "icon": "leaf",
+  "description": "Share of network emissions mitigated by flare-gas mining"
+ },
+ {
+  "title": "Intensity",
+  "file": "intensity.html",
+  "icon": "leaf",
+  "description": "Total and net emissions per kWh consumed"
+ },
+ {
+  "title": "Sustainable",
+  "file": "sustainable.html",
+  "icon": "leaf",
+  "description": "Share of mining power from renewables and nuclear"
+ },
+ {
+  "title": "vs Hashrate",
+  "file": "since-2019.html",
+  "icon": "chart",
+  "description": "Hashrate, emissions and price indexed to September 2019"
+ },
+ {
   "title": "Methodology",
   "file": "methodology.html",
   "icon": "doc",
