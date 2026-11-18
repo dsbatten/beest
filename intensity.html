@@ -67,6 +67,15 @@
     #chart, #chart .draglayer, #chart .nsewdrag, #chart .drag { touch-action: pan-y pinch-zoom !important; cursor: default !important; }
     .footnote { font-size: 2.2vw; line-height: 1.4; }
   }
+  .notes { max-width: 760px; margin: 40px auto 8px; padding: 0 8px; color: #CCCCCC; font-size: 15px; line-height: 1.55; font-weight: 300; }
+  .notes h3 { font-size: 22px; font-weight: 400; color: #EEEEEE; margin: 0 0 10px; }
+  .notes p { margin: 0 0 16px; }
+  .notes > ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 16px; }
+  .notes li b { display: block; font-weight: 400; color: #EEEEEE; margin-bottom: 2px; }
+  .notes ul ul { margin: 6px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
+  .notes a { color: var(--link); text-decoration: none; }
+  .notes a:hover, .notes a:focus { text-decoration: underline; }
+  @media (max-width: 640px) { .notes { font-size: 14px; margin-top: 24px; } .notes h3 { font-size: 19px; } }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 
   .site { display: grid; grid-template-columns: minmax(0, 1fr) 160px; gap: 20px; max-width: 1480px; margin: 0 auto; }
@@ -97,7 +106,16 @@
   <div id="chart" role="img" aria-label="Bitcoin network total and net emissions per kilowatt-hour consumed, in grams of CO2e, since September 2019, with bitcoin price on its own axis"></div>
 
   <div class="status" id="status" hidden></div>
-  <div class="footnote">Emissions per kilowatt-hour of electricity the network consumes. Net intensity deducts the methane destroyed by flare-gas mining. Cambridge's 252 gCO2e/kWh (December 2025) is a snapshot; from then on, the grid-connected share of mining (91.9%) moves with the world grid's carbon intensity, which has fallen by about 1.7% a year since 2019 (<a href="https://ember-energy.org/data/monthly-electricity-data/" target="_blank" rel="noopener">Ember</a>). Flare-gas calculations use <a href="https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/" target="_blank" rel="noopener">IPCC AR6</a> for the warming potential of methane (GWP20) and <a href="https://www.science.org/doi/10.1126/science.abq0385" target="_blank" rel="noopener">Plant et al. 2022</a> for flare efficiency (91.1%).</div>
+  <section class="notes" aria-label="Chart notes">
+    <h3>Bitcoin Network Emissions Intensity</h3>
+    <p>This chart shows the emissions from each kilowatt-hour the network uses. The dashed line is the carbon intensity of the mining energy mix. The solid line deducts the methane miners destroy, so the gap between the two is that mitigation per kilowatt-hour.</p>
+    <ul>
+      <li><b>How I calculate it</b>Total emissions ÷ electricity used, and net emissions ÷ electricity used.</li>
+      <li><b>Cambridge's figure is a snapshot</b>Cambridge's 252 gCO2e/kWh comes from a single survey, in December 2025. Since then I move the grid-connected part of mining (91.9%) with the world grid's carbon intensity, and hold off-grid mining as surveyed (<a href="methodology.html#grid-greening-since-december-2025" target="_blank" rel="noopener">Grid greening</a>). The world grid's carbon intensity fell by ~1.7% a year from 2019 to 2025 (522 to 472 gCO2e/kWh), by 2.5% in the 12 months to September 2026, and by 1.6% since the Cambridge survey (~2.1% a year). At the long-run pace that takes ~4 gCO2e/kWh off the mining figure each year until Cambridge's next survey resets it. So far it has moved from 252 to 248.3.</li>
+      <li><b>Before December 2025</b>The line follows <a href="https://docs.google.com/spreadsheets/d/1YSsIk2ghvPDHTcfUKkKo9cqg0XI_gSGh/edit?gid=270821339#gid=270821339" target="_blank" rel="noopener">BEEST 1</a> from September 2019 (597 gCO2e/kWh) to October 2024 (261), with straight lines between its dated points, then runs straight to Cambridge's 252.</li>
+      <li><b>Sources</b><ul><li>Carbon intensity: <a href="https://docs.google.com/spreadsheets/d/1YSsIk2ghvPDHTcfUKkKo9cqg0XI_gSGh/edit?gid=270821339#gid=270821339" target="_blank" rel="noopener">BEEST 1</a> (September 2019 to October 2024) and <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/" target="_blank" rel="noopener">Cambridge Digital Mining Industry Report, 2nd edition, preliminary results</a> (252 gCO2e/kWh, December 2025)</li><li>Grid greening from December 2025: <a href="https://ember-energy.org/data/monthly-electricity-data/" target="_blank" rel="noopener">Ember monthly electricity data</a>, with the on-grid share from <a href="https://www.jbs.cam.ac.uk/wp-content/uploads/2025/04/2025-04-cambridge-digital-mining-industry-report.pdf" target="_blank" rel="noopener">Cambridge Digital Mining Industry Report, April 2025</a></li><li>Flare-gas mitigation: <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/" target="_blank" rel="noopener">Cambridge Digital Mining Industry Report, 2nd edition, preliminary results</a> (4.69 MtCO2e a year from 44 respondents) and, before December 2025, <a href="https://docs.google.com/spreadsheets/d/1YSsIk2ghvPDHTcfUKkKo9cqg0XI_gSGh/edit?gid=270821339#gid=270821339" target="_blank" rel="noopener">BEEST 1</a></li><li>Flare efficiency, 91.1%: <a href="https://www.science.org/doi/10.1126/science.abq0385" target="_blank" rel="noopener">Plant et al. 2022, Science</a>; warming potential of methane over 20 years: <a href="https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/" target="_blank" rel="noopener">IPCC AR6, Chapter 7</a></li><li>Hashrate, 7-day average: <a href="https://mempool.space/docs/api/rest#get-mining-hashrate" target="_blank" rel="noopener">mempool.space</a></li><li>Fleet efficiency: <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/" target="_blank" rel="noopener">Cambridge Digital Mining Industry Report, 2nd edition, preliminary results</a> (20.8 J/TH, December 2025 survey) and <a href="https://hashrateindex.com/blog/luxor-hashrate-lookback-series-july-2026/" target="_blank" rel="noopener">Luxor Hashrate Lookback, July 2026</a>; before December 2025, Cambridge's survey points with the <a href="https://ccaf.io/cbnsi/cbeci" target="_blank" rel="noopener">CBECI</a> hardware-efficiency series between them</li><li>BTC price: <a href="https://coinmetrics.io/community-network-data/" target="_blank" rel="noopener">Coin Metrics</a></li></ul></li>
+    </ul>
+  </section>
 </div>
 
 <script>
