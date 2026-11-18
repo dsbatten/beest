@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17",
+ "generated": "2026-11-18",
  "hashrate_source": "mempool.space",
  "price_source": "Coin Metrics community API (PriceUSD), fallback blockchain.com",
  "inputs": {
@@ -8,7 +8,8 @@
   "mitigation_landfill_mt": null,
   "efficiency_jth_start": 22.31,
   "efficiency_jth_end": 19.29,
-  "efficiency_end_date": "2026-11-15"
+  "efficiency_end_date": "2026-11-15",
+  "grid_greening_latest_month": "2026-09"
  },
  "rows": [
   {
@@ -21,7 +22,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 48.97,
-   "price_usd": 86505
+   "price_usd": 86505,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-02",
@@ -33,7 +36,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 48.24,
-   "price_usd": 91528
+   "price_usd": 91528,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-03",
@@ -45,7 +50,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 48.68,
-   "price_usd": 93609
+   "price_usd": 93609,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-04",
@@ -57,7 +64,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 46.83,
-   "price_usd": 92206
+   "price_usd": 92206,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-05",
@@ -69,7 +78,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 46.26,
-   "price_usd": 89280
+   "price_usd": 89280,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-06",
@@ -81,7 +92,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 44.65,
-   "price_usd": 89170
+   "price_usd": 89170,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-07",
@@ -93,7 +106,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 46.12,
-   "price_usd": 90068
+   "price_usd": 90068,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-08",
@@ -105,7 +120,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 45.64,
-   "price_usd": 90673
+   "price_usd": 90673,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-09",
@@ -117,7 +134,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 46.49,
-   "price_usd": 92809
+   "price_usd": 92809,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-10",
@@ -129,7 +148,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 46.52,
-   "price_usd": 92103
+   "price_usd": 92103,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-11",
@@ -141,7 +162,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 47.64,
-   "price_usd": 92624
+   "price_usd": 92624,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-12",
@@ -153,7 +176,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 49.05,
-   "price_usd": 90332
+   "price_usd": 90332,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-13",
@@ -165,7 +190,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 50.31,
-   "price_usd": 90245
+   "price_usd": 90245,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-14",
@@ -177,7 +204,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 49.03,
-   "price_usd": 88096
+   "price_usd": 88096,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-15",
@@ -189,7 +218,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 47.45,
-   "price_usd": 86353
+   "price_usd": 86353,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-16",
@@ -201,7 +232,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 46.58,
-   "price_usd": 87752
+   "price_usd": 87752,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-17",
@@ -213,7 +246,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 47.54,
-   "price_usd": 86060
+   "price_usd": 86060,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-18",
@@ -225,7 +260,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 46.6,
-   "price_usd": 85434
+   "price_usd": 85434,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-19",
@@ -237,7 +274,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 45.7,
-   "price_usd": 88168
+   "price_usd": 88168,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-20",
@@ -249,7 +288,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 45.67,
-   "price_usd": 88292
+   "price_usd": 88292,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-21",
@@ -261,7 +302,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 45.86,
-   "price_usd": 88533
+   "price_usd": 88533,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-22",
@@ -273,7 +316,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 46.36,
-   "price_usd": 88474
+   "price_usd": 88474,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-23",
@@ -285,7 +330,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 46.62,
-   "price_usd": 87366
+   "price_usd": 87366,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-24",
@@ -297,7 +344,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 46.4,
-   "price_usd": 87626
+   "price_usd": 87626,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-25",
@@ -309,7 +358,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 47.46,
-   "price_usd": 87231
+   "price_usd": 87231,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-26",
@@ -321,7 +372,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 47.16,
-   "price_usd": 87335
+   "price_usd": 87335,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-27",
@@ -333,7 +386,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 47.77,
-   "price_usd": 87695
+   "price_usd": 87695,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-28",
@@ -345,7 +400,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 47.16,
-   "price_usd": 87748
+   "price_usd": 87748,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-29",
@@ -357,7 +414,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 48.04,
-   "price_usd": 87134
+   "price_usd": 87134,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-30",
@@ -369,7 +428,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 48.76,
-   "price_usd": 88428
+   "price_usd": 88428,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2025-12-31",
@@ -381,7 +442,9 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 47.43,
-   "price_usd": 87517
+   "price_usd": 87517,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2026-01-01",
@@ -389,11 +452,13 @@
    "efficiency_jth": 22.04,
    "power_gw": 23.0,
    "electricity_twh_yr": 201.5,
-   "gross_mt": 50.78,
+   "gross_mt": 50.77,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 46.09,
-   "price_usd": 88684
+   "net_mt": 46.08,
+   "price_usd": 88684,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.594
   },
   {
    "date": "2026-01-02",
@@ -401,11 +466,13 @@
    "efficiency_jth": 22.04,
    "power_gw": 23.29,
    "electricity_twh_yr": 204.1,
-   "gross_mt": 51.42,
+   "gross_mt": 51.41,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 46.73,
-   "price_usd": 89940
+   "net_mt": 46.72,
+   "price_usd": 89940,
+   "intensity_g_kwh": 252.0,
+   "clean_share": 0.5941
   },
   {
    "date": "2026-01-03",
@@ -413,11 +480,13 @@
    "efficiency_jth": 22.03,
    "power_gw": 23.01,
    "electricity_twh_yr": 201.6,
-   "gross_mt": 50.79,
+   "gross_mt": 50.78,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 46.1,
-   "price_usd": 90598
+   "net_mt": 46.09,
+   "price_usd": 90598,
+   "intensity_g_kwh": 251.9,
+   "clean_share": 0.5941
   },
   {
    "date": "2026-01-04",
@@ -425,11 +494,13 @@
    "efficiency_jth": 22.02,
    "power_gw": 23.45,
    "electricity_twh_yr": 205.5,
-   "gross_mt": 51.77,
+   "gross_mt": 51.76,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 47.08,
-   "price_usd": 91360
+   "net_mt": 47.07,
+   "price_usd": 91360,
+   "intensity_g_kwh": 251.9,
+   "clean_share": 0.5942
   },
   {
    "date": "2026-01-05",
@@ -437,11 +508,13 @@
    "efficiency_jth": 22.01,
    "power_gw": 23.19,
    "electricity_twh_yr": 203.1,
-   "gross_mt": 51.18,
+   "gross_mt": 51.17,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 46.49,
-   "price_usd": 93949
+   "net_mt": 46.48,
+   "price_usd": 93949,
+   "intensity_g_kwh": 251.9,
+   "clean_share": 0.5942
   },
   {
    "date": "2026-01-06",
@@ -449,11 +522,13 @@
    "efficiency_jth": 22.0,
    "power_gw": 22.7,
    "electricity_twh_yr": 198.8,
-   "gross_mt": 50.11,
+   "gross_mt": 50.08,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 45.42,
-   "price_usd": 93574
+   "net_mt": 45.39,
+   "price_usd": 93574,
+   "intensity_g_kwh": 251.9,
+   "clean_share": 0.5943
   },
   {
    "date": "2026-01-07",
@@ -461,11 +536,13 @@
    "efficiency_jth": 21.99,
    "power_gw": 22.94,
    "electricity_twh_yr": 201.0,
-   "gross_mt": 50.64,
+   "gross_mt": 50.61,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 45.95,
-   "price_usd": 91209
+   "net_mt": 45.92,
+   "price_usd": 91209,
+   "intensity_g_kwh": 251.9,
+   "clean_share": 0.5943
   },
   {
    "date": "2026-01-08",
@@ -473,11 +550,13 @@
    "efficiency_jth": 21.98,
    "power_gw": 23.24,
    "electricity_twh_yr": 203.6,
-   "gross_mt": 51.3,
+   "gross_mt": 51.26,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 46.61,
-   "price_usd": 91097
+   "net_mt": 46.57,
+   "price_usd": 91097,
+   "intensity_g_kwh": 251.8,
+   "clean_share": 0.5944
   },
   {
    "date": "2026-01-09",
@@ -485,11 +564,13 @@
    "efficiency_jth": 21.97,
    "power_gw": 22.77,
    "electricity_twh_yr": 199.4,
-   "gross_mt": 50.26,
+   "gross_mt": 50.23,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 45.57,
-   "price_usd": 90540
+   "net_mt": 45.54,
+   "price_usd": 90540,
+   "intensity_g_kwh": 251.8,
+   "clean_share": 0.5944
   },
   {
    "date": "2026-01-10",
@@ -497,11 +578,13 @@
    "efficiency_jth": 21.97,
    "power_gw": 22.68,
    "electricity_twh_yr": 198.7,
-   "gross_mt": 50.06,
+   "gross_mt": 50.03,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 45.37,
-   "price_usd": 90406
+   "net_mt": 45.34,
+   "price_usd": 90406,
+   "intensity_g_kwh": 251.8,
+   "clean_share": 0.5945
   },
   {
    "date": "2026-01-11",
@@ -509,11 +592,13 @@
    "efficiency_jth": 21.96,
    "power_gw": 22.82,
    "electricity_twh_yr": 199.9,
-   "gross_mt": 50.37,
+   "gross_mt": 50.32,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 45.68,
-   "price_usd": 90717
+   "net_mt": 45.63,
+   "price_usd": 90717,
+   "intensity_g_kwh": 251.8,
+   "clean_share": 0.5945
   },
   {
    "date": "2026-01-12",
@@ -521,11 +606,13 @@
    "efficiency_jth": 21.95,
    "power_gw": 22.2,
    "electricity_twh_yr": 194.5,
-   "gross_mt": 49.01,
+   "gross_mt": 48.97,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 44.32,
-   "price_usd": 91141
+   "net_mt": 44.28,
+   "price_usd": 91141,
+   "intensity_g_kwh": 251.8,
+   "clean_share": 0.5946
   },
   {
    "date": "2026-01-13",
@@ -533,11 +620,13 @@
    "efficiency_jth": 21.94,
    "power_gw": 22.4,
    "electricity_twh_yr": 196.2,
-   "gross_mt": 49.45,
+   "gross_mt": 49.41,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 44.76,
-   "price_usd": 95304
+   "net_mt": 44.72,
+   "price_usd": 95304,
+   "intensity_g_kwh": 251.8,
+   "clean_share": 0.5946
   },
   {
    "date": "2026-01-14",
@@ -545,11 +634,13 @@
    "efficiency_jth": 21.93,
    "power_gw": 22.48,
    "electricity_twh_yr": 196.9,
-   "gross_mt": 49.62,
+   "gross_mt": 49.57,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 44.93,
-   "price_usd": 97044
+   "net_mt": 44.88,
+   "price_usd": 97044,
+   "intensity_g_kwh": 251.7,
+   "clean_share": 0.5947
   },
   {
    "date": "2026-01-15",
@@ -557,11 +648,13 @@
    "efficiency_jth": 21.92,
    "power_gw": 21.91,
    "electricity_twh_yr": 192.0,
-   "gross_mt": 48.37,
+   "gross_mt": 48.32,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.68,
-   "price_usd": 95546
+   "net_mt": 43.63,
+   "price_usd": 95546,
+   "intensity_g_kwh": 251.7,
+   "clean_share": 0.5947
   },
   {
    "date": "2026-01-16",
@@ -569,11 +662,13 @@
    "efficiency_jth": 21.91,
    "power_gw": 22.11,
    "electricity_twh_yr": 193.7,
-   "gross_mt": 48.8,
+   "gross_mt": 48.74,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 44.11,
-   "price_usd": 95489
+   "net_mt": 44.05,
+   "price_usd": 95489,
+   "intensity_g_kwh": 251.7,
+   "clean_share": 0.5948
   },
   {
    "date": "2026-01-17",
@@ -581,11 +676,13 @@
    "efficiency_jth": 21.91,
    "power_gw": 21.77,
    "electricity_twh_yr": 190.7,
-   "gross_mt": 48.06,
+   "gross_mt": 47.99,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.37,
-   "price_usd": 95107
+   "net_mt": 43.3,
+   "price_usd": 95107,
+   "intensity_g_kwh": 251.7,
+   "clean_share": 0.5948
   },
   {
    "date": "2026-01-18",
@@ -593,11 +690,13 @@
    "efficiency_jth": 21.9,
    "power_gw": 21.41,
    "electricity_twh_yr": 187.6,
-   "gross_mt": 47.27,
+   "gross_mt": 47.21,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 42.58,
-   "price_usd": 94261
+   "net_mt": 42.52,
+   "price_usd": 94261,
+   "intensity_g_kwh": 251.7,
+   "clean_share": 0.5949
   },
   {
    "date": "2026-01-19",
@@ -605,11 +704,13 @@
    "efficiency_jth": 21.89,
    "power_gw": 21.88,
    "electricity_twh_yr": 191.7,
-   "gross_mt": 48.3,
+   "gross_mt": 48.23,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.61,
-   "price_usd": 92526
+   "net_mt": 43.54,
+   "price_usd": 92526,
+   "intensity_g_kwh": 251.6,
+   "clean_share": 0.5949
   },
   {
    "date": "2026-01-20",
@@ -617,11 +718,13 @@
    "efficiency_jth": 21.88,
    "power_gw": 21.98,
    "electricity_twh_yr": 192.5,
-   "gross_mt": 48.52,
+   "gross_mt": 48.44,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.83,
-   "price_usd": 88237
+   "net_mt": 43.75,
+   "price_usd": 88237,
+   "intensity_g_kwh": 251.6,
+   "clean_share": 0.595
   },
   {
    "date": "2026-01-21",
@@ -629,11 +732,13 @@
    "efficiency_jth": 21.87,
    "power_gw": 21.98,
    "electricity_twh_yr": 192.5,
-   "gross_mt": 48.52,
+   "gross_mt": 48.44,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.83,
-   "price_usd": 89599
+   "net_mt": 43.75,
+   "price_usd": 89599,
+   "intensity_g_kwh": 251.6,
+   "clean_share": 0.595
   },
   {
    "date": "2026-01-22",
@@ -641,11 +746,13 @@
    "efficiency_jth": 21.86,
    "power_gw": 22.24,
    "electricity_twh_yr": 194.8,
-   "gross_mt": 49.09,
+   "gross_mt": 49.01,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 44.4,
-   "price_usd": 89396
+   "net_mt": 44.32,
+   "price_usd": 89396,
+   "intensity_g_kwh": 251.6,
+   "clean_share": 0.5951
   },
   {
    "date": "2026-01-23",
@@ -653,11 +760,13 @@
    "efficiency_jth": 21.85,
    "power_gw": 22.63,
    "electricity_twh_yr": 198.2,
-   "gross_mt": 49.95,
+   "gross_mt": 49.86,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 45.26,
-   "price_usd": 89440
+   "net_mt": 45.17,
+   "price_usd": 89440,
+   "intensity_g_kwh": 251.6,
+   "clean_share": 0.5951
   },
   {
    "date": "2026-01-24",
@@ -665,11 +774,13 @@
    "efficiency_jth": 21.84,
    "power_gw": 22.76,
    "electricity_twh_yr": 199.4,
-   "gross_mt": 50.25,
+   "gross_mt": 50.16,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 45.56,
-   "price_usd": 89185
+   "net_mt": 45.47,
+   "price_usd": 89185,
+   "intensity_g_kwh": 251.5,
+   "clean_share": 0.5952
   },
   {
    "date": "2026-01-25",
@@ -677,11 +788,13 @@
    "efficiency_jth": 21.84,
    "power_gw": 21.61,
    "electricity_twh_yr": 189.3,
-   "gross_mt": 47.7,
+   "gross_mt": 47.6,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.01,
-   "price_usd": 86446
+   "net_mt": 42.91,
+   "price_usd": 86446,
+   "intensity_g_kwh": 251.5,
+   "clean_share": 0.5952
   },
   {
    "date": "2026-01-26",
@@ -689,11 +802,13 @@
    "efficiency_jth": 21.83,
    "power_gw": 20.77,
    "electricity_twh_yr": 181.9,
-   "gross_mt": 45.84,
+   "gross_mt": 45.75,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.15,
-   "price_usd": 88337
+   "net_mt": 41.06,
+   "price_usd": 88337,
+   "intensity_g_kwh": 251.5,
+   "clean_share": 0.5953
   },
   {
    "date": "2026-01-27",
@@ -701,11 +816,13 @@
    "efficiency_jth": 21.82,
    "power_gw": 20.1,
    "electricity_twh_yr": 176.1,
-   "gross_mt": 44.37,
+   "gross_mt": 44.28,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.68,
-   "price_usd": 89260
+   "net_mt": 39.59,
+   "price_usd": 89260,
+   "intensity_g_kwh": 251.5,
+   "clean_share": 0.5953
   },
   {
    "date": "2026-01-28",
@@ -713,11 +830,13 @@
    "efficiency_jth": 21.81,
    "power_gw": 19.67,
    "electricity_twh_yr": 172.3,
-   "gross_mt": 43.43,
+   "gross_mt": 43.34,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.74,
-   "price_usd": 89178
+   "net_mt": 38.65,
+   "price_usd": 89178,
+   "intensity_g_kwh": 251.5,
+   "clean_share": 0.5954
   },
   {
    "date": "2026-01-29",
@@ -725,11 +844,13 @@
    "efficiency_jth": 21.8,
    "power_gw": 19.0,
    "electricity_twh_yr": 166.5,
-   "gross_mt": 41.95,
+   "gross_mt": 41.86,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.26,
-   "price_usd": 84520
+   "net_mt": 37.17,
+   "price_usd": 84520,
+   "intensity_g_kwh": 251.4,
+   "clean_share": 0.5954
   },
   {
    "date": "2026-01-30",
@@ -737,11 +858,13 @@
    "efficiency_jth": 21.79,
    "power_gw": 18.23,
    "electricity_twh_yr": 159.7,
-   "gross_mt": 40.25,
+   "gross_mt": 40.16,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.56,
-   "price_usd": 84017
+   "net_mt": 35.47,
+   "price_usd": 84017,
+   "intensity_g_kwh": 251.4,
+   "clean_share": 0.5955
   },
   {
    "date": "2026-01-31",
@@ -749,11 +872,13 @@
    "efficiency_jth": 21.78,
    "power_gw": 18.0,
    "electricity_twh_yr": 157.7,
-   "gross_mt": 39.74,
+   "gross_mt": 39.64,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.05,
-   "price_usd": 78702
+   "net_mt": 34.95,
+   "price_usd": 78702,
+   "intensity_g_kwh": 251.4,
+   "clean_share": 0.5955
   },
   {
    "date": "2026-02-01",
@@ -761,11 +886,13 @@
    "efficiency_jth": 21.78,
    "power_gw": 18.81,
    "electricity_twh_yr": 164.7,
-   "gross_mt": 41.52,
+   "gross_mt": 41.42,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.83,
-   "price_usd": 76911
+   "net_mt": 36.73,
+   "price_usd": 76911,
+   "intensity_g_kwh": 251.4,
+   "clean_share": 0.5956
   },
   {
    "date": "2026-02-02",
@@ -773,11 +900,13 @@
    "efficiency_jth": 21.77,
    "power_gw": 19.07,
    "electricity_twh_yr": 167.0,
-   "gross_mt": 42.09,
+   "gross_mt": 41.99,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.4,
-   "price_usd": 78717
+   "net_mt": 37.3,
+   "price_usd": 78717,
+   "intensity_g_kwh": 251.4,
+   "clean_share": 0.5956
   },
   {
    "date": "2026-02-03",
@@ -785,11 +914,13 @@
    "efficiency_jth": 21.76,
    "power_gw": 18.93,
    "electricity_twh_yr": 165.9,
-   "gross_mt": 41.8,
+   "gross_mt": 41.7,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.11,
-   "price_usd": 75685
+   "net_mt": 37.01,
+   "price_usd": 75685,
+   "intensity_g_kwh": 251.4,
+   "clean_share": 0.5956
   },
   {
    "date": "2026-02-04",
@@ -797,11 +928,13 @@
    "efficiency_jth": 21.75,
    "power_gw": 19.15,
    "electricity_twh_yr": 167.8,
-   "gross_mt": 42.27,
+   "gross_mt": 42.17,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.58,
-   "price_usd": 73095
+   "net_mt": 37.48,
+   "price_usd": 73095,
+   "intensity_g_kwh": 251.4,
+   "clean_share": 0.5957
   },
   {
    "date": "2026-02-05",
@@ -809,11 +942,13 @@
    "efficiency_jth": 21.74,
    "power_gw": 19.85,
    "electricity_twh_yr": 173.9,
-   "gross_mt": 43.82,
+   "gross_mt": 43.71,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.13,
-   "price_usd": 63495
+   "net_mt": 39.02,
+   "price_usd": 63495,
+   "intensity_g_kwh": 251.4,
+   "clean_share": 0.5957
   },
   {
    "date": "2026-02-06",
@@ -821,11 +956,13 @@
    "efficiency_jth": 21.73,
    "power_gw": 19.83,
    "electricity_twh_yr": 173.7,
-   "gross_mt": 43.78,
+   "gross_mt": 43.67,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.09,
-   "price_usd": 70648
+   "net_mt": 38.98,
+   "price_usd": 70648,
+   "intensity_g_kwh": 251.4,
+   "clean_share": 0.5957
   },
   {
    "date": "2026-02-07",
@@ -833,11 +970,13 @@
    "efficiency_jth": 21.72,
    "power_gw": 20.13,
    "electricity_twh_yr": 176.4,
-   "gross_mt": 44.45,
+   "gross_mt": 44.33,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.76,
-   "price_usd": 69166
+   "net_mt": 39.64,
+   "price_usd": 69166,
+   "intensity_g_kwh": 251.4,
+   "clean_share": 0.5958
   },
   {
    "date": "2026-02-08",
@@ -845,11 +984,13 @@
    "efficiency_jth": 21.71,
    "power_gw": 20.59,
    "electricity_twh_yr": 180.3,
-   "gross_mt": 45.44,
+   "gross_mt": 45.32,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.75,
-   "price_usd": 70523
+   "net_mt": 40.63,
+   "price_usd": 70523,
+   "intensity_g_kwh": 251.3,
+   "clean_share": 0.5958
   },
   {
    "date": "2026-02-09",
@@ -857,11 +998,13 @@
    "efficiency_jth": 21.71,
    "power_gw": 21.23,
    "electricity_twh_yr": 185.9,
-   "gross_mt": 46.86,
+   "gross_mt": 46.73,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 42.17,
-   "price_usd": 70244
+   "net_mt": 42.04,
+   "price_usd": 70244,
+   "intensity_g_kwh": 251.3,
+   "clean_share": 0.5959
   },
   {
    "date": "2026-02-10",
@@ -869,11 +1012,13 @@
    "efficiency_jth": 21.7,
    "power_gw": 21.83,
    "electricity_twh_yr": 191.2,
-   "gross_mt": 48.18,
+   "gross_mt": 48.05,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.49,
-   "price_usd": 68689
+   "net_mt": 43.36,
+   "price_usd": 68689,
+   "intensity_g_kwh": 251.3,
+   "clean_share": 0.5959
   },
   {
    "date": "2026-02-11",
@@ -881,11 +1026,13 @@
    "efficiency_jth": 21.69,
    "power_gw": 21.74,
    "electricity_twh_yr": 190.5,
-   "gross_mt": 48.0,
+   "gross_mt": 47.87,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.31,
-   "price_usd": 66990
+   "net_mt": 43.18,
+   "price_usd": 66990,
+   "intensity_g_kwh": 251.3,
+   "clean_share": 0.5959
   },
   {
    "date": "2026-02-12",
@@ -893,11 +1040,13 @@
    "efficiency_jth": 21.68,
    "power_gw": 21.7,
    "electricity_twh_yr": 190.1,
-   "gross_mt": 47.91,
+   "gross_mt": 47.78,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.22,
-   "price_usd": 66222
+   "net_mt": 43.09,
+   "price_usd": 66222,
+   "intensity_g_kwh": 251.3,
+   "clean_share": 0.596
   },
   {
    "date": "2026-02-13",
@@ -905,11 +1054,13 @@
    "efficiency_jth": 21.67,
    "power_gw": 22.27,
    "electricity_twh_yr": 195.1,
-   "gross_mt": 49.17,
+   "gross_mt": 49.03,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 44.48,
-   "price_usd": 68861
+   "net_mt": 44.34,
+   "price_usd": 68861,
+   "intensity_g_kwh": 251.3,
+   "clean_share": 0.596
   },
   {
    "date": "2026-02-14",
@@ -917,11 +1068,13 @@
    "efficiency_jth": 21.66,
    "power_gw": 22.06,
    "electricity_twh_yr": 193.3,
-   "gross_mt": 48.7,
+   "gross_mt": 48.56,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 44.01,
-   "price_usd": 69798
+   "net_mt": 43.87,
+   "price_usd": 69798,
+   "intensity_g_kwh": 251.3,
+   "clean_share": 0.596
   },
   {
    "date": "2026-02-15",
@@ -929,11 +1082,13 @@
    "efficiency_jth": 21.65,
    "power_gw": 21.81,
    "electricity_twh_yr": 191.1,
-   "gross_mt": 48.16,
+   "gross_mt": 48.02,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.47,
-   "price_usd": 68630
+   "net_mt": 43.33,
+   "price_usd": 68630,
+   "intensity_g_kwh": 251.3,
+   "clean_share": 0.5961
   },
   {
    "date": "2026-02-16",
@@ -941,11 +1096,13 @@
    "efficiency_jth": 21.65,
    "power_gw": 22.39,
    "electricity_twh_yr": 196.1,
-   "gross_mt": 49.42,
+   "gross_mt": 49.27,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 44.73,
-   "price_usd": 68747
+   "net_mt": 44.58,
+   "price_usd": 68747,
+   "intensity_g_kwh": 251.3,
+   "clean_share": 0.5961
   },
   {
    "date": "2026-02-17",
@@ -953,11 +1110,13 @@
    "efficiency_jth": 21.64,
    "power_gw": 22.56,
    "electricity_twh_yr": 197.6,
-   "gross_mt": 49.8,
+   "gross_mt": 49.66,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 45.11,
-   "price_usd": 67471
+   "net_mt": 44.97,
+   "price_usd": 67471,
+   "intensity_g_kwh": 251.3,
+   "clean_share": 0.5962
   },
   {
    "date": "2026-02-18",
@@ -965,11 +1124,13 @@
    "efficiency_jth": 21.63,
    "power_gw": 22.96,
    "electricity_twh_yr": 201.2,
-   "gross_mt": 50.69,
+   "gross_mt": 50.54,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 46.0,
-   "price_usd": 66381
+   "net_mt": 45.85,
+   "price_usd": 66381,
+   "intensity_g_kwh": 251.3,
+   "clean_share": 0.5962
   },
   {
    "date": "2026-02-19",
@@ -977,11 +1138,13 @@
    "efficiency_jth": 21.62,
    "power_gw": 22.86,
    "electricity_twh_yr": 200.2,
-   "gross_mt": 50.46,
+   "gross_mt": 50.31,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 45.77,
-   "price_usd": 66932
+   "net_mt": 45.62,
+   "price_usd": 66932,
+   "intensity_g_kwh": 251.3,
+   "clean_share": 0.5962
   },
   {
    "date": "2026-02-20",
@@ -989,11 +1152,13 @@
    "efficiency_jth": 21.61,
    "power_gw": 22.6,
    "electricity_twh_yr": 198.0,
-   "gross_mt": 49.88,
+   "gross_mt": 49.74,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 45.19,
-   "price_usd": 67977
+   "net_mt": 45.05,
+   "price_usd": 67977,
+   "intensity_g_kwh": 251.2,
+   "clean_share": 0.5963
   },
   {
    "date": "2026-02-21",
@@ -1001,11 +1166,13 @@
    "efficiency_jth": 21.6,
    "power_gw": 22.76,
    "electricity_twh_yr": 199.3,
-   "gross_mt": 50.24,
+   "gross_mt": 50.08,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 45.55,
-   "price_usd": 68021
+   "net_mt": 45.39,
+   "price_usd": 68021,
+   "intensity_g_kwh": 251.2,
+   "clean_share": 0.5963
   },
   {
    "date": "2026-02-22",
@@ -1013,11 +1180,13 @@
    "efficiency_jth": 21.59,
    "power_gw": 22.16,
    "electricity_twh_yr": 194.2,
-   "gross_mt": 48.93,
+   "gross_mt": 48.78,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 44.24,
-   "price_usd": 67550
+   "net_mt": 44.09,
+   "price_usd": 67550,
+   "intensity_g_kwh": 251.2,
+   "clean_share": 0.5963
   },
   {
    "date": "2026-02-23",
@@ -1025,11 +1194,13 @@
    "efficiency_jth": 21.58,
    "power_gw": 21.91,
    "electricity_twh_yr": 192.0,
-   "gross_mt": 48.38,
+   "gross_mt": 48.23,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.69,
-   "price_usd": 64690
+   "net_mt": 43.54,
+   "price_usd": 64690,
+   "intensity_g_kwh": 251.2,
+   "clean_share": 0.5964
   },
   {
    "date": "2026-02-24",
@@ -1037,11 +1208,13 @@
    "efficiency_jth": 21.58,
    "power_gw": 21.86,
    "electricity_twh_yr": 191.5,
-   "gross_mt": 48.26,
+   "gross_mt": 48.11,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.57,
-   "price_usd": 64124
+   "net_mt": 43.42,
+   "price_usd": 64124,
+   "intensity_g_kwh": 251.2,
+   "clean_share": 0.5964
   },
   {
    "date": "2026-02-25",
@@ -1049,11 +1222,13 @@
    "efficiency_jth": 21.57,
    "power_gw": 22.3,
    "electricity_twh_yr": 195.4,
-   "gross_mt": 49.23,
+   "gross_mt": 49.07,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 44.54,
-   "price_usd": 68039
+   "net_mt": 44.38,
+   "price_usd": 68039,
+   "intensity_g_kwh": 251.2,
+   "clean_share": 0.5964
   },
   {
    "date": "2026-02-26",
@@ -1061,11 +1236,13 @@
    "efficiency_jth": 21.56,
    "power_gw": 22.79,
    "electricity_twh_yr": 199.7,
-   "gross_mt": 50.32,
+   "gross_mt": 50.16,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 45.63,
-   "price_usd": 67519
+   "net_mt": 45.47,
+   "price_usd": 67519,
+   "intensity_g_kwh": 251.2,
+   "clean_share": 0.5965
   },
   {
    "date": "2026-02-27",
@@ -1073,11 +1250,13 @@
    "efficiency_jth": 21.55,
    "power_gw": 22.76,
    "electricity_twh_yr": 199.3,
-   "gross_mt": 50.23,
+   "gross_mt": 50.07,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 45.54,
-   "price_usd": 65864
+   "net_mt": 45.38,
+   "price_usd": 65864,
+   "intensity_g_kwh": 251.2,
+   "clean_share": 0.5965
   },
   {
    "date": "2026-02-28",
@@ -1085,11 +1264,13 @@
    "efficiency_jth": 21.54,
    "power_gw": 22.81,
    "electricity_twh_yr": 199.8,
-   "gross_mt": 50.34,
+   "gross_mt": 50.18,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 45.65,
-   "price_usd": 66966
+   "net_mt": 45.49,
+   "price_usd": 66966,
+   "intensity_g_kwh": 251.2,
+   "clean_share": 0.5966
   },
   {
    "date": "2026-03-01",
@@ -1097,11 +1278,13 @@
    "efficiency_jth": 21.53,
    "power_gw": 23.35,
    "electricity_twh_yr": 204.5,
-   "gross_mt": 51.54,
+   "gross_mt": 51.38,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 46.85,
-   "price_usd": 65734
+   "net_mt": 46.69,
+   "price_usd": 65734,
+   "intensity_g_kwh": 251.2,
+   "clean_share": 0.5966
   },
   {
    "date": "2026-03-02",
@@ -1109,11 +1292,13 @@
    "efficiency_jth": 21.52,
    "power_gw": 23.01,
    "electricity_twh_yr": 201.6,
-   "gross_mt": 50.79,
+   "gross_mt": 50.63,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 46.1,
-   "price_usd": 68923
+   "net_mt": 45.94,
+   "price_usd": 68923,
+   "intensity_g_kwh": 251.2,
+   "clean_share": 0.5966
   },
   {
    "date": "2026-03-03",
@@ -1121,11 +1306,13 @@
    "efficiency_jth": 21.52,
    "power_gw": 22.71,
    "electricity_twh_yr": 198.9,
-   "gross_mt": 50.13,
+   "gross_mt": 49.96,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 45.44,
-   "price_usd": 68431
+   "net_mt": 45.27,
+   "price_usd": 68431,
+   "intensity_g_kwh": 251.2,
+   "clean_share": 0.5966
   },
   {
    "date": "2026-03-04",
@@ -1133,11 +1320,13 @@
    "efficiency_jth": 21.51,
    "power_gw": 22.06,
    "electricity_twh_yr": 193.3,
-   "gross_mt": 48.7,
+   "gross_mt": 48.54,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 44.01,
-   "price_usd": 72667
+   "net_mt": 43.85,
+   "price_usd": 72667,
+   "intensity_g_kwh": 251.2,
+   "clean_share": 0.5967
   },
   {
    "date": "2026-03-05",
@@ -1145,11 +1334,13 @@
    "efficiency_jth": 21.5,
    "power_gw": 21.5,
    "electricity_twh_yr": 188.3,
-   "gross_mt": 47.46,
+   "gross_mt": 47.3,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 42.77,
-   "price_usd": 70987
+   "net_mt": 42.61,
+   "price_usd": 70987,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.5967
   },
   {
    "date": "2026-03-06",
@@ -1157,11 +1348,13 @@
    "efficiency_jth": 21.49,
    "power_gw": 22.04,
    "electricity_twh_yr": 193.1,
-   "gross_mt": 48.66,
+   "gross_mt": 48.49,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.97,
-   "price_usd": 68227
+   "net_mt": 43.8,
+   "price_usd": 68227,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.5967
   },
   {
    "date": "2026-03-07",
@@ -1169,11 +1362,13 @@
    "efficiency_jth": 21.48,
    "power_gw": 22.13,
    "electricity_twh_yr": 193.9,
-   "gross_mt": 48.85,
+   "gross_mt": 48.69,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 44.16,
-   "price_usd": 67316
+   "net_mt": 44.0,
+   "price_usd": 67316,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.5967
   },
   {
    "date": "2026-03-08",
@@ -1181,11 +1376,13 @@
    "efficiency_jth": 21.47,
    "power_gw": 21.85,
    "electricity_twh_yr": 191.4,
-   "gross_mt": 48.24,
+   "gross_mt": 48.07,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.55,
-   "price_usd": 66203
+   "net_mt": 43.38,
+   "price_usd": 66203,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.5968
   },
   {
    "date": "2026-03-09",
@@ -1193,11 +1390,13 @@
    "efficiency_jth": 21.46,
    "power_gw": 21.57,
    "electricity_twh_yr": 188.9,
-   "gross_mt": 47.61,
+   "gross_mt": 47.44,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 42.92,
-   "price_usd": 68529
+   "net_mt": 42.75,
+   "price_usd": 68529,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.5968
   },
   {
    "date": "2026-03-10",
@@ -1205,11 +1404,13 @@
    "efficiency_jth": 21.45,
    "power_gw": 21.61,
    "electricity_twh_yr": 189.3,
-   "gross_mt": 47.71,
+   "gross_mt": 47.55,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.02,
-   "price_usd": 69892
+   "net_mt": 42.86,
+   "price_usd": 69892,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.5968
   },
   {
    "date": "2026-03-11",
@@ -1217,11 +1418,13 @@
    "efficiency_jth": 21.45,
    "power_gw": 21.73,
    "electricity_twh_yr": 190.4,
-   "gross_mt": 47.98,
+   "gross_mt": 47.81,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.29,
-   "price_usd": 70299
+   "net_mt": 43.12,
+   "price_usd": 70299,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.5968
   },
   {
    "date": "2026-03-12",
@@ -1229,11 +1432,13 @@
    "efficiency_jth": 21.44,
    "power_gw": 21.87,
    "electricity_twh_yr": 191.5,
-   "gross_mt": 48.27,
+   "gross_mt": 48.1,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.58,
-   "price_usd": 70538
+   "net_mt": 43.41,
+   "price_usd": 70538,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.5969
   },
   {
    "date": "2026-03-13",
@@ -1241,11 +1446,13 @@
    "efficiency_jth": 21.43,
    "power_gw": 21.09,
    "electricity_twh_yr": 184.7,
-   "gross_mt": 46.55,
+   "gross_mt": 46.38,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.86,
-   "price_usd": 70930
+   "net_mt": 41.69,
+   "price_usd": 70930,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.5969
   },
   {
    "date": "2026-03-14",
@@ -1253,11 +1460,13 @@
    "efficiency_jth": 21.42,
    "power_gw": 20.52,
    "electricity_twh_yr": 179.7,
-   "gross_mt": 45.3,
+   "gross_mt": 45.13,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.61,
-   "price_usd": 71136
+   "net_mt": 40.44,
+   "price_usd": 71136,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.5969
   },
   {
    "date": "2026-03-15",
@@ -1265,11 +1474,13 @@
    "efficiency_jth": 21.41,
    "power_gw": 20.46,
    "electricity_twh_yr": 179.2,
-   "gross_mt": 45.16,
+   "gross_mt": 45.0,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.47,
-   "price_usd": 72712
+   "net_mt": 40.31,
+   "price_usd": 72712,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.5969
   },
   {
    "date": "2026-03-16",
@@ -1277,11 +1488,13 @@
    "efficiency_jth": 21.4,
    "power_gw": 20.26,
    "electricity_twh_yr": 177.5,
-   "gross_mt": 44.72,
+   "gross_mt": 44.56,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.03,
-   "price_usd": 74724
+   "net_mt": 39.87,
+   "price_usd": 74724,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.597
   },
   {
    "date": "2026-03-17",
@@ -1289,11 +1502,13 @@
    "efficiency_jth": 21.39,
    "power_gw": 20.0,
    "electricity_twh_yr": 175.2,
-   "gross_mt": 44.15,
+   "gross_mt": 43.99,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.46,
-   "price_usd": 74086
+   "net_mt": 39.3,
+   "price_usd": 74086,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.597
   },
   {
    "date": "2026-03-18",
@@ -1301,11 +1516,13 @@
    "efficiency_jth": 21.39,
    "power_gw": 19.65,
    "electricity_twh_yr": 172.1,
-   "gross_mt": 43.37,
+   "gross_mt": 43.21,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.68,
-   "price_usd": 71254
+   "net_mt": 38.52,
+   "price_usd": 71254,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.597
   },
   {
    "date": "2026-03-19",
@@ -1313,11 +1530,13 @@
    "efficiency_jth": 21.38,
    "power_gw": 19.7,
    "electricity_twh_yr": 172.6,
-   "gross_mt": 43.5,
+   "gross_mt": 43.33,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.81,
-   "price_usd": 69949
+   "net_mt": 38.64,
+   "price_usd": 69949,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.5971
   },
   {
    "date": "2026-03-20",
@@ -1325,11 +1544,13 @@
    "efficiency_jth": 21.37,
    "power_gw": 19.77,
    "electricity_twh_yr": 173.2,
-   "gross_mt": 43.64,
+   "gross_mt": 43.47,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.95,
-   "price_usd": 70510
+   "net_mt": 38.78,
+   "price_usd": 70510,
+   "intensity_g_kwh": 251.1,
+   "clean_share": 0.5971
   },
   {
    "date": "2026-03-21",
@@ -1337,11 +1558,13 @@
    "efficiency_jth": 21.36,
    "power_gw": 20.07,
    "electricity_twh_yr": 175.8,
-   "gross_mt": 44.31,
+   "gross_mt": 44.14,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.62,
-   "price_usd": 69707
+   "net_mt": 39.45,
+   "price_usd": 69707,
+   "intensity_g_kwh": 251.0,
+   "clean_share": 0.5971
   },
   {
    "date": "2026-03-22",
@@ -1349,11 +1572,13 @@
    "efficiency_jth": 21.35,
    "power_gw": 20.06,
    "electricity_twh_yr": 175.7,
-   "gross_mt": 44.27,
+   "gross_mt": 44.1,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.58,
-   "price_usd": 68018
+   "net_mt": 39.41,
+   "price_usd": 68018,
+   "intensity_g_kwh": 251.0,
+   "clean_share": 0.5971
   },
   {
    "date": "2026-03-23",
@@ -1361,11 +1586,13 @@
    "efficiency_jth": 21.34,
    "power_gw": 20.54,
    "electricity_twh_yr": 180.0,
-   "gross_mt": 45.35,
+   "gross_mt": 45.18,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.66,
-   "price_usd": 70726
+   "net_mt": 40.49,
+   "price_usd": 70726,
+   "intensity_g_kwh": 251.0,
+   "clean_share": 0.5972
   },
   {
    "date": "2026-03-24",
@@ -1373,11 +1600,13 @@
    "efficiency_jth": 21.33,
    "power_gw": 20.98,
    "electricity_twh_yr": 183.7,
-   "gross_mt": 46.3,
+   "gross_mt": 46.13,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.61,
-   "price_usd": 70610
+   "net_mt": 41.44,
+   "price_usd": 70610,
+   "intensity_g_kwh": 251.0,
+   "clean_share": 0.5972
   },
   {
    "date": "2026-03-25",
@@ -1385,11 +1614,13 @@
    "efficiency_jth": 21.32,
    "power_gw": 20.83,
    "electricity_twh_yr": 182.5,
-   "gross_mt": 45.98,
+   "gross_mt": 45.8,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.29,
-   "price_usd": 71281
+   "net_mt": 41.11,
+   "price_usd": 71281,
+   "intensity_g_kwh": 251.0,
+   "clean_share": 0.5972
   },
   {
    "date": "2026-03-26",
@@ -1397,11 +1628,13 @@
    "efficiency_jth": 21.32,
    "power_gw": 20.8,
    "electricity_twh_yr": 182.2,
-   "gross_mt": 45.91,
+   "gross_mt": 45.73,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.22,
-   "price_usd": 68723
+   "net_mt": 41.04,
+   "price_usd": 68723,
+   "intensity_g_kwh": 251.0,
+   "clean_share": 0.5972
   },
   {
    "date": "2026-03-27",
@@ -1409,11 +1642,13 @@
    "efficiency_jth": 21.31,
    "power_gw": 21.19,
    "electricity_twh_yr": 185.6,
-   "gross_mt": 46.77,
+   "gross_mt": 46.59,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 42.08,
-   "price_usd": 66214
+   "net_mt": 41.9,
+   "price_usd": 66214,
+   "intensity_g_kwh": 251.0,
+   "clean_share": 0.5973
   },
   {
    "date": "2026-03-28",
@@ -1421,11 +1656,13 @@
    "efficiency_jth": 21.3,
    "power_gw": 21.35,
    "electricity_twh_yr": 187.0,
-   "gross_mt": 47.13,
+   "gross_mt": 46.95,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 42.44,
-   "price_usd": 66351
+   "net_mt": 42.26,
+   "price_usd": 66351,
+   "intensity_g_kwh": 251.0,
+   "clean_share": 0.5973
   },
   {
    "date": "2026-03-29",
@@ -1433,11 +1670,13 @@
    "efficiency_jth": 21.29,
    "power_gw": 22.01,
    "electricity_twh_yr": 192.8,
-   "gross_mt": 48.58,
+   "gross_mt": 48.39,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.89,
-   "price_usd": 65967
+   "net_mt": 43.7,
+   "price_usd": 65967,
+   "intensity_g_kwh": 251.0,
+   "clean_share": 0.5973
   },
   {
    "date": "2026-03-30",
@@ -1445,11 +1684,13 @@
    "efficiency_jth": 21.28,
    "power_gw": 21.67,
    "electricity_twh_yr": 189.8,
-   "gross_mt": 47.84,
+   "gross_mt": 47.65,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.15,
-   "price_usd": 66651
+   "net_mt": 42.96,
+   "price_usd": 66651,
+   "intensity_g_kwh": 251.0,
+   "clean_share": 0.5973
   },
   {
    "date": "2026-03-31",
@@ -1457,11 +1698,13 @@
    "efficiency_jth": 21.27,
    "power_gw": 21.2,
    "electricity_twh_yr": 185.7,
-   "gross_mt": 46.8,
+   "gross_mt": 46.61,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 42.11,
-   "price_usd": 68215
+   "net_mt": 41.92,
+   "price_usd": 68215,
+   "intensity_g_kwh": 251.0,
+   "clean_share": 0.5974
   },
   {
    "date": "2026-04-01",
@@ -1469,11 +1712,13 @@
    "efficiency_jth": 21.26,
    "power_gw": 21.36,
    "electricity_twh_yr": 187.1,
-   "gross_mt": 47.14,
+   "gross_mt": 46.95,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 42.45,
-   "price_usd": 68117
+   "net_mt": 42.26,
+   "price_usd": 68117,
+   "intensity_g_kwh": 251.0,
+   "clean_share": 0.5974
   },
   {
    "date": "2026-04-02",
@@ -1481,11 +1726,13 @@
    "efficiency_jth": 21.26,
    "power_gw": 21.6,
    "electricity_twh_yr": 189.2,
-   "gross_mt": 47.69,
+   "gross_mt": 47.49,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 43.0,
-   "price_usd": 66908
+   "net_mt": 42.8,
+   "price_usd": 66908,
+   "intensity_g_kwh": 251.0,
+   "clean_share": 0.5974
   },
   {
    "date": "2026-04-03",
@@ -1493,11 +1740,13 @@
    "efficiency_jth": 21.25,
    "power_gw": 21.2,
    "electricity_twh_yr": 185.8,
-   "gross_mt": 46.81,
+   "gross_mt": 46.61,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 42.12,
-   "price_usd": 66892
+   "net_mt": 41.92,
+   "price_usd": 66892,
+   "intensity_g_kwh": 250.9,
+   "clean_share": 0.5975
   },
   {
    "date": "2026-04-04",
@@ -1505,11 +1754,13 @@
    "efficiency_jth": 21.24,
    "power_gw": 20.77,
    "electricity_twh_yr": 182.0,
-   "gross_mt": 45.86,
+   "gross_mt": 45.66,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.17,
-   "price_usd": 67295
+   "net_mt": 40.97,
+   "price_usd": 67295,
+   "intensity_g_kwh": 250.9,
+   "clean_share": 0.5975
   },
   {
    "date": "2026-04-05",
@@ -1517,11 +1768,13 @@
    "efficiency_jth": 21.23,
    "power_gw": 19.82,
    "electricity_twh_yr": 173.6,
-   "gross_mt": 43.75,
+   "gross_mt": 43.57,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.06,
-   "price_usd": 68922
+   "net_mt": 38.88,
+   "price_usd": 68922,
+   "intensity_g_kwh": 250.9,
+   "clean_share": 0.5976
   },
   {
    "date": "2026-04-06",
@@ -1529,11 +1782,13 @@
    "efficiency_jth": 21.22,
    "power_gw": 20.26,
    "electricity_twh_yr": 177.5,
-   "gross_mt": 44.73,
+   "gross_mt": 44.54,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.04,
-   "price_usd": 68743
+   "net_mt": 39.85,
+   "price_usd": 68743,
+   "intensity_g_kwh": 250.9,
+   "clean_share": 0.5976
   },
   {
    "date": "2026-04-07",
@@ -1541,11 +1796,13 @@
    "efficiency_jth": 21.21,
    "power_gw": 20.17,
    "electricity_twh_yr": 176.7,
-   "gross_mt": 44.52,
+   "gross_mt": 44.33,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.83,
-   "price_usd": 72057
+   "net_mt": 39.64,
+   "price_usd": 72057,
+   "intensity_g_kwh": 250.9,
+   "clean_share": 0.5976
   },
   {
    "date": "2026-04-08",
@@ -1553,11 +1810,13 @@
    "efficiency_jth": 21.2,
    "power_gw": 20.3,
    "electricity_twh_yr": 177.9,
-   "gross_mt": 44.82,
+   "gross_mt": 44.62,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.13,
-   "price_usd": 71085
+   "net_mt": 39.93,
+   "price_usd": 71085,
+   "intensity_g_kwh": 250.9,
+   "clean_share": 0.5977
   },
   {
    "date": "2026-04-09",
@@ -1565,11 +1824,13 @@
    "efficiency_jth": 21.19,
    "power_gw": 20.11,
    "electricity_twh_yr": 176.1,
-   "gross_mt": 44.39,
+   "gross_mt": 44.19,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.7,
-   "price_usd": 71789
+   "net_mt": 39.5,
+   "price_usd": 71789,
+   "intensity_g_kwh": 250.9,
+   "clean_share": 0.5977
   },
   {
    "date": "2026-04-10",
@@ -1577,11 +1838,13 @@
    "efficiency_jth": 21.19,
    "power_gw": 20.2,
    "electricity_twh_yr": 177.0,
-   "gross_mt": 44.59,
+   "gross_mt": 44.39,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.9,
-   "price_usd": 72945
+   "net_mt": 39.7,
+   "price_usd": 72945,
+   "intensity_g_kwh": 250.9,
+   "clean_share": 0.5978
   },
   {
    "date": "2026-04-11",
@@ -1589,11 +1852,13 @@
    "efficiency_jth": 21.18,
    "power_gw": 20.16,
    "electricity_twh_yr": 176.6,
-   "gross_mt": 44.51,
+   "gross_mt": 44.31,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.82,
-   "price_usd": 73119
+   "net_mt": 39.62,
+   "price_usd": 73119,
+   "intensity_g_kwh": 250.8,
+   "clean_share": 0.5978
   },
   {
    "date": "2026-04-12",
@@ -1601,11 +1866,13 @@
    "efficiency_jth": 21.17,
    "power_gw": 20.17,
    "electricity_twh_yr": 176.7,
-   "gross_mt": 44.53,
+   "gross_mt": 44.32,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.84,
-   "price_usd": 70685
+   "net_mt": 39.63,
+   "price_usd": 70685,
+   "intensity_g_kwh": 250.8,
+   "clean_share": 0.5979
   },
   {
    "date": "2026-04-13",
@@ -1613,11 +1880,13 @@
    "efficiency_jth": 21.16,
    "power_gw": 20.04,
    "electricity_twh_yr": 175.6,
-   "gross_mt": 44.25,
+   "gross_mt": 44.04,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.56,
-   "price_usd": 74633
+   "net_mt": 39.35,
+   "price_usd": 74633,
+   "intensity_g_kwh": 250.8,
+   "clean_share": 0.5979
   },
   {
    "date": "2026-04-14",
@@ -1625,11 +1894,13 @@
    "efficiency_jth": 21.15,
    "power_gw": 20.49,
    "electricity_twh_yr": 179.5,
-   "gross_mt": 45.23,
+   "gross_mt": 45.02,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.54,
-   "price_usd": 74174
+   "net_mt": 40.33,
+   "price_usd": 74174,
+   "intensity_g_kwh": 250.8,
+   "clean_share": 0.5979
   },
   {
    "date": "2026-04-15",
@@ -1637,11 +1908,13 @@
    "efficiency_jth": 21.14,
    "power_gw": 21.01,
    "electricity_twh_yr": 184.1,
-   "gross_mt": 46.38,
+   "gross_mt": 46.16,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.69,
-   "price_usd": 74762
+   "net_mt": 41.47,
+   "price_usd": 74762,
+   "intensity_g_kwh": 250.8,
+   "clean_share": 0.598
   },
   {
    "date": "2026-04-16",
@@ -1649,11 +1922,13 @@
    "efficiency_jth": 21.13,
    "power_gw": 20.56,
    "electricity_twh_yr": 180.1,
-   "gross_mt": 45.39,
+   "gross_mt": 45.17,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.7,
-   "price_usd": 75096
+   "net_mt": 40.48,
+   "price_usd": 75096,
+   "intensity_g_kwh": 250.8,
+   "clean_share": 0.598
   },
   {
    "date": "2026-04-17",
@@ -1661,11 +1936,13 @@
    "efficiency_jth": 21.13,
    "power_gw": 20.7,
    "electricity_twh_yr": 181.3,
-   "gross_mt": 45.69,
+   "gross_mt": 45.46,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.0,
-   "price_usd": 77114
+   "net_mt": 40.77,
+   "price_usd": 77114,
+   "intensity_g_kwh": 250.8,
+   "clean_share": 0.5981
   },
   {
    "date": "2026-04-18",
@@ -1673,11 +1950,13 @@
    "efficiency_jth": 21.12,
    "power_gw": 20.93,
    "electricity_twh_yr": 183.4,
-   "gross_mt": 46.21,
+   "gross_mt": 45.98,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.52,
-   "price_usd": 75792
+   "net_mt": 41.29,
+   "price_usd": 75792,
+   "intensity_g_kwh": 250.8,
+   "clean_share": 0.5981
   },
   {
    "date": "2026-04-19",
@@ -1685,11 +1964,13 @@
    "efficiency_jth": 21.11,
    "power_gw": 21.53,
    "electricity_twh_yr": 188.6,
-   "gross_mt": 47.53,
+   "gross_mt": 47.29,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 42.84,
-   "price_usd": 73905
+   "net_mt": 42.6,
+   "price_usd": 73905,
+   "intensity_g_kwh": 250.8,
+   "clean_share": 0.5981
   },
   {
    "date": "2026-04-20",
@@ -1697,11 +1978,13 @@
    "efficiency_jth": 21.1,
    "power_gw": 21.51,
    "electricity_twh_yr": 188.4,
-   "gross_mt": 47.48,
+   "gross_mt": 47.24,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 42.79,
-   "price_usd": 75814
+   "net_mt": 42.55,
+   "price_usd": 75814,
+   "intensity_g_kwh": 250.7,
+   "clean_share": 0.5982
   },
   {
    "date": "2026-04-21",
@@ -1709,11 +1992,13 @@
    "efficiency_jth": 21.09,
    "power_gw": 21.04,
    "electricity_twh_yr": 184.3,
-   "gross_mt": 46.45,
+   "gross_mt": 46.21,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.76,
-   "price_usd": 76107
+   "net_mt": 41.52,
+   "price_usd": 76107,
+   "intensity_g_kwh": 250.7,
+   "clean_share": 0.5982
   },
   {
    "date": "2026-04-22",
@@ -1721,11 +2006,13 @@
    "efficiency_jth": 21.08,
    "power_gw": 20.37,
    "electricity_twh_yr": 178.4,
-   "gross_mt": 44.96,
+   "gross_mt": 44.73,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.27,
-   "price_usd": 78318
+   "net_mt": 40.04,
+   "price_usd": 78318,
+   "intensity_g_kwh": 250.7,
+   "clean_share": 0.5983
   },
   {
    "date": "2026-04-23",
@@ -1733,11 +2020,13 @@
    "efficiency_jth": 21.07,
    "power_gw": 20.38,
    "electricity_twh_yr": 178.6,
-   "gross_mt": 45.0,
+   "gross_mt": 44.77,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.31,
-   "price_usd": 78234
+   "net_mt": 40.08,
+   "price_usd": 78234,
+   "intensity_g_kwh": 250.7,
+   "clean_share": 0.5983
   },
   {
    "date": "2026-04-24",
@@ -1745,11 +2034,13 @@
    "efficiency_jth": 21.06,
    "power_gw": 19.69,
    "electricity_twh_yr": 172.5,
-   "gross_mt": 43.46,
+   "gross_mt": 43.23,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.77,
-   "price_usd": 77444
+   "net_mt": 38.54,
+   "price_usd": 77444,
+   "intensity_g_kwh": 250.7,
+   "clean_share": 0.5983
   },
   {
    "date": "2026-04-25",
@@ -1757,11 +2048,13 @@
    "efficiency_jth": 21.06,
    "power_gw": 19.82,
    "electricity_twh_yr": 173.6,
-   "gross_mt": 43.75,
+   "gross_mt": 43.52,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.06,
-   "price_usd": 77625
+   "net_mt": 38.83,
+   "price_usd": 77625,
+   "intensity_g_kwh": 250.7,
+   "clean_share": 0.5984
   },
   {
    "date": "2026-04-26",
@@ -1769,11 +2062,13 @@
    "efficiency_jth": 21.05,
    "power_gw": 19.56,
    "electricity_twh_yr": 171.4,
-   "gross_mt": 43.18,
+   "gross_mt": 42.95,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.49,
-   "price_usd": 78539
+   "net_mt": 38.26,
+   "price_usd": 78539,
+   "intensity_g_kwh": 250.7,
+   "clean_share": 0.5984
   },
   {
    "date": "2026-04-27",
@@ -1781,11 +2076,13 @@
    "efficiency_jth": 21.04,
    "power_gw": 19.38,
    "electricity_twh_yr": 169.7,
-   "gross_mt": 42.77,
+   "gross_mt": 42.55,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.08,
-   "price_usd": 77256
+   "net_mt": 37.86,
+   "price_usd": 77256,
+   "intensity_g_kwh": 250.7,
+   "clean_share": 0.5985
   },
   {
    "date": "2026-04-28",
@@ -1793,11 +2090,13 @@
    "efficiency_jth": 21.03,
    "power_gw": 19.53,
    "electricity_twh_yr": 171.1,
-   "gross_mt": 43.11,
+   "gross_mt": 42.88,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.42,
-   "price_usd": 76296
+   "net_mt": 38.19,
+   "price_usd": 76296,
+   "intensity_g_kwh": 250.6,
+   "clean_share": 0.5985
   },
   {
    "date": "2026-04-29",
@@ -1805,11 +2104,13 @@
    "efficiency_jth": 21.02,
    "power_gw": 19.6,
    "electricity_twh_yr": 171.7,
-   "gross_mt": 43.26,
+   "gross_mt": 43.03,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.57,
-   "price_usd": 75795
+   "net_mt": 38.34,
+   "price_usd": 75795,
+   "intensity_g_kwh": 250.6,
+   "clean_share": 0.5986
   },
   {
    "date": "2026-04-30",
@@ -1817,11 +2118,13 @@
    "efficiency_jth": 21.01,
    "power_gw": 19.51,
    "electricity_twh_yr": 170.9,
-   "gross_mt": 43.07,
+   "gross_mt": 42.83,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.38,
-   "price_usd": 76300
+   "net_mt": 38.14,
+   "price_usd": 76300,
+   "intensity_g_kwh": 250.6,
+   "clean_share": 0.5986
   },
   {
    "date": "2026-05-01",
@@ -1829,11 +2132,13 @@
    "efficiency_jth": 21.0,
    "power_gw": 19.88,
    "electricity_twh_yr": 174.1,
-   "gross_mt": 43.88,
+   "gross_mt": 43.64,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.19,
-   "price_usd": 78133
+   "net_mt": 38.95,
+   "price_usd": 78133,
+   "intensity_g_kwh": 250.6,
+   "clean_share": 0.5986
   },
   {
    "date": "2026-05-02",
@@ -1841,11 +2146,13 @@
    "efficiency_jth": 21.0,
    "power_gw": 20.05,
    "electricity_twh_yr": 175.7,
-   "gross_mt": 44.27,
+   "gross_mt": 44.02,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.58,
-   "price_usd": 78713
+   "net_mt": 39.33,
+   "price_usd": 78713,
+   "intensity_g_kwh": 250.6,
+   "clean_share": 0.5987
   },
   {
    "date": "2026-05-03",
@@ -1853,11 +2160,13 @@
    "efficiency_jth": 20.99,
    "power_gw": 19.86,
    "electricity_twh_yr": 173.9,
-   "gross_mt": 43.83,
+   "gross_mt": 43.59,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.14,
-   "price_usd": 78649
+   "net_mt": 38.9,
+   "price_usd": 78649,
+   "intensity_g_kwh": 250.6,
+   "clean_share": 0.5987
   },
   {
    "date": "2026-05-04",
@@ -1865,11 +2174,13 @@
    "efficiency_jth": 20.98,
    "power_gw": 19.85,
    "electricity_twh_yr": 173.9,
-   "gross_mt": 43.83,
+   "gross_mt": 43.58,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.14,
-   "price_usd": 79826
+   "net_mt": 38.89,
+   "price_usd": 79826,
+   "intensity_g_kwh": 250.6,
+   "clean_share": 0.5988
   },
   {
    "date": "2026-05-05",
@@ -1877,11 +2188,13 @@
    "efficiency_jth": 20.97,
    "power_gw": 20.02,
    "electricity_twh_yr": 175.4,
-   "gross_mt": 44.2,
+   "gross_mt": 43.95,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.51,
-   "price_usd": 80937
+   "net_mt": 39.26,
+   "price_usd": 80937,
+   "intensity_g_kwh": 250.6,
+   "clean_share": 0.5988
   },
   {
    "date": "2026-05-06",
@@ -1889,11 +2202,13 @@
    "efficiency_jth": 20.96,
    "power_gw": 20.17,
    "electricity_twh_yr": 176.7,
-   "gross_mt": 44.52,
+   "gross_mt": 44.26,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.83,
-   "price_usd": 81365
+   "net_mt": 39.57,
+   "price_usd": 81365,
+   "intensity_g_kwh": 250.5,
+   "clean_share": 0.5989
   },
   {
    "date": "2026-05-07",
@@ -1901,11 +2216,13 @@
    "efficiency_jth": 20.95,
    "power_gw": 20.4,
    "electricity_twh_yr": 178.7,
-   "gross_mt": 45.02,
+   "gross_mt": 44.76,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.33,
-   "price_usd": 79989
+   "net_mt": 40.07,
+   "price_usd": 79989,
+   "intensity_g_kwh": 250.5,
+   "clean_share": 0.5989
   },
   {
    "date": "2026-05-08",
@@ -1913,11 +2230,13 @@
    "efficiency_jth": 20.94,
    "power_gw": 20.32,
    "electricity_twh_yr": 178.0,
-   "gross_mt": 44.86,
+   "gross_mt": 44.6,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.17,
-   "price_usd": 80180
+   "net_mt": 39.91,
+   "price_usd": 80180,
+   "intensity_g_kwh": 250.5,
+   "clean_share": 0.599
   },
   {
    "date": "2026-05-09",
@@ -1925,11 +2244,13 @@
    "efficiency_jth": 20.93,
    "power_gw": 20.08,
    "electricity_twh_yr": 175.9,
-   "gross_mt": 44.32,
+   "gross_mt": 44.06,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.63,
-   "price_usd": 80664
+   "net_mt": 39.37,
+   "price_usd": 80664,
+   "intensity_g_kwh": 250.5,
+   "clean_share": 0.599
   },
   {
    "date": "2026-05-10",
@@ -1937,11 +2258,13 @@
    "efficiency_jth": 20.93,
    "power_gw": 20.71,
    "electricity_twh_yr": 181.4,
-   "gross_mt": 45.71,
+   "gross_mt": 45.44,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.02,
-   "price_usd": 82257
+   "net_mt": 40.75,
+   "price_usd": 82257,
+   "intensity_g_kwh": 250.5,
+   "clean_share": 0.5991
   },
   {
    "date": "2026-05-11",
@@ -1949,11 +2272,13 @@
    "efficiency_jth": 20.92,
    "power_gw": 20.66,
    "electricity_twh_yr": 181.0,
-   "gross_mt": 45.6,
+   "gross_mt": 45.33,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.91,
-   "price_usd": 81715
+   "net_mt": 40.64,
+   "price_usd": 81715,
+   "intensity_g_kwh": 250.5,
+   "clean_share": 0.5991
   },
   {
    "date": "2026-05-12",
@@ -1961,11 +2286,13 @@
    "efficiency_jth": 20.91,
    "power_gw": 21.01,
    "electricity_twh_yr": 184.1,
-   "gross_mt": 46.38,
+   "gross_mt": 46.1,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.69,
-   "price_usd": 80526
+   "net_mt": 41.41,
+   "price_usd": 80526,
+   "intensity_g_kwh": 250.5,
+   "clean_share": 0.5992
   },
   {
    "date": "2026-05-13",
@@ -1973,11 +2300,13 @@
    "efficiency_jth": 20.9,
    "power_gw": 20.64,
    "electricity_twh_yr": 180.8,
-   "gross_mt": 45.57,
+   "gross_mt": 45.29,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.88,
-   "price_usd": 79292
+   "net_mt": 40.6,
+   "price_usd": 79292,
+   "intensity_g_kwh": 250.4,
+   "clean_share": 0.5992
   },
   {
    "date": "2026-05-14",
@@ -1985,11 +2314,13 @@
    "efficiency_jth": 20.89,
    "power_gw": 20.57,
    "electricity_twh_yr": 180.2,
-   "gross_mt": 45.42,
+   "gross_mt": 45.14,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.73,
-   "price_usd": 81176
+   "net_mt": 40.45,
+   "price_usd": 81176,
+   "intensity_g_kwh": 250.4,
+   "clean_share": 0.5993
   },
   {
    "date": "2026-05-15",
@@ -1997,11 +2328,13 @@
    "efficiency_jth": 20.88,
    "power_gw": 20.77,
    "electricity_twh_yr": 182.0,
-   "gross_mt": 45.85,
+   "gross_mt": 45.56,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.16,
-   "price_usd": 79063
+   "net_mt": 40.87,
+   "price_usd": 79063,
+   "intensity_g_kwh": 250.4,
+   "clean_share": 0.5993
   },
   {
    "date": "2026-05-16",
@@ -2009,11 +2342,13 @@
    "efficiency_jth": 20.87,
    "power_gw": 20.71,
    "electricity_twh_yr": 181.4,
-   "gross_mt": 45.71,
+   "gross_mt": 45.42,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.02,
-   "price_usd": 78164
+   "net_mt": 40.73,
+   "price_usd": 78164,
+   "intensity_g_kwh": 250.4,
+   "clean_share": 0.5994
   },
   {
    "date": "2026-05-17",
@@ -2021,11 +2356,13 @@
    "efficiency_jth": 20.87,
    "power_gw": 20.48,
    "electricity_twh_yr": 179.4,
-   "gross_mt": 45.2,
+   "gross_mt": 44.91,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.51,
-   "price_usd": 77498
+   "net_mt": 40.22,
+   "price_usd": 77498,
+   "intensity_g_kwh": 250.4,
+   "clean_share": 0.5994
   },
   {
    "date": "2026-05-18",
@@ -2033,11 +2370,13 @@
    "efficiency_jth": 20.86,
    "power_gw": 20.37,
    "electricity_twh_yr": 178.4,
-   "gross_mt": 44.96,
+   "gross_mt": 44.67,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.27,
-   "price_usd": 76976
+   "net_mt": 39.98,
+   "price_usd": 76976,
+   "intensity_g_kwh": 250.4,
+   "clean_share": 0.5995
   },
   {
    "date": "2026-05-19",
@@ -2045,11 +2384,13 @@
    "efficiency_jth": 20.85,
    "power_gw": 19.85,
    "electricity_twh_yr": 173.9,
-   "gross_mt": 43.81,
+   "gross_mt": 43.53,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.12,
-   "price_usd": 76807
+   "net_mt": 38.84,
+   "price_usd": 76807,
+   "intensity_g_kwh": 250.4,
+   "clean_share": 0.5995
   },
   {
    "date": "2026-05-20",
@@ -2057,11 +2398,13 @@
    "efficiency_jth": 20.84,
    "power_gw": 20.13,
    "electricity_twh_yr": 176.3,
-   "gross_mt": 44.44,
+   "gross_mt": 44.15,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.75,
-   "price_usd": 77408
+   "net_mt": 39.46,
+   "price_usd": 77408,
+   "intensity_g_kwh": 250.4,
+   "clean_share": 0.5995
   },
   {
    "date": "2026-05-21",
@@ -2069,11 +2412,13 @@
    "efficiency_jth": 20.83,
    "power_gw": 20.5,
    "electricity_twh_yr": 179.6,
-   "gross_mt": 45.25,
+   "gross_mt": 44.95,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.56,
-   "price_usd": 77595
+   "net_mt": 40.26,
+   "price_usd": 77595,
+   "intensity_g_kwh": 250.3,
+   "clean_share": 0.5996
   },
   {
    "date": "2026-05-22",
@@ -2081,11 +2426,13 @@
    "efficiency_jth": 20.82,
    "power_gw": 20.09,
    "electricity_twh_yr": 176.0,
-   "gross_mt": 44.35,
+   "gross_mt": 44.06,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.66,
-   "price_usd": 75568
+   "net_mt": 39.37,
+   "price_usd": 75568,
+   "intensity_g_kwh": 250.3,
+   "clean_share": 0.5996
   },
   {
    "date": "2026-05-23",
@@ -2093,11 +2440,13 @@
    "efficiency_jth": 20.81,
    "power_gw": 20.37,
    "electricity_twh_yr": 178.4,
-   "gross_mt": 44.96,
+   "gross_mt": 44.66,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.27,
-   "price_usd": 76620
+   "net_mt": 39.97,
+   "price_usd": 76620,
+   "intensity_g_kwh": 250.3,
+   "clean_share": 0.5997
   },
   {
    "date": "2026-05-24",
@@ -2105,11 +2454,13 @@
    "efficiency_jth": 20.8,
    "power_gw": 20.6,
    "electricity_twh_yr": 180.5,
-   "gross_mt": 45.48,
+   "gross_mt": 45.18,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.79,
-   "price_usd": 76951
+   "net_mt": 40.49,
+   "price_usd": 76951,
+   "intensity_g_kwh": 250.3,
+   "clean_share": 0.5997
   },
   {
    "date": "2026-05-25",
@@ -2117,11 +2468,13 @@
    "efficiency_jth": 20.8,
    "power_gw": 20.37,
    "electricity_twh_yr": 178.5,
-   "gross_mt": 44.98,
+   "gross_mt": 44.67,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.29,
-   "price_usd": 77245
+   "net_mt": 39.98,
+   "price_usd": 77245,
+   "intensity_g_kwh": 250.3,
+   "clean_share": 0.5998
   },
   {
    "date": "2026-05-26",
@@ -2129,11 +2482,13 @@
    "efficiency_jth": 20.79,
    "power_gw": 20.94,
    "electricity_twh_yr": 183.5,
-   "gross_mt": 46.23,
+   "gross_mt": 45.91,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.54,
-   "price_usd": 75816
+   "net_mt": 41.22,
+   "price_usd": 75816,
+   "intensity_g_kwh": 250.3,
+   "clean_share": 0.5998
   },
   {
    "date": "2026-05-27",
@@ -2141,11 +2496,13 @@
    "efficiency_jth": 20.78,
    "power_gw": 20.87,
    "electricity_twh_yr": 182.8,
-   "gross_mt": 46.06,
+   "gross_mt": 45.75,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.37,
-   "price_usd": 74269
+   "net_mt": 41.06,
+   "price_usd": 74269,
+   "intensity_g_kwh": 250.3,
+   "clean_share": 0.5999
   },
   {
    "date": "2026-05-28",
@@ -2153,11 +2510,13 @@
    "efficiency_jth": 20.77,
    "power_gw": 20.58,
    "electricity_twh_yr": 180.3,
-   "gross_mt": 45.43,
+   "gross_mt": 45.12,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.74,
-   "price_usd": 73501
+   "net_mt": 40.43,
+   "price_usd": 73501,
+   "intensity_g_kwh": 250.3,
+   "clean_share": 0.5999
   },
   {
    "date": "2026-05-29",
@@ -2165,11 +2524,13 @@
    "efficiency_jth": 20.76,
    "power_gw": 21.31,
    "electricity_twh_yr": 186.6,
-   "gross_mt": 47.04,
+   "gross_mt": 46.71,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 42.35,
-   "price_usd": 73323
+   "net_mt": 42.02,
+   "price_usd": 73323,
+   "intensity_g_kwh": 250.2,
+   "clean_share": 0.6
   },
   {
    "date": "2026-05-30",
@@ -2177,11 +2538,13 @@
    "efficiency_jth": 20.75,
    "power_gw": 20.99,
    "electricity_twh_yr": 183.9,
-   "gross_mt": 46.33,
+   "gross_mt": 46.0,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.64,
-   "price_usd": 73731
+   "net_mt": 41.31,
+   "price_usd": 73731,
+   "intensity_g_kwh": 250.2,
+   "clean_share": 0.6
   },
   {
    "date": "2026-05-31",
@@ -2189,11 +2552,13 @@
    "efficiency_jth": 20.74,
    "power_gw": 20.58,
    "electricity_twh_yr": 180.3,
-   "gross_mt": 45.43,
+   "gross_mt": 45.11,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.74,
-   "price_usd": 73600
+   "net_mt": 40.42,
+   "price_usd": 73600,
+   "intensity_g_kwh": 250.2,
+   "clean_share": 0.6001
   },
   {
    "date": "2026-06-01",
@@ -2201,11 +2566,13 @@
    "efficiency_jth": 20.74,
    "power_gw": 20.93,
    "electricity_twh_yr": 183.3,
-   "gross_mt": 46.2,
+   "gross_mt": 45.87,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.51,
-   "price_usd": 71329
+   "net_mt": 41.18,
+   "price_usd": 71329,
+   "intensity_g_kwh": 250.2,
+   "clean_share": 0.6001
   },
   {
    "date": "2026-06-02",
@@ -2213,11 +2580,13 @@
    "efficiency_jth": 20.73,
    "power_gw": 20.3,
    "electricity_twh_yr": 177.9,
-   "gross_mt": 44.82,
+   "gross_mt": 44.5,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.13,
-   "price_usd": 66541
+   "net_mt": 39.81,
+   "price_usd": 66541,
+   "intensity_g_kwh": 250.2,
+   "clean_share": 0.6002
   },
   {
    "date": "2026-06-03",
@@ -2225,11 +2594,13 @@
    "efficiency_jth": 20.72,
    "power_gw": 19.76,
    "electricity_twh_yr": 173.1,
-   "gross_mt": 43.62,
+   "gross_mt": 43.31,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.93,
-   "price_usd": 64233
+   "net_mt": 38.62,
+   "price_usd": 64233,
+   "intensity_g_kwh": 250.2,
+   "clean_share": 0.6002
   },
   {
    "date": "2026-06-04",
@@ -2237,11 +2608,13 @@
    "efficiency_jth": 20.71,
    "power_gw": 19.17,
    "electricity_twh_yr": 168.0,
-   "gross_mt": 42.32,
+   "gross_mt": 42.02,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.63,
-   "price_usd": 63639
+   "net_mt": 37.33,
+   "price_usd": 63639,
+   "intensity_g_kwh": 250.2,
+   "clean_share": 0.6002
   },
   {
    "date": "2026-06-05",
@@ -2249,11 +2622,13 @@
    "efficiency_jth": 20.7,
    "power_gw": 18.84,
    "electricity_twh_yr": 165.0,
-   "gross_mt": 41.58,
+   "gross_mt": 41.28,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.89,
-   "price_usd": 60908
+   "net_mt": 36.59,
+   "price_usd": 60908,
+   "intensity_g_kwh": 250.1,
+   "clean_share": 0.6003
   },
   {
    "date": "2026-06-06",
@@ -2261,11 +2636,13 @@
    "efficiency_jth": 20.69,
    "power_gw": 18.73,
    "electricity_twh_yr": 164.1,
-   "gross_mt": 41.35,
+   "gross_mt": 41.05,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.66,
-   "price_usd": 60772
+   "net_mt": 36.36,
+   "price_usd": 60772,
+   "intensity_g_kwh": 250.1,
+   "clean_share": 0.6003
   },
   {
    "date": "2026-06-07",
@@ -2273,11 +2650,13 @@
    "efficiency_jth": 20.68,
    "power_gw": 18.29,
    "electricity_twh_yr": 160.2,
-   "gross_mt": 40.38,
+   "gross_mt": 40.08,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.69,
-   "price_usd": 63158
+   "net_mt": 35.39,
+   "price_usd": 63158,
+   "intensity_g_kwh": 250.1,
+   "clean_share": 0.6004
   },
   {
    "date": "2026-06-08",
@@ -2285,11 +2664,13 @@
    "efficiency_jth": 20.67,
    "power_gw": 17.69,
    "electricity_twh_yr": 155.0,
-   "gross_mt": 39.05,
+   "gross_mt": 38.76,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.36,
-   "price_usd": 63110
+   "net_mt": 34.07,
+   "price_usd": 63110,
+   "intensity_g_kwh": 250.1,
+   "clean_share": 0.6004
   },
   {
    "date": "2026-06-09",
@@ -2297,11 +2678,13 @@
    "efficiency_jth": 20.67,
    "power_gw": 17.61,
    "electricity_twh_yr": 154.3,
-   "gross_mt": 38.88,
+   "gross_mt": 38.59,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.19,
-   "price_usd": 61640
+   "net_mt": 33.9,
+   "price_usd": 61640,
+   "intensity_g_kwh": 250.1,
+   "clean_share": 0.6005
   },
   {
    "date": "2026-06-10",
@@ -2309,11 +2692,13 @@
    "efficiency_jth": 20.66,
    "power_gw": 17.9,
    "electricity_twh_yr": 156.8,
-   "gross_mt": 39.52,
+   "gross_mt": 39.22,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.83,
-   "price_usd": 61435
+   "net_mt": 34.53,
+   "price_usd": 61435,
+   "intensity_g_kwh": 250.1,
+   "clean_share": 0.6005
   },
   {
    "date": "2026-06-11",
@@ -2321,11 +2706,13 @@
    "efficiency_jth": 20.65,
    "power_gw": 18.19,
    "electricity_twh_yr": 159.3,
-   "gross_mt": 40.15,
+   "gross_mt": 39.84,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.46,
-   "price_usd": 63475
+   "net_mt": 35.15,
+   "price_usd": 63475,
+   "intensity_g_kwh": 250.1,
+   "clean_share": 0.6005
   },
   {
    "date": "2026-06-12",
@@ -2333,11 +2720,13 @@
    "efficiency_jth": 20.64,
    "power_gw": 18.01,
    "electricity_twh_yr": 157.8,
-   "gross_mt": 39.75,
+   "gross_mt": 39.45,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.06,
-   "price_usd": 63476
+   "net_mt": 34.76,
+   "price_usd": 63476,
+   "intensity_g_kwh": 250.1,
+   "clean_share": 0.6006
   },
   {
    "date": "2026-06-13",
@@ -2345,11 +2734,13 @@
    "efficiency_jth": 20.63,
    "power_gw": 18.25,
    "electricity_twh_yr": 159.9,
-   "gross_mt": 40.28,
+   "gross_mt": 39.97,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.59,
-   "price_usd": 64424
+   "net_mt": 35.28,
+   "price_usd": 64424,
+   "intensity_g_kwh": 250.0,
+   "clean_share": 0.6006
   },
   {
    "date": "2026-06-14",
@@ -2357,11 +2748,13 @@
    "efficiency_jth": 20.62,
    "power_gw": 18.32,
    "electricity_twh_yr": 160.5,
-   "gross_mt": 40.45,
+   "gross_mt": 40.13,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.76,
-   "price_usd": 65615
+   "net_mt": 35.44,
+   "price_usd": 65615,
+   "intensity_g_kwh": 250.0,
+   "clean_share": 0.6007
   },
   {
    "date": "2026-06-15",
@@ -2369,11 +2762,13 @@
    "efficiency_jth": 20.61,
    "power_gw": 18.63,
    "electricity_twh_yr": 163.2,
-   "gross_mt": 41.12,
+   "gross_mt": 40.8,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.43,
-   "price_usd": 66223
+   "net_mt": 36.11,
+   "price_usd": 66223,
+   "intensity_g_kwh": 250.0,
+   "clean_share": 0.6007
   },
   {
    "date": "2026-06-16",
@@ -2381,11 +2776,13 @@
    "efficiency_jth": 20.61,
    "power_gw": 18.7,
    "electricity_twh_yr": 163.8,
-   "gross_mt": 41.28,
+   "gross_mt": 40.95,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.59,
-   "price_usd": 65638
+   "net_mt": 36.26,
+   "price_usd": 65638,
+   "intensity_g_kwh": 250.0,
+   "clean_share": 0.6007
   },
   {
    "date": "2026-06-17",
@@ -2393,11 +2790,13 @@
    "efficiency_jth": 20.6,
    "power_gw": 19.12,
    "electricity_twh_yr": 167.5,
-   "gross_mt": 42.2,
+   "gross_mt": 41.86,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.51,
-   "price_usd": 64401
+   "net_mt": 37.17,
+   "price_usd": 64401,
+   "intensity_g_kwh": 250.0,
+   "clean_share": 0.6008
   },
   {
    "date": "2026-06-18",
@@ -2405,11 +2804,13 @@
    "efficiency_jth": 20.59,
    "power_gw": 19.02,
    "electricity_twh_yr": 166.6,
-   "gross_mt": 41.99,
+   "gross_mt": 41.66,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.3,
-   "price_usd": 62835
+   "net_mt": 36.97,
+   "price_usd": 62835,
+   "intensity_g_kwh": 250.0,
+   "clean_share": 0.6008
   },
   {
    "date": "2026-06-19",
@@ -2417,11 +2818,13 @@
    "efficiency_jth": 20.58,
    "power_gw": 19.27,
    "electricity_twh_yr": 168.8,
-   "gross_mt": 42.54,
+   "gross_mt": 42.2,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.85,
-   "price_usd": 63307
+   "net_mt": 37.51,
+   "price_usd": 63307,
+   "intensity_g_kwh": 250.0,
+   "clean_share": 0.6009
   },
   {
    "date": "2026-06-20",
@@ -2429,11 +2832,13 @@
    "efficiency_jth": 20.57,
    "power_gw": 19.05,
    "electricity_twh_yr": 166.9,
-   "gross_mt": 42.06,
+   "gross_mt": 41.72,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.37,
-   "price_usd": 64221
+   "net_mt": 37.03,
+   "price_usd": 64221,
+   "intensity_g_kwh": 250.0,
+   "clean_share": 0.6009
   },
   {
    "date": "2026-06-21",
@@ -2441,11 +2846,13 @@
    "efficiency_jth": 20.56,
    "power_gw": 19.37,
    "electricity_twh_yr": 169.7,
-   "gross_mt": 42.76,
+   "gross_mt": 42.42,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.07,
-   "price_usd": 63365
+   "net_mt": 37.73,
+   "price_usd": 63365,
+   "intensity_g_kwh": 250.0,
+   "clean_share": 0.601
   },
   {
    "date": "2026-06-22",
@@ -2453,11 +2860,13 @@
    "efficiency_jth": 20.55,
    "power_gw": 19.11,
    "electricity_twh_yr": 167.4,
-   "gross_mt": 42.18,
+   "gross_mt": 41.84,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.49,
-   "price_usd": 63924
+   "net_mt": 37.15,
+   "price_usd": 63924,
+   "intensity_g_kwh": 249.9,
+   "clean_share": 0.601
   },
   {
    "date": "2026-06-23",
@@ -2465,11 +2874,13 @@
    "efficiency_jth": 20.54,
    "power_gw": 19.24,
    "electricity_twh_yr": 168.5,
-   "gross_mt": 42.46,
+   "gross_mt": 42.11,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.77,
-   "price_usd": 62593
+   "net_mt": 37.42,
+   "price_usd": 62593,
+   "intensity_g_kwh": 249.9,
+   "clean_share": 0.601
   },
   {
    "date": "2026-06-24",
@@ -2477,11 +2888,13 @@
    "efficiency_jth": 20.54,
    "power_gw": 19.44,
    "electricity_twh_yr": 170.3,
-   "gross_mt": 42.92,
+   "gross_mt": 42.57,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.23,
-   "price_usd": 60908
+   "net_mt": 37.88,
+   "price_usd": 60908,
+   "intensity_g_kwh": 249.9,
+   "clean_share": 0.6011
   },
   {
    "date": "2026-06-25",
@@ -2489,11 +2902,13 @@
    "efficiency_jth": 20.53,
    "power_gw": 19.85,
    "electricity_twh_yr": 173.9,
-   "gross_mt": 43.81,
+   "gross_mt": 43.45,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.12,
-   "price_usd": 59863
+   "net_mt": 38.76,
+   "price_usd": 59863,
+   "intensity_g_kwh": 249.9,
+   "clean_share": 0.6011
   },
   {
    "date": "2026-06-26",
@@ -2501,11 +2916,13 @@
    "efficiency_jth": 20.52,
    "power_gw": 19.93,
    "electricity_twh_yr": 174.6,
-   "gross_mt": 43.99,
+   "gross_mt": 43.62,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.3,
-   "price_usd": 59962
+   "net_mt": 38.93,
+   "price_usd": 59962,
+   "intensity_g_kwh": 249.9,
+   "clean_share": 0.6012
   },
   {
    "date": "2026-06-27",
@@ -2513,11 +2930,13 @@
    "efficiency_jth": 20.51,
    "power_gw": 20.01,
    "electricity_twh_yr": 175.3,
-   "gross_mt": 44.18,
+   "gross_mt": 43.81,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.49,
-   "price_usd": 59956
+   "net_mt": 39.12,
+   "price_usd": 59956,
+   "intensity_g_kwh": 249.9,
+   "clean_share": 0.6012
   },
   {
    "date": "2026-06-28",
@@ -2525,11 +2944,13 @@
    "efficiency_jth": 20.5,
    "power_gw": 20.39,
    "electricity_twh_yr": 178.6,
-   "gross_mt": 45.01,
+   "gross_mt": 44.63,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.32,
-   "price_usd": 59517
+   "net_mt": 39.94,
+   "price_usd": 59517,
+   "intensity_g_kwh": 249.9,
+   "clean_share": 0.6012
   },
   {
    "date": "2026-06-29",
@@ -2537,11 +2958,13 @@
    "efficiency_jth": 20.49,
    "power_gw": 20.47,
    "electricity_twh_yr": 179.3,
-   "gross_mt": 45.19,
+   "gross_mt": 44.8,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.5,
-   "price_usd": 60175
+   "net_mt": 40.11,
+   "price_usd": 60175,
+   "intensity_g_kwh": 249.9,
+   "clean_share": 0.6013
   },
   {
    "date": "2026-06-30",
@@ -2549,11 +2972,13 @@
    "efficiency_jth": 20.48,
    "power_gw": 20.09,
    "electricity_twh_yr": 176.0,
-   "gross_mt": 44.35,
+   "gross_mt": 43.97,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.66,
-   "price_usd": 58525
+   "net_mt": 39.28,
+   "price_usd": 58525,
+   "intensity_g_kwh": 249.8,
+   "clean_share": 0.6013
   },
   {
    "date": "2026-07-01",
@@ -2561,11 +2986,13 @@
    "efficiency_jth": 20.48,
    "power_gw": 19.78,
    "electricity_twh_yr": 173.3,
-   "gross_mt": 43.67,
+   "gross_mt": 43.3,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.98,
-   "price_usd": 60066
+   "net_mt": 38.61,
+   "price_usd": 60066,
+   "intensity_g_kwh": 249.8,
+   "clean_share": 0.6014
   },
   {
    "date": "2026-07-02",
@@ -2573,11 +3000,13 @@
    "efficiency_jth": 20.47,
    "power_gw": 19.75,
    "electricity_twh_yr": 173.0,
-   "gross_mt": 43.6,
+   "gross_mt": 43.22,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.91,
-   "price_usd": 61438
+   "net_mt": 38.53,
+   "price_usd": 61438,
+   "intensity_g_kwh": 249.8,
+   "clean_share": 0.6015
   },
   {
    "date": "2026-07-03",
@@ -2585,11 +3014,13 @@
    "efficiency_jth": 20.46,
    "power_gw": 19.22,
    "electricity_twh_yr": 168.4,
-   "gross_mt": 42.43,
+   "gross_mt": 42.05,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.74,
-   "price_usd": 62565
+   "net_mt": 37.36,
+   "price_usd": 62565,
+   "intensity_g_kwh": 249.8,
+   "clean_share": 0.6015
   },
   {
    "date": "2026-07-04",
@@ -2597,11 +3028,13 @@
    "efficiency_jth": 20.45,
    "power_gw": 19.31,
    "electricity_twh_yr": 169.1,
-   "gross_mt": 42.62,
+   "gross_mt": 42.24,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.93,
-   "price_usd": 63090
+   "net_mt": 37.55,
+   "price_usd": 63090,
+   "intensity_g_kwh": 249.8,
+   "clean_share": 0.6016
   },
   {
    "date": "2026-07-05",
@@ -2609,11 +3042,13 @@
    "efficiency_jth": 20.44,
    "power_gw": 19.08,
    "electricity_twh_yr": 167.2,
-   "gross_mt": 42.13,
+   "gross_mt": 41.75,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.44,
-   "price_usd": 63620
+   "net_mt": 37.06,
+   "price_usd": 63620,
+   "intensity_g_kwh": 249.7,
+   "clean_share": 0.6017
   },
   {
    "date": "2026-07-06",
@@ -2621,11 +3056,13 @@
    "efficiency_jth": 20.43,
    "power_gw": 19.06,
    "electricity_twh_yr": 167.0,
-   "gross_mt": 42.08,
+   "gross_mt": 41.7,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.39,
-   "price_usd": 64063
+   "net_mt": 37.01,
+   "price_usd": 64063,
+   "intensity_g_kwh": 249.7,
+   "clean_share": 0.6017
   },
   {
    "date": "2026-07-07",
@@ -2633,11 +3070,13 @@
    "efficiency_jth": 20.42,
    "power_gw": 18.86,
    "electricity_twh_yr": 165.2,
-   "gross_mt": 41.63,
+   "gross_mt": 41.24,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.94,
-   "price_usd": 63458
+   "net_mt": 36.55,
+   "price_usd": 63458,
+   "intensity_g_kwh": 249.7,
+   "clean_share": 0.6018
   },
   {
    "date": "2026-07-08",
@@ -2645,11 +3084,13 @@
    "efficiency_jth": 20.41,
    "power_gw": 18.73,
    "electricity_twh_yr": 164.1,
-   "gross_mt": 41.35,
+   "gross_mt": 40.97,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.66,
-   "price_usd": 62214
+   "net_mt": 36.28,
+   "price_usd": 62214,
+   "intensity_g_kwh": 249.7,
+   "clean_share": 0.6019
   },
   {
    "date": "2026-07-09",
@@ -2657,11 +3098,13 @@
    "efficiency_jth": 20.41,
    "power_gw": 18.56,
    "electricity_twh_yr": 162.6,
-   "gross_mt": 40.97,
+   "gross_mt": 40.59,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.28,
-   "price_usd": 63189
+   "net_mt": 35.9,
+   "price_usd": 63189,
+   "intensity_g_kwh": 249.6,
+   "clean_share": 0.602
   },
   {
    "date": "2026-07-10",
@@ -2669,11 +3112,13 @@
    "efficiency_jth": 20.4,
    "power_gw": 18.4,
    "electricity_twh_yr": 161.2,
-   "gross_mt": 40.62,
+   "gross_mt": 40.24,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.93,
-   "price_usd": 64119
+   "net_mt": 35.55,
+   "price_usd": 64119,
+   "intensity_g_kwh": 249.6,
+   "clean_share": 0.602
   },
   {
    "date": "2026-07-11",
@@ -2681,11 +3126,13 @@
    "efficiency_jth": 20.39,
    "power_gw": 17.99,
    "electricity_twh_yr": 157.6,
-   "gross_mt": 39.71,
+   "gross_mt": 39.34,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.02,
-   "price_usd": 63893
+   "net_mt": 34.65,
+   "price_usd": 63893,
+   "intensity_g_kwh": 249.6,
+   "clean_share": 0.6021
   },
   {
    "date": "2026-07-12",
@@ -2693,11 +3140,13 @@
    "efficiency_jth": 20.38,
    "power_gw": 17.66,
    "electricity_twh_yr": 154.7,
-   "gross_mt": 38.98,
+   "gross_mt": 38.61,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.29,
-   "price_usd": 63752
+   "net_mt": 33.92,
+   "price_usd": 63752,
+   "intensity_g_kwh": 249.6,
+   "clean_share": 0.6022
   },
   {
    "date": "2026-07-13",
@@ -2705,11 +3154,13 @@
    "efficiency_jth": 20.37,
    "power_gw": 17.83,
    "electricity_twh_yr": 156.2,
-   "gross_mt": 39.37,
+   "gross_mt": 38.99,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.68,
-   "price_usd": 62127
+   "net_mt": 34.3,
+   "price_usd": 62127,
+   "intensity_g_kwh": 249.6,
+   "clean_share": 0.6022
   },
   {
    "date": "2026-07-14",
@@ -2717,11 +3168,13 @@
    "efficiency_jth": 20.36,
    "power_gw": 18.26,
    "electricity_twh_yr": 159.9,
-   "gross_mt": 40.3,
+   "gross_mt": 39.91,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.61,
-   "price_usd": 64934
+   "net_mt": 35.22,
+   "price_usd": 64934,
+   "intensity_g_kwh": 249.5,
+   "clean_share": 0.6023
   },
   {
    "date": "2026-07-15",
@@ -2729,11 +3182,13 @@
    "efficiency_jth": 20.35,
    "power_gw": 18.48,
    "electricity_twh_yr": 161.9,
-   "gross_mt": 40.8,
+   "gross_mt": 40.4,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.11,
-   "price_usd": 64765
+   "net_mt": 35.71,
+   "price_usd": 64765,
+   "intensity_g_kwh": 249.5,
+   "clean_share": 0.6024
   },
   {
    "date": "2026-07-16",
@@ -2741,11 +3196,13 @@
    "efficiency_jth": 20.35,
    "power_gw": 18.34,
    "electricity_twh_yr": 160.7,
-   "gross_mt": 40.49,
+   "gross_mt": 40.09,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.8,
-   "price_usd": 63780
+   "net_mt": 35.4,
+   "price_usd": 63780,
+   "intensity_g_kwh": 249.5,
+   "clean_share": 0.6024
   },
   {
    "date": "2026-07-17",
@@ -2753,11 +3210,13 @@
    "efficiency_jth": 20.34,
    "power_gw": 18.22,
    "electricity_twh_yr": 159.6,
-   "gross_mt": 40.22,
+   "gross_mt": 39.82,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.53,
-   "price_usd": 63916
+   "net_mt": 35.13,
+   "price_usd": 63916,
+   "intensity_g_kwh": 249.5,
+   "clean_share": 0.6025
   },
   {
    "date": "2026-07-18",
@@ -2765,11 +3224,13 @@
    "efficiency_jth": 20.33,
    "power_gw": 18.01,
    "electricity_twh_yr": 157.7,
-   "gross_mt": 39.75,
+   "gross_mt": 39.35,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.06,
-   "price_usd": 64778
+   "net_mt": 34.66,
+   "price_usd": 64778,
+   "intensity_g_kwh": 249.5,
+   "clean_share": 0.6026
   },
   {
    "date": "2026-07-19",
@@ -2777,11 +3238,13 @@
    "efficiency_jth": 20.32,
    "power_gw": 18.35,
    "electricity_twh_yr": 160.8,
-   "gross_mt": 40.51,
+   "gross_mt": 40.1,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.82,
-   "price_usd": 64653
+   "net_mt": 35.41,
+   "price_usd": 64653,
+   "intensity_g_kwh": 249.4,
+   "clean_share": 0.6026
   },
   {
    "date": "2026-07-20",
@@ -2789,11 +3252,13 @@
    "efficiency_jth": 20.31,
    "power_gw": 18.77,
    "electricity_twh_yr": 164.4,
-   "gross_mt": 41.43,
+   "gross_mt": 41.0,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.74,
-   "price_usd": 65182
+   "net_mt": 36.31,
+   "price_usd": 65182,
+   "intensity_g_kwh": 249.4,
+   "clean_share": 0.6027
   },
   {
    "date": "2026-07-21",
@@ -2801,11 +3266,13 @@
    "efficiency_jth": 20.3,
    "power_gw": 18.72,
    "electricity_twh_yr": 164.0,
-   "gross_mt": 41.33,
+   "gross_mt": 40.9,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.64,
-   "price_usd": 66403
+   "net_mt": 36.21,
+   "price_usd": 66403,
+   "intensity_g_kwh": 249.4,
+   "clean_share": 0.6028
   },
   {
    "date": "2026-07-22",
@@ -2813,11 +3280,13 @@
    "efficiency_jth": 20.29,
    "power_gw": 18.27,
    "electricity_twh_yr": 160.1,
-   "gross_mt": 40.33,
+   "gross_mt": 39.91,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.64,
-   "price_usd": 65983
+   "net_mt": 35.22,
+   "price_usd": 65983,
+   "intensity_g_kwh": 249.4,
+   "clean_share": 0.6029
   },
   {
    "date": "2026-07-23",
@@ -2825,11 +3294,13 @@
    "efficiency_jth": 20.28,
    "power_gw": 17.91,
    "electricity_twh_yr": 156.9,
-   "gross_mt": 39.54,
+   "gross_mt": 39.13,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.85,
-   "price_usd": 65094
+   "net_mt": 34.44,
+   "price_usd": 65094,
+   "intensity_g_kwh": 249.4,
+   "clean_share": 0.6029
   },
   {
    "date": "2026-07-24",
@@ -2837,11 +3308,13 @@
    "efficiency_jth": 20.28,
    "power_gw": 18.06,
    "electricity_twh_yr": 158.2,
-   "gross_mt": 39.88,
+   "gross_mt": 39.45,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.19,
-   "price_usd": 64100
+   "net_mt": 34.76,
+   "price_usd": 64100,
+   "intensity_g_kwh": 249.3,
+   "clean_share": 0.603
   },
   {
    "date": "2026-07-25",
@@ -2849,11 +3322,13 @@
    "efficiency_jth": 20.27,
    "power_gw": 18.58,
    "electricity_twh_yr": 162.7,
-   "gross_mt": 41.01,
+   "gross_mt": 40.57,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.32,
-   "price_usd": 64331
+   "net_mt": 35.88,
+   "price_usd": 64331,
+   "intensity_g_kwh": 249.3,
+   "clean_share": 0.6031
   },
   {
    "date": "2026-07-26",
@@ -2861,11 +3336,13 @@
    "efficiency_jth": 20.26,
    "power_gw": 18.08,
    "electricity_twh_yr": 158.4,
-   "gross_mt": 39.92,
+   "gross_mt": 39.49,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.23,
-   "price_usd": 65329
+   "net_mt": 34.8,
+   "price_usd": 65329,
+   "intensity_g_kwh": 249.3,
+   "clean_share": 0.6031
   },
   {
    "date": "2026-07-27",
@@ -2873,11 +3350,13 @@
    "efficiency_jth": 20.25,
    "power_gw": 17.67,
    "electricity_twh_yr": 154.8,
-   "gross_mt": 39.0,
+   "gross_mt": 38.58,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.31,
-   "price_usd": 63718
+   "net_mt": 33.89,
+   "price_usd": 63718,
+   "intensity_g_kwh": 249.3,
+   "clean_share": 0.6032
   },
   {
    "date": "2026-07-28",
@@ -2885,11 +3364,13 @@
    "efficiency_jth": 20.24,
    "power_gw": 17.57,
    "electricity_twh_yr": 153.9,
-   "gross_mt": 38.78,
+   "gross_mt": 38.36,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.09,
-   "price_usd": 63728
+   "net_mt": 33.67,
+   "price_usd": 63728,
+   "intensity_g_kwh": 249.2,
+   "clean_share": 0.6033
   },
   {
    "date": "2026-07-29",
@@ -2897,11 +3378,13 @@
    "efficiency_jth": 20.23,
    "power_gw": 17.32,
    "electricity_twh_yr": 151.8,
-   "gross_mt": 38.24,
+   "gross_mt": 37.82,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 33.55,
-   "price_usd": 63905
+   "net_mt": 33.13,
+   "price_usd": 63905,
+   "intensity_g_kwh": 249.2,
+   "clean_share": 0.6033
   },
   {
    "date": "2026-07-30",
@@ -2909,11 +3392,13 @@
    "efficiency_jth": 20.22,
    "power_gw": 17.79,
    "electricity_twh_yr": 155.8,
-   "gross_mt": 39.27,
+   "gross_mt": 38.83,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.58,
-   "price_usd": 64828
+   "net_mt": 34.14,
+   "price_usd": 64828,
+   "intensity_g_kwh": 249.2,
+   "clean_share": 0.6034
   },
   {
    "date": "2026-07-31",
@@ -2921,11 +3406,13 @@
    "efficiency_jth": 20.22,
    "power_gw": 18.14,
    "electricity_twh_yr": 158.9,
-   "gross_mt": 40.04,
+   "gross_mt": 39.59,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.35,
-   "price_usd": 62875
+   "net_mt": 34.9,
+   "price_usd": 62875,
+   "intensity_g_kwh": 249.2,
+   "clean_share": 0.6035
   },
   {
    "date": "2026-08-01",
@@ -2933,11 +3420,13 @@
    "efficiency_jth": 20.21,
    "power_gw": 18.17,
    "electricity_twh_yr": 159.2,
-   "gross_mt": 40.11,
+   "gross_mt": 39.66,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.42,
-   "price_usd": 62752
+   "net_mt": 34.97,
+   "price_usd": 62752,
+   "intensity_g_kwh": 249.2,
+   "clean_share": 0.6035
   },
   {
    "date": "2026-08-02",
@@ -2945,11 +3434,13 @@
    "efficiency_jth": 20.2,
    "power_gw": 18.62,
    "electricity_twh_yr": 163.1,
-   "gross_mt": 41.11,
+   "gross_mt": 40.64,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.42,
-   "price_usd": 63446
+   "net_mt": 35.95,
+   "price_usd": 63446,
+   "intensity_g_kwh": 249.1,
+   "clean_share": 0.6036
   },
   {
    "date": "2026-08-03",
@@ -2957,11 +3448,13 @@
    "efficiency_jth": 20.19,
    "power_gw": 18.57,
    "electricity_twh_yr": 162.7,
-   "gross_mt": 41.0,
+   "gross_mt": 40.53,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.31,
-   "price_usd": 63460
+   "net_mt": 35.84,
+   "price_usd": 63460,
+   "intensity_g_kwh": 249.1,
+   "clean_share": 0.6037
   },
   {
    "date": "2026-08-04",
@@ -2969,11 +3462,13 @@
    "efficiency_jth": 20.18,
    "power_gw": 18.75,
    "electricity_twh_yr": 164.2,
-   "gross_mt": 41.39,
+   "gross_mt": 40.91,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.7,
-   "price_usd": 64161
+   "net_mt": 36.22,
+   "price_usd": 64161,
+   "intensity_g_kwh": 249.1,
+   "clean_share": 0.6037
   },
   {
    "date": "2026-08-05",
@@ -2981,11 +3476,13 @@
    "efficiency_jth": 20.17,
    "power_gw": 19.02,
    "electricity_twh_yr": 166.6,
-   "gross_mt": 41.98,
+   "gross_mt": 41.49,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.29,
-   "price_usd": 64610
+   "net_mt": 36.8,
+   "price_usd": 64610,
+   "intensity_g_kwh": 249.1,
+   "clean_share": 0.6038
   },
   {
    "date": "2026-08-06",
@@ -2993,11 +3490,13 @@
    "efficiency_jth": 20.16,
    "power_gw": 19.02,
    "electricity_twh_yr": 166.6,
-   "gross_mt": 41.99,
+   "gross_mt": 41.5,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.3,
-   "price_usd": 64212
+   "net_mt": 36.81,
+   "price_usd": 64212,
+   "intensity_g_kwh": 249.1,
+   "clean_share": 0.6039
   },
   {
    "date": "2026-08-07",
@@ -3005,11 +3504,13 @@
    "efficiency_jth": 20.15,
    "power_gw": 18.54,
    "electricity_twh_yr": 162.4,
-   "gross_mt": 40.92,
+   "gross_mt": 40.44,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.23,
-   "price_usd": 64869
+   "net_mt": 35.75,
+   "price_usd": 64869,
+   "intensity_g_kwh": 249.0,
+   "clean_share": 0.6039
   },
   {
    "date": "2026-08-08",
@@ -3017,11 +3518,13 @@
    "efficiency_jth": 20.15,
    "power_gw": 18.55,
    "electricity_twh_yr": 162.5,
-   "gross_mt": 40.94,
+   "gross_mt": 40.46,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.25,
-   "price_usd": 64907
+   "net_mt": 35.77,
+   "price_usd": 64907,
+   "intensity_g_kwh": 249.0,
+   "clean_share": 0.604
   },
   {
    "date": "2026-08-09",
@@ -3029,11 +3532,13 @@
    "efficiency_jth": 20.14,
    "power_gw": 18.18,
    "electricity_twh_yr": 159.3,
-   "gross_mt": 40.14,
+   "gross_mt": 39.66,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.45,
-   "price_usd": 64865
+   "net_mt": 34.97,
+   "price_usd": 64865,
+   "intensity_g_kwh": 249.0,
+   "clean_share": 0.604
   },
   {
    "date": "2026-08-10",
@@ -3041,11 +3546,13 @@
    "efficiency_jth": 20.13,
    "power_gw": 18.15,
    "electricity_twh_yr": 159.0,
-   "gross_mt": 40.07,
+   "gross_mt": 39.59,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.38,
-   "price_usd": 63908
+   "net_mt": 34.9,
+   "price_usd": 63908,
+   "intensity_g_kwh": 249.0,
+   "clean_share": 0.6041
   },
   {
    "date": "2026-08-11",
@@ -3053,11 +3560,13 @@
    "efficiency_jth": 20.12,
    "power_gw": 17.96,
    "electricity_twh_yr": 157.4,
-   "gross_mt": 39.66,
+   "gross_mt": 39.18,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.97,
-   "price_usd": 63547
+   "net_mt": 34.49,
+   "price_usd": 63547,
+   "intensity_g_kwh": 248.9,
+   "clean_share": 0.6042
   },
   {
    "date": "2026-08-12",
@@ -3065,11 +3574,13 @@
    "efficiency_jth": 20.11,
    "power_gw": 17.79,
    "electricity_twh_yr": 155.9,
-   "gross_mt": 39.28,
+   "gross_mt": 38.8,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.59,
-   "price_usd": 63359
+   "net_mt": 34.11,
+   "price_usd": 63359,
+   "intensity_g_kwh": 248.9,
+   "clean_share": 0.6042
   },
   {
    "date": "2026-08-13",
@@ -3077,11 +3588,13 @@
    "efficiency_jth": 20.1,
    "power_gw": 17.76,
    "electricity_twh_yr": 155.5,
-   "gross_mt": 39.2,
+   "gross_mt": 38.72,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.51,
-   "price_usd": 63395
+   "net_mt": 34.03,
+   "price_usd": 63395,
+   "intensity_g_kwh": 248.9,
+   "clean_share": 0.6043
   },
   {
    "date": "2026-08-14",
@@ -3089,11 +3602,13 @@
    "efficiency_jth": 20.09,
    "power_gw": 18.13,
    "electricity_twh_yr": 158.8,
-   "gross_mt": 40.02,
+   "gross_mt": 39.53,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.33,
-   "price_usd": 62925
+   "net_mt": 34.84,
+   "price_usd": 62925,
+   "intensity_g_kwh": 248.9,
+   "clean_share": 0.6044
   },
   {
    "date": "2026-08-15",
@@ -3101,11 +3616,13 @@
    "efficiency_jth": 20.09,
    "power_gw": 17.97,
    "electricity_twh_yr": 157.5,
-   "gross_mt": 39.68,
+   "gross_mt": 39.18,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.99,
-   "price_usd": 63034
+   "net_mt": 34.49,
+   "price_usd": 63034,
+   "intensity_g_kwh": 248.9,
+   "clean_share": 0.6044
   },
   {
    "date": "2026-08-16",
@@ -3113,11 +3630,13 @@
    "efficiency_jth": 20.08,
    "power_gw": 18.0,
    "electricity_twh_yr": 157.7,
-   "gross_mt": 39.74,
+   "gross_mt": 39.25,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.05,
-   "price_usd": 62818
+   "net_mt": 34.56,
+   "price_usd": 62818,
+   "intensity_g_kwh": 248.8,
+   "clean_share": 0.6045
   },
   {
    "date": "2026-08-17",
@@ -3125,11 +3644,13 @@
    "efficiency_jth": 20.07,
    "power_gw": 18.36,
    "electricity_twh_yr": 160.9,
-   "gross_mt": 40.54,
+   "gross_mt": 40.03,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.85,
-   "price_usd": 64434
+   "net_mt": 35.34,
+   "price_usd": 64434,
+   "intensity_g_kwh": 248.8,
+   "clean_share": 0.6046
   },
   {
    "date": "2026-08-18",
@@ -3137,11 +3658,13 @@
    "efficiency_jth": 20.06,
    "power_gw": 18.7,
    "electricity_twh_yr": 163.8,
-   "gross_mt": 41.28,
+   "gross_mt": 40.75,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.59,
-   "price_usd": 64696
+   "net_mt": 36.06,
+   "price_usd": 64696,
+   "intensity_g_kwh": 248.8,
+   "clean_share": 0.6046
   },
   {
    "date": "2026-08-19",
@@ -3149,11 +3672,13 @@
    "efficiency_jth": 20.05,
    "power_gw": 19.03,
    "electricity_twh_yr": 166.7,
-   "gross_mt": 42.01,
+   "gross_mt": 41.47,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.32,
-   "price_usd": 69268
+   "net_mt": 36.78,
+   "price_usd": 69268,
+   "intensity_g_kwh": 248.8,
+   "clean_share": 0.6047
   },
   {
    "date": "2026-08-20",
@@ -3161,11 +3686,13 @@
    "efficiency_jth": 20.04,
    "power_gw": 18.71,
    "electricity_twh_yr": 163.9,
-   "gross_mt": 41.31,
+   "gross_mt": 40.78,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.62,
-   "price_usd": 73071
+   "net_mt": 36.09,
+   "price_usd": 73071,
+   "intensity_g_kwh": 248.8,
+   "clean_share": 0.6048
   },
   {
    "date": "2026-08-21",
@@ -3173,11 +3700,13 @@
    "efficiency_jth": 20.03,
    "power_gw": 18.38,
    "electricity_twh_yr": 161.0,
-   "gross_mt": 40.57,
+   "gross_mt": 40.04,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.88,
-   "price_usd": 78359
+   "net_mt": 35.35,
+   "price_usd": 78359,
+   "intensity_g_kwh": 248.7,
+   "clean_share": 0.6048
   },
   {
    "date": "2026-08-22",
@@ -3185,11 +3714,13 @@
    "efficiency_jth": 20.03,
    "power_gw": 18.15,
    "electricity_twh_yr": 159.0,
-   "gross_mt": 40.06,
+   "gross_mt": 39.54,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.37,
-   "price_usd": 77020
+   "net_mt": 34.85,
+   "price_usd": 77020,
+   "intensity_g_kwh": 248.7,
+   "clean_share": 0.6049
   },
   {
    "date": "2026-08-23",
@@ -3197,11 +3728,13 @@
    "efficiency_jth": 20.02,
    "power_gw": 18.22,
    "electricity_twh_yr": 159.6,
-   "gross_mt": 40.22,
+   "gross_mt": 39.69,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.53,
-   "price_usd": 77593
+   "net_mt": 35.0,
+   "price_usd": 77593,
+   "intensity_g_kwh": 248.7,
+   "clean_share": 0.6049
   },
   {
    "date": "2026-08-24",
@@ -3209,11 +3742,13 @@
    "efficiency_jth": 20.01,
    "power_gw": 17.7,
    "electricity_twh_yr": 155.0,
-   "gross_mt": 39.07,
+   "gross_mt": 38.55,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.38,
-   "price_usd": 78894
+   "net_mt": 33.86,
+   "price_usd": 78894,
+   "intensity_g_kwh": 248.7,
+   "clean_share": 0.605
   },
   {
    "date": "2026-08-25",
@@ -3221,11 +3756,13 @@
    "efficiency_jth": 20.0,
    "power_gw": 17.35,
    "electricity_twh_yr": 152.0,
-   "gross_mt": 38.3,
+   "gross_mt": 37.79,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 33.61,
-   "price_usd": 78601
+   "net_mt": 33.1,
+   "price_usd": 78601,
+   "intensity_g_kwh": 248.6,
+   "clean_share": 0.6051
   },
   {
    "date": "2026-08-26",
@@ -3233,11 +3770,13 @@
    "efficiency_jth": 19.99,
    "power_gw": 17.2,
    "electricity_twh_yr": 150.6,
-   "gross_mt": 37.96,
+   "gross_mt": 37.45,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 33.27,
-   "price_usd": 78955
+   "net_mt": 32.76,
+   "price_usd": 78955,
+   "intensity_g_kwh": 248.6,
+   "clean_share": 0.6051
   },
   {
    "date": "2026-08-27",
@@ -3245,11 +3784,13 @@
    "efficiency_jth": 19.98,
    "power_gw": 17.71,
    "electricity_twh_yr": 155.1,
-   "gross_mt": 39.09,
+   "gross_mt": 38.57,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.4,
-   "price_usd": 80297
+   "net_mt": 33.88,
+   "price_usd": 80297,
+   "intensity_g_kwh": 248.6,
+   "clean_share": 0.6052
   },
   {
    "date": "2026-08-28",
@@ -3257,11 +3798,13 @@
    "efficiency_jth": 19.97,
    "power_gw": 17.94,
    "electricity_twh_yr": 157.1,
-   "gross_mt": 39.59,
+   "gross_mt": 39.06,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.9,
-   "price_usd": 77717
+   "net_mt": 34.37,
+   "price_usd": 77717,
+   "intensity_g_kwh": 248.6,
+   "clean_share": 0.6053
   },
   {
    "date": "2026-08-29",
@@ -3269,11 +3812,13 @@
    "efficiency_jth": 19.96,
    "power_gw": 17.83,
    "electricity_twh_yr": 156.2,
-   "gross_mt": 39.36,
+   "gross_mt": 38.83,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.67,
-   "price_usd": 78244
+   "net_mt": 34.14,
+   "price_usd": 78244,
+   "intensity_g_kwh": 248.6,
+   "clean_share": 0.6053
   },
   {
    "date": "2026-08-30",
@@ -3281,11 +3826,13 @@
    "efficiency_jth": 19.96,
    "power_gw": 17.72,
    "electricity_twh_yr": 155.2,
-   "gross_mt": 39.12,
+   "gross_mt": 38.58,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.43,
-   "price_usd": 77689
+   "net_mt": 33.89,
+   "price_usd": 77689,
+   "intensity_g_kwh": 248.5,
+   "clean_share": 0.6054
   },
   {
    "date": "2026-08-31",
@@ -3293,11 +3840,13 @@
    "efficiency_jth": 19.95,
    "power_gw": 18.3,
    "electricity_twh_yr": 160.3,
-   "gross_mt": 40.4,
+   "gross_mt": 39.84,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.71,
-   "price_usd": 78534
+   "net_mt": 35.15,
+   "price_usd": 78534,
+   "intensity_g_kwh": 248.5,
+   "clean_share": 0.6055
   },
   {
    "date": "2026-09-01",
@@ -3305,11 +3854,13 @@
    "efficiency_jth": 19.94,
    "power_gw": 18.41,
    "electricity_twh_yr": 161.3,
-   "gross_mt": 40.64,
+   "gross_mt": 40.08,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.95,
-   "price_usd": 77408
+   "net_mt": 35.39,
+   "price_usd": 77408,
+   "intensity_g_kwh": 248.5,
+   "clean_share": 0.6055
   },
   {
    "date": "2026-09-02",
@@ -3317,11 +3868,13 @@
    "efficiency_jth": 19.93,
    "power_gw": 18.43,
    "electricity_twh_yr": 161.5,
-   "gross_mt": 40.69,
+   "gross_mt": 40.13,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.0,
-   "price_usd": 77189
+   "net_mt": 35.44,
+   "price_usd": 77189,
+   "intensity_g_kwh": 248.5,
+   "clean_share": 0.6055
   },
   {
    "date": "2026-09-03",
@@ -3329,11 +3882,13 @@
    "efficiency_jth": 19.92,
    "power_gw": 18.11,
    "electricity_twh_yr": 158.7,
-   "gross_mt": 39.98,
+   "gross_mt": 39.43,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.29,
-   "price_usd": 81243
+   "net_mt": 34.74,
+   "price_usd": 81243,
+   "intensity_g_kwh": 248.5,
+   "clean_share": 0.6055
   },
   {
    "date": "2026-09-04",
@@ -3341,11 +3896,13 @@
    "efficiency_jth": 19.91,
    "power_gw": 18.37,
    "electricity_twh_yr": 160.9,
-   "gross_mt": 40.54,
+   "gross_mt": 39.98,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.85,
-   "price_usd": 79682
+   "net_mt": 35.29,
+   "price_usd": 79682,
+   "intensity_g_kwh": 248.5,
+   "clean_share": 0.6055
   },
   {
    "date": "2026-09-05",
@@ -3353,11 +3910,13 @@
    "efficiency_jth": 19.9,
    "power_gw": 18.6,
    "electricity_twh_yr": 162.9,
-   "gross_mt": 41.05,
+   "gross_mt": 40.48,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.36,
-   "price_usd": 79817
+   "net_mt": 35.79,
+   "price_usd": 79817,
+   "intensity_g_kwh": 248.5,
+   "clean_share": 0.6056
   },
   {
    "date": "2026-09-06",
@@ -3365,11 +3924,13 @@
    "efficiency_jth": 19.9,
    "power_gw": 18.6,
    "electricity_twh_yr": 163.0,
-   "gross_mt": 41.07,
+   "gross_mt": 40.5,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.38,
-   "price_usd": 80320
+   "net_mt": 35.81,
+   "price_usd": 80320,
+   "intensity_g_kwh": 248.5,
+   "clean_share": 0.6056
   },
   {
    "date": "2026-09-07",
@@ -3377,11 +3938,13 @@
    "efficiency_jth": 19.89,
    "power_gw": 18.56,
    "electricity_twh_yr": 162.6,
-   "gross_mt": 40.97,
+   "gross_mt": 40.4,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.28,
-   "price_usd": 79073
+   "net_mt": 35.71,
+   "price_usd": 79073,
+   "intensity_g_kwh": 248.5,
+   "clean_share": 0.6056
   },
   {
    "date": "2026-09-08",
@@ -3389,11 +3952,13 @@
    "efficiency_jth": 19.88,
    "power_gw": 18.44,
    "electricity_twh_yr": 161.5,
-   "gross_mt": 40.7,
+   "gross_mt": 40.13,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.01,
-   "price_usd": 78446
+   "net_mt": 35.44,
+   "price_usd": 78446,
+   "intensity_g_kwh": 248.5,
+   "clean_share": 0.6056
   },
   {
    "date": "2026-09-09",
@@ -3401,11 +3966,13 @@
    "efficiency_jth": 19.87,
    "power_gw": 18.3,
    "electricity_twh_yr": 160.3,
-   "gross_mt": 40.41,
+   "gross_mt": 39.84,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.72,
-   "price_usd": 78207
+   "net_mt": 35.15,
+   "price_usd": 78207,
+   "intensity_g_kwh": 248.5,
+   "clean_share": 0.6057
   },
   {
    "date": "2026-09-10",
@@ -3413,11 +3980,13 @@
    "efficiency_jth": 19.86,
    "power_gw": 18.77,
    "electricity_twh_yr": 164.4,
-   "gross_mt": 41.42,
+   "gross_mt": 40.84,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.73,
-   "price_usd": 76676
+   "net_mt": 36.15,
+   "price_usd": 76676,
+   "intensity_g_kwh": 248.5,
+   "clean_share": 0.6057
   },
   {
    "date": "2026-09-11",
@@ -3425,11 +3994,13 @@
    "efficiency_jth": 19.85,
    "power_gw": 18.33,
    "electricity_twh_yr": 160.6,
-   "gross_mt": 40.46,
+   "gross_mt": 39.89,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.77,
-   "price_usd": 77177
+   "net_mt": 35.2,
+   "price_usd": 77177,
+   "intensity_g_kwh": 248.5,
+   "clean_share": 0.6057
   },
   {
    "date": "2026-09-12",
@@ -3437,11 +4008,13 @@
    "efficiency_jth": 19.84,
    "power_gw": 18.64,
    "electricity_twh_yr": 163.3,
-   "gross_mt": 41.14,
+   "gross_mt": 40.56,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.45,
-   "price_usd": 77252
+   "net_mt": 35.87,
+   "price_usd": 77252,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.6057
   },
   {
    "date": "2026-09-13",
@@ -3449,11 +4022,13 @@
    "efficiency_jth": 19.83,
    "power_gw": 18.83,
    "electricity_twh_yr": 165.0,
-   "gross_mt": 41.57,
+   "gross_mt": 40.98,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.88,
-   "price_usd": 76759
+   "net_mt": 36.29,
+   "price_usd": 76759,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.6057
   },
   {
    "date": "2026-09-14",
@@ -3461,11 +4036,13 @@
    "efficiency_jth": 19.83,
    "power_gw": 18.61,
    "electricity_twh_yr": 163.0,
-   "gross_mt": 41.09,
+   "gross_mt": 40.51,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.4,
-   "price_usd": 78279
+   "net_mt": 35.82,
+   "price_usd": 78279,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.6058
   },
   {
    "date": "2026-09-15",
@@ -3473,11 +4050,13 @@
    "efficiency_jth": 19.82,
    "power_gw": 18.82,
    "electricity_twh_yr": 164.9,
-   "gross_mt": 41.55,
+   "gross_mt": 40.96,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.86,
-   "price_usd": 75650
+   "net_mt": 36.27,
+   "price_usd": 75650,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.6058
   },
   {
    "date": "2026-09-16",
@@ -3485,11 +4064,13 @@
    "efficiency_jth": 19.81,
    "power_gw": 19.28,
    "electricity_twh_yr": 168.9,
-   "gross_mt": 42.55,
+   "gross_mt": 41.95,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.86,
-   "price_usd": 76082
+   "net_mt": 37.26,
+   "price_usd": 76082,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.6058
   },
   {
    "date": "2026-09-17",
@@ -3497,11 +4078,13 @@
    "efficiency_jth": 19.8,
    "power_gw": 18.86,
    "electricity_twh_yr": 165.2,
-   "gross_mt": 41.63,
+   "gross_mt": 41.04,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.94,
-   "price_usd": 76387
+   "net_mt": 36.35,
+   "price_usd": 76387,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.6058
   },
   {
    "date": "2026-09-18",
@@ -3509,11 +4092,13 @@
    "efficiency_jth": 19.79,
    "power_gw": 19.02,
    "electricity_twh_yr": 166.6,
-   "gross_mt": 41.98,
+   "gross_mt": 41.38,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.29,
-   "price_usd": 80944
+   "net_mt": 36.69,
+   "price_usd": 80944,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.6058
   },
   {
    "date": "2026-09-19",
@@ -3521,11 +4106,13 @@
    "efficiency_jth": 19.78,
    "power_gw": 18.81,
    "electricity_twh_yr": 164.8,
-   "gross_mt": 41.52,
+   "gross_mt": 40.92,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.83,
-   "price_usd": 81262
+   "net_mt": 36.23,
+   "price_usd": 81262,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.6059
   },
   {
    "date": "2026-09-20",
@@ -3533,11 +4120,13 @@
    "efficiency_jth": 19.77,
    "power_gw": 18.35,
    "electricity_twh_yr": 160.7,
-   "gross_mt": 40.5,
+   "gross_mt": 39.92,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.81,
-   "price_usd": 81195
+   "net_mt": 35.23,
+   "price_usd": 81195,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.6059
   },
   {
    "date": "2026-09-21",
@@ -3545,11 +4134,13 @@
    "efficiency_jth": 19.77,
    "power_gw": 18.48,
    "electricity_twh_yr": 161.9,
-   "gross_mt": 40.79,
+   "gross_mt": 40.21,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.1,
-   "price_usd": 86505
+   "net_mt": 35.52,
+   "price_usd": 86505,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.6059
   },
   {
    "date": "2026-09-22",
@@ -3557,11 +4148,13 @@
    "efficiency_jth": 19.76,
    "power_gw": 18.55,
    "electricity_twh_yr": 162.5,
-   "gross_mt": 40.94,
+   "gross_mt": 40.35,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.25,
-   "price_usd": 86205
+   "net_mt": 35.66,
+   "price_usd": 86205,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.6059
   },
   {
    "date": "2026-09-23",
@@ -3569,11 +4162,13 @@
    "efficiency_jth": 19.75,
    "power_gw": 18.29,
    "electricity_twh_yr": 160.2,
-   "gross_mt": 40.38,
+   "gross_mt": 39.8,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.69,
-   "price_usd": 84434
+   "net_mt": 35.11,
+   "price_usd": 84434,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.6059
   },
   {
    "date": "2026-09-24",
@@ -3581,11 +4176,13 @@
    "efficiency_jth": 19.74,
    "power_gw": 18.18,
    "electricity_twh_yr": 159.3,
-   "gross_mt": 40.13,
+   "gross_mt": 39.55,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.44,
-   "price_usd": 84387
+   "net_mt": 34.86,
+   "price_usd": 84387,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.606
   },
   {
    "date": "2026-09-25",
@@ -3593,11 +4190,13 @@
    "efficiency_jth": 19.73,
    "power_gw": 18.28,
    "electricity_twh_yr": 160.1,
-   "gross_mt": 40.35,
+   "gross_mt": 39.77,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.66,
-   "price_usd": 84062
+   "net_mt": 35.08,
+   "price_usd": 84062,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.606
   },
   {
    "date": "2026-09-26",
@@ -3605,11 +4204,13 @@
    "efficiency_jth": 19.72,
    "power_gw": 18.06,
    "electricity_twh_yr": 158.2,
-   "gross_mt": 39.87,
+   "gross_mt": 39.3,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.18,
-   "price_usd": 84386
+   "net_mt": 34.61,
+   "price_usd": 84386,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.606
   },
   {
    "date": "2026-09-27",
@@ -3617,11 +4218,13 @@
    "efficiency_jth": 19.71,
    "power_gw": 18.6,
    "electricity_twh_yr": 162.9,
-   "gross_mt": 41.06,
+   "gross_mt": 40.46,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.37,
-   "price_usd": 84392
+   "net_mt": 35.77,
+   "price_usd": 84392,
+   "intensity_g_kwh": 248.4,
+   "clean_share": 0.606
   },
   {
    "date": "2026-09-28",
@@ -3629,11 +4232,13 @@
    "efficiency_jth": 19.7,
    "power_gw": 18.42,
    "electricity_twh_yr": 161.3,
-   "gross_mt": 40.66,
+   "gross_mt": 40.07,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.97,
-   "price_usd": 83517
+   "net_mt": 35.38,
+   "price_usd": 83517,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-09-29",
@@ -3641,11 +4246,13 @@
    "efficiency_jth": 19.7,
    "power_gw": 18.7,
    "electricity_twh_yr": 163.8,
-   "gross_mt": 41.29,
+   "gross_mt": 40.69,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.6,
-   "price_usd": 83675
+   "net_mt": 36.0,
+   "price_usd": 83675,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-09-30",
@@ -3653,11 +4260,13 @@
    "efficiency_jth": 19.69,
    "power_gw": 19.02,
    "electricity_twh_yr": 166.6,
-   "gross_mt": 41.99,
+   "gross_mt": 41.38,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.3,
-   "price_usd": 83580
+   "net_mt": 36.69,
+   "price_usd": 83580,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-01",
@@ -3665,11 +4274,13 @@
    "efficiency_jth": 19.68,
    "power_gw": 19.27,
    "electricity_twh_yr": 168.8,
-   "gross_mt": 42.54,
+   "gross_mt": 41.92,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.85,
-   "price_usd": 84777
+   "net_mt": 37.23,
+   "price_usd": 84777,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-02",
@@ -3677,11 +4288,13 @@
    "efficiency_jth": 19.67,
    "power_gw": 19.2,
    "electricity_twh_yr": 168.2,
-   "gross_mt": 42.38,
+   "gross_mt": 41.77,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.69,
-   "price_usd": 84518
+   "net_mt": 37.08,
+   "price_usd": 84518,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-03",
@@ -3689,11 +4302,13 @@
    "efficiency_jth": 19.66,
    "power_gw": 19.35,
    "electricity_twh_yr": 169.5,
-   "gross_mt": 42.71,
+   "gross_mt": 42.09,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.02,
-   "price_usd": 84756
+   "net_mt": 37.4,
+   "price_usd": 84756,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-04",
@@ -3701,11 +4316,13 @@
    "efficiency_jth": 19.65,
    "power_gw": 18.92,
    "electricity_twh_yr": 165.7,
-   "gross_mt": 41.76,
+   "gross_mt": 41.15,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.07,
-   "price_usd": 86521
+   "net_mt": 36.46,
+   "price_usd": 86521,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-05",
@@ -3713,11 +4330,13 @@
    "efficiency_jth": 19.64,
    "power_gw": 18.88,
    "electricity_twh_yr": 165.4,
-   "gross_mt": 41.69,
+   "gross_mt": 41.08,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.0,
-   "price_usd": 85835
+   "net_mt": 36.39,
+   "price_usd": 85835,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-06",
@@ -3725,11 +4344,13 @@
    "efficiency_jth": 19.64,
    "power_gw": 19.13,
    "electricity_twh_yr": 167.5,
-   "gross_mt": 42.22,
+   "gross_mt": 41.61,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.53,
-   "price_usd": 85523
+   "net_mt": 36.92,
+   "price_usd": 85523,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-07",
@@ -3737,11 +4358,13 @@
    "efficiency_jth": 19.63,
    "power_gw": 19.04,
    "electricity_twh_yr": 166.8,
-   "gross_mt": 42.04,
+   "gross_mt": 41.43,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.35,
-   "price_usd": 83274
+   "net_mt": 36.74,
+   "price_usd": 83274,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-08",
@@ -3749,11 +4372,13 @@
    "efficiency_jth": 19.62,
    "power_gw": 19.29,
    "electricity_twh_yr": 169.0,
-   "gross_mt": 42.58,
+   "gross_mt": 41.96,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.89,
-   "price_usd": 81732
+   "net_mt": 37.27,
+   "price_usd": 81732,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-09",
@@ -3761,11 +4386,13 @@
    "efficiency_jth": 19.61,
    "power_gw": 19.29,
    "electricity_twh_yr": 169.0,
-   "gross_mt": 42.59,
+   "gross_mt": 41.97,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.9,
-   "price_usd": 82563
+   "net_mt": 37.28,
+   "price_usd": 82563,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-10",
@@ -3773,11 +4400,13 @@
    "efficiency_jth": 19.6,
    "power_gw": 19.36,
    "electricity_twh_yr": 169.6,
-   "gross_mt": 42.73,
+   "gross_mt": 42.11,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.04,
-   "price_usd": 82949
+   "net_mt": 37.42,
+   "price_usd": 82949,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-11",
@@ -3785,11 +4414,13 @@
    "efficiency_jth": 19.59,
    "power_gw": 19.78,
    "electricity_twh_yr": 173.3,
-   "gross_mt": 43.67,
+   "gross_mt": 43.04,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.98,
-   "price_usd": 83637
+   "net_mt": 38.35,
+   "price_usd": 83637,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-12",
@@ -3797,11 +4428,13 @@
    "efficiency_jth": 19.58,
    "power_gw": 20.01,
    "electricity_twh_yr": 175.2,
-   "gross_mt": 44.16,
+   "gross_mt": 43.52,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.47,
-   "price_usd": 81805
+   "net_mt": 38.83,
+   "price_usd": 81805,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-13",
@@ -3809,11 +4442,13 @@
    "efficiency_jth": 19.57,
    "power_gw": 19.5,
    "electricity_twh_yr": 170.8,
-   "gross_mt": 43.04,
+   "gross_mt": 42.42,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.35,
-   "price_usd": 83141
+   "net_mt": 37.73,
+   "price_usd": 83141,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-14",
@@ -3821,11 +4456,13 @@
    "efficiency_jth": 19.57,
    "power_gw": 19.64,
    "electricity_twh_yr": 172.0,
-   "gross_mt": 43.35,
+   "gross_mt": 42.72,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.66,
-   "price_usd": 81499
+   "net_mt": 38.03,
+   "price_usd": 81499,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-15",
@@ -3833,11 +4470,13 @@
    "efficiency_jth": 19.56,
    "power_gw": 19.81,
    "electricity_twh_yr": 173.5,
-   "gross_mt": 43.73,
+   "gross_mt": 43.1,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.04,
-   "price_usd": 82116
+   "net_mt": 38.41,
+   "price_usd": 82116,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-16",
@@ -3845,11 +4484,13 @@
    "efficiency_jth": 19.55,
    "power_gw": 20.03,
    "electricity_twh_yr": 175.5,
-   "gross_mt": 44.22,
+   "gross_mt": 43.57,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.53,
-   "price_usd": 81538
+   "net_mt": 38.88,
+   "price_usd": 81538,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-17",
@@ -3857,11 +4498,13 @@
    "efficiency_jth": 19.54,
    "power_gw": 20.16,
    "electricity_twh_yr": 176.6,
-   "gross_mt": 44.5,
+   "gross_mt": 43.85,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.81,
-   "price_usd": 81269
+   "net_mt": 39.16,
+   "price_usd": 81269,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-18",
@@ -3869,11 +4512,13 @@
    "efficiency_jth": 19.53,
    "power_gw": 19.92,
    "electricity_twh_yr": 174.5,
-   "gross_mt": 43.98,
+   "gross_mt": 43.34,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.29,
-   "price_usd": 81935
+   "net_mt": 38.65,
+   "price_usd": 81935,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-19",
@@ -3881,11 +4526,13 @@
    "efficiency_jth": 19.52,
    "power_gw": 20.14,
    "electricity_twh_yr": 176.4,
-   "gross_mt": 44.45,
+   "gross_mt": 43.81,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.76,
-   "price_usd": 81918
+   "net_mt": 39.12,
+   "price_usd": 81918,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-20",
@@ -3893,11 +4540,13 @@
    "efficiency_jth": 19.51,
    "power_gw": 20.31,
    "electricity_twh_yr": 177.9,
-   "gross_mt": 44.84,
+   "gross_mt": 44.19,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.15,
-   "price_usd": 82899
+   "net_mt": 39.5,
+   "price_usd": 82899,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-21",
@@ -3905,11 +4554,13 @@
    "efficiency_jth": 19.51,
    "power_gw": 20.51,
    "electricity_twh_yr": 179.7,
-   "gross_mt": 45.28,
+   "gross_mt": 44.62,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.59,
-   "price_usd": 84176
+   "net_mt": 39.93,
+   "price_usd": 84176,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-22",
@@ -3917,11 +4568,13 @@
    "efficiency_jth": 19.5,
    "power_gw": 20.53,
    "electricity_twh_yr": 179.8,
-   "gross_mt": 45.32,
+   "gross_mt": 44.66,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.63,
-   "price_usd": 81257
+   "net_mt": 39.97,
+   "price_usd": 81257,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-23",
@@ -3929,11 +4582,13 @@
    "efficiency_jth": 19.49,
    "power_gw": 20.16,
    "electricity_twh_yr": 176.6,
-   "gross_mt": 44.49,
+   "gross_mt": 43.85,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.8,
-   "price_usd": 80924
+   "net_mt": 39.16,
+   "price_usd": 80924,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-24",
@@ -3941,11 +4596,13 @@
    "efficiency_jth": 19.48,
    "power_gw": 20.76,
    "electricity_twh_yr": 181.8,
-   "gross_mt": 45.82,
+   "gross_mt": 45.15,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.13,
-   "price_usd": 80699
+   "net_mt": 40.46,
+   "price_usd": 80699,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-25",
@@ -3953,11 +4610,13 @@
    "efficiency_jth": 19.47,
    "power_gw": 20.92,
    "electricity_twh_yr": 183.3,
-   "gross_mt": 46.19,
+   "gross_mt": 45.52,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.5,
-   "price_usd": 80039
+   "net_mt": 40.83,
+   "price_usd": 80039,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-26",
@@ -3965,11 +4624,13 @@
    "efficiency_jth": 19.46,
    "power_gw": 20.88,
    "electricity_twh_yr": 182.9,
-   "gross_mt": 46.09,
+   "gross_mt": 45.41,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.4,
-   "price_usd": 79950
+   "net_mt": 40.72,
+   "price_usd": 79950,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-27",
@@ -3977,11 +4638,13 @@
    "efficiency_jth": 19.45,
    "power_gw": 21.03,
    "electricity_twh_yr": 184.2,
-   "gross_mt": 46.42,
+   "gross_mt": 45.75,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.73,
-   "price_usd": 80801
+   "net_mt": 41.06,
+   "price_usd": 80801,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-28",
@@ -3989,11 +4652,13 @@
    "efficiency_jth": 19.44,
    "power_gw": 20.89,
    "electricity_twh_yr": 183.0,
-   "gross_mt": 46.12,
+   "gross_mt": 45.45,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.43,
-   "price_usd": 81237
+   "net_mt": 40.76,
+   "price_usd": 81237,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-29",
@@ -4001,11 +4666,13 @@
    "efficiency_jth": 19.44,
    "power_gw": 20.65,
    "electricity_twh_yr": 180.9,
-   "gross_mt": 45.59,
+   "gross_mt": 44.93,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.9,
-   "price_usd": 78193
+   "net_mt": 40.24,
+   "price_usd": 78193,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-30",
@@ -4013,11 +4680,13 @@
    "efficiency_jth": 19.43,
    "power_gw": 20.91,
    "electricity_twh_yr": 183.2,
-   "gross_mt": 46.17,
+   "gross_mt": 45.5,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.48,
-   "price_usd": 77110
+   "net_mt": 40.81,
+   "price_usd": 77110,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-10-31",
@@ -4025,11 +4694,13 @@
    "efficiency_jth": 19.42,
    "power_gw": 20.45,
    "electricity_twh_yr": 179.1,
-   "gross_mt": 45.14,
+   "gross_mt": 44.49,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.45,
-   "price_usd": 77401
+   "net_mt": 39.8,
+   "price_usd": 77401,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-01",
@@ -4037,11 +4708,13 @@
    "efficiency_jth": 19.41,
    "power_gw": 20.66,
    "electricity_twh_yr": 181.0,
-   "gross_mt": 45.61,
+   "gross_mt": 44.95,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 40.92,
-   "price_usd": 78135
+   "net_mt": 40.26,
+   "price_usd": 78135,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-02",
@@ -4049,11 +4722,13 @@
    "efficiency_jth": 19.4,
    "power_gw": 20.74,
    "electricity_twh_yr": 181.7,
-   "gross_mt": 45.79,
+   "gross_mt": 45.13,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 41.1,
-   "price_usd": 76681
+   "net_mt": 40.44,
+   "price_usd": 76681,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-03",
@@ -4061,11 +4736,13 @@
    "efficiency_jth": 19.39,
    "power_gw": 20.14,
    "electricity_twh_yr": 176.4,
-   "gross_mt": 44.46,
+   "gross_mt": 43.82,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.77,
-   "price_usd": 77656
+   "net_mt": 39.13,
+   "price_usd": 77656,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-04",
@@ -4073,11 +4750,13 @@
    "efficiency_jth": 19.38,
    "power_gw": 19.93,
    "electricity_twh_yr": 174.6,
-   "gross_mt": 44.0,
+   "gross_mt": 43.36,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.31,
-   "price_usd": 80488
+   "net_mt": 38.67,
+   "price_usd": 80488,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-05",
@@ -4085,11 +4764,13 @@
    "efficiency_jth": 19.38,
    "power_gw": 20.11,
    "electricity_twh_yr": 176.1,
-   "gross_mt": 44.39,
+   "gross_mt": 43.74,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.7,
-   "price_usd": 75803
+   "net_mt": 39.05,
+   "price_usd": 75803,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-06",
@@ -4097,11 +4778,13 @@
    "efficiency_jth": 19.37,
    "power_gw": 20.07,
    "electricity_twh_yr": 175.8,
-   "gross_mt": 44.31,
+   "gross_mt": 43.67,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.62,
-   "price_usd": 75827
+   "net_mt": 38.98,
+   "price_usd": 75827,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-07",
@@ -4109,11 +4792,13 @@
    "efficiency_jth": 19.36,
    "power_gw": 19.89,
    "electricity_twh_yr": 174.2,
-   "gross_mt": 43.9,
+   "gross_mt": 43.26,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 39.21,
-   "price_usd": 75724
+   "net_mt": 38.57,
+   "price_usd": 75724,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-08",
@@ -4121,11 +4806,13 @@
    "efficiency_jth": 19.35,
    "power_gw": 19.61,
    "electricity_twh_yr": 171.8,
-   "gross_mt": 43.29,
+   "gross_mt": 42.66,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 38.6,
-   "price_usd": 74967
+   "net_mt": 37.97,
+   "price_usd": 74967,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-09",
@@ -4133,11 +4820,13 @@
    "efficiency_jth": 19.34,
    "power_gw": 18.77,
    "electricity_twh_yr": 164.4,
-   "gross_mt": 41.43,
+   "gross_mt": 40.83,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.74,
-   "price_usd": 75161
+   "net_mt": 36.14,
+   "price_usd": 75161,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-10",
@@ -4145,11 +4834,13 @@
    "efficiency_jth": 19.33,
    "power_gw": 18.52,
    "electricity_twh_yr": 162.3,
-   "gross_mt": 40.89,
+   "gross_mt": 40.3,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 36.2,
-   "price_usd": 73661
+   "net_mt": 35.61,
+   "price_usd": 73661,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-11",
@@ -4157,11 +4848,13 @@
    "efficiency_jth": 19.32,
    "power_gw": 18.38,
    "electricity_twh_yr": 161.0,
-   "gross_mt": 40.57,
+   "gross_mt": 39.98,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.88,
-   "price_usd": 73806
+   "net_mt": 35.29,
+   "price_usd": 73806,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-12",
@@ -4169,11 +4862,13 @@
    "efficiency_jth": 19.31,
    "power_gw": 18.11,
    "electricity_twh_yr": 158.7,
-   "gross_mt": 39.98,
+   "gross_mt": 39.4,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.29,
-   "price_usd": 71280
+   "net_mt": 34.71,
+   "price_usd": 71280,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-13",
@@ -4181,11 +4876,13 @@
    "efficiency_jth": 19.31,
    "power_gw": 17.95,
    "electricity_twh_yr": 157.3,
-   "gross_mt": 39.63,
+   "gross_mt": 39.05,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 34.94,
-   "price_usd": 68096
+   "net_mt": 34.36,
+   "price_usd": 68096,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-14",
@@ -4193,11 +4890,13 @@
    "efficiency_jth": 19.3,
    "power_gw": 17.42,
    "electricity_twh_yr": 152.6,
-   "gross_mt": 38.46,
+   "gross_mt": 37.9,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 33.77,
-   "price_usd": 63821
+   "net_mt": 33.21,
+   "price_usd": 63821,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-15",
@@ -4205,11 +4904,13 @@
    "efficiency_jth": 19.29,
    "power_gw": 17.24,
    "electricity_twh_yr": 151.0,
-   "gross_mt": 38.05,
+   "gross_mt": 37.5,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 33.36,
-   "price_usd": 65189
+   "net_mt": 32.81,
+   "price_usd": 65189,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-16",
@@ -4217,11 +4918,13 @@
    "efficiency_jth": 19.29,
    "power_gw": 18.12,
    "electricity_twh_yr": 158.8,
-   "gross_mt": 40.01,
+   "gross_mt": 39.42,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 35.32,
-   "price_usd": 64943
+   "net_mt": 34.73,
+   "price_usd": 64943,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   },
   {
    "date": "2026-11-17",
@@ -4229,11 +4932,27 @@
    "efficiency_jth": 19.29,
    "power_gw": 18.89,
    "electricity_twh_yr": 165.4,
-   "gross_mt": 41.69,
+   "gross_mt": 41.09,
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
-   "net_mt": 37.0,
-   "price_usd": 64943
+   "net_mt": 36.4,
+   "price_usd": 64908,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
+  },
+  {
+   "date": "2026-11-18",
+   "hashrate_ehs_7d": 982.8,
+   "efficiency_jth": 19.29,
+   "power_gw": 18.96,
+   "electricity_twh_yr": 166.1,
+   "gross_mt": 41.24,
+   "mitigation_gas_mt": 4.69,
+   "mitigation_landfill_mt": null,
+   "net_mt": 36.55,
+   "price_usd": 64908,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061
   }
  ]
 }
