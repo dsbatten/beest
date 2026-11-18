@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Bitcoin Mining Sustainable Energy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.35.0/plotly.min.js"></script>
+<style>img{max-width:100%}[hidden]{display:none!important}</style>
+</head><body>
+<style>
+  /* Layout: navy canvas in the woocharts manner. Centred light headline, one line of sources beneath it, one Plotly chart and a clickable legend, a footnote. Single-theme by design. */
+  :root {
+    --bg: #092142;
+    --ink: #EEEEEE;
+    --ink-title: #CCCCCC;
+    --ink-muted: #B8C0CC;
+    --link: #3B86C6;
+    --grid: rgba(238,238,238,0.09);
+    --gross: #BB271A;
+    --gas: #5CC971;
+    --net: #CC43D6;
+    --hash: #F19E4B;
+    --price: #4397C7;
+    --font: "Open Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    color-scheme: dark;
+  }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font);
+    font-weight: 400;
+    margin: 0;
+    padding-block: 26px 22px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    font-variant-numeric: tabular-nums;
+  }
+  .wrap { max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; }
+  h1 {
+    font-size: clamp(30px, 4.8vw, 58px);
+    line-height: 1.1;
+    font-weight: 300;
+    color: var(--ink-title);
+    margin: 0;
+    text-align: center;
+    text-wrap: balance;
+    letter-spacing: 0.005em;
+  }
+  .source { text-align: center; font-size: 15px; color: var(--ink); margin-top: 16px; line-height: 1.6; }
+  .source b { font-weight: 600; }
+  .source a { color: var(--link); text-decoration: none; }
+  .source a:hover, .source a:focus { text-decoration: underline; }
+  .source .sep { color: var(--ink-muted); margin: 0 8px; }
+  #chart { width: 100%; height: 720px; margin-top: 22px; min-width: 0; }
+  .status { font-size: 15px; color: var(--ink-muted); margin-top: 12px; text-align: center; }
+  .footnote { font-size: 13px; color: var(--ink-muted); margin-top: 10px; text-align: center; line-height: 1.5; }
+  .footnote a { color: var(--link); text-decoration: none; }
+  .footnote a:hover, .footnote a:focus { text-decoration: underline; }
+  .js-plotly-plot .plotly .modebar { opacity: 0.35; }
+  .js-plotly-plot .plotly .modebar:hover { opacity: 1; }
+  @media (max-width: 640px) {
+    body { padding-left: max(8px, env(safe-area-inset-left, 0px)); padding-right: max(8px, env(safe-area-inset-right, 0px)); padding-top: 16px; }
+    h1 { font-size: 5vw; }
+    .source { font-size: 2.4vw; margin-top: 2vw; line-height: 1.45; }
+    .source .sep { margin: 0 0.8vw; }
+    #chart { height: 520px; margin-top: 12px; }
+    #chart, #chart .draglayer, #chart .nsewdrag, #chart .drag { touch-action: pan-y pinch-zoom !important; cursor: default !important; }
+    .footnote { font-size: 2.2vw; line-height: 1.4; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+  .site { display: grid; grid-template-columns: minmax(0, 1fr) 160px; gap: 20px; max-width: 1480px; margin: 0 auto; }
+  .site > .wrap { max-width: none; margin: 0; min-width: 0; }
+  .nav { padding-top: 10px; border-left: 2px dotted rgba(238,238,238,0.25); padding-left: 16px; align-self: start; position: sticky; top: 16px; }
+  .nav h2 { font-size: 11px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); margin: 8px 0 14px; }
+  .nav a { display: flex; align-items: center; gap: 8px; color: var(--link); text-decoration: none; font-size: 15px; font-weight: 300; line-height: 1.3; padding: 7px 0; }
+  .nav a svg { width: 15px; height: 15px; flex: none; fill: none; stroke: var(--link); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .nav a:hover, .nav a:focus { text-decoration: underline; }
+  @media (max-width: 900px) {
+    .site { grid-template-columns: 1fr; gap: 10px; }
+    .nav { border-left: 0; padding-left: 0; position: static; border-top: 1px solid rgba(238,238,238,0.14); margin-top: 18px; padding-top: 14px; }
+    .nav a { display: inline-flex; margin-right: 18px; font-size: 13px; padding: 6px 0; }
+    .nav a svg { width: 13px; height: 13px; }
+  }
+</style>
+
+<div class="site">
+<div class="wrap">
+  <h1>Bitcoin Mining: Usage of Sustainable Energy</h1>
+  <div class="source" id="source">
+    <b>author:</b> <a href="https://x.com/dsbatten" target="_blank" rel="noopener">@dsbatten</a> <span class="sep">|</span>
+    <b>source:</b> <a href="methodology.html" target="_blank" rel="noopener">BEEST 2</a> <span class="sep">|</span>
+    <b>data:</b> <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/" target="_blank" rel="noopener">Cambridge CCAF</a>, <a href="https://docs.google.com/spreadsheets/d/1YSsIk2ghvPDHTcfUKkKo9cqg0XI_gSGh/edit?gid=270821339#gid=270821339" target="_blank" rel="noopener">BEEST 1</a>, <a href="https://ember-energy.org/data/monthly-electricity-data/" target="_blank" rel="noopener">Ember</a>, <a href="https://coinmetrics.io/community-network-data/" target="_blank" rel="noopener">Coin Metrics</a>
+    <span class="sep">|</span> <b>updated:</b> <span id="updated">–</span>
+  </div>
+
+  <div id="chart" role="img" aria-label="Share of Bitcoin mining powered by sustainable energy (renewables and nuclear) since September 2019, with bitcoin price on its own axis"></div>
+
+  <div class="status" id="status" hidden></div>
+  <div class="footnote">Sustainable energy follows the Cambridge Centre for Alternative Finance definition: renewables (hydro, wind, solar and other) plus nuclear. From December 2025, the grid-connected share of mining (91.9%) moves with the world grid (<a href="https://ember-energy.org/data/monthly-electricity-data/" target="_blank" rel="noopener">Ember</a>).</div>
+</div>
+
+<script>
+window.ESG = {
+  file: "beest2-bitcoin-mining-sustainable-energy",
+  traces: (rows, css, lw) => [
+    { name: "Sustainable energy share", y: rows.map((r) => 100 * r.clean_share), line: { color: css("--gas"), width: lw(2.2) },
+      hovertemplate: "%{y:.1f}%<extra>Sustainable energy share</extra>" },
+  ],
+  yaxis: () => ({ title: "Sustainable energy: % of mining power", titleShort: "Sustainable, % of power", axis: { range: [0, 100], ticksuffix: "%", dtick: 20 } }),
+};
+</script>
+<script src="esg.js"></script>
+<aside class="nav" id="nav" aria-label="Charts"></aside>
+</div>
+<script src="nav.js"></script>
+</body></html>
