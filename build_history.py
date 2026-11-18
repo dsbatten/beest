@@ -213,6 +213,30 @@ def build():
     for r in rows:
         last_supply = supplies.get(r["date"], last_supply)
         r["supply_btc"] = round(last_supply) if last_supply else None
+    # Mitigated chart only: total emissions on a 30-day hashrate average. Flare-gas mining is off-grid and runs
+    # near-continuously, so it does not rise and fall with the grid-price swings that move the network's hashrate
+    # week to week; a 30-day average keeps those short swings out of the mitigated share. Total emissions scale
+    # in direct proportion to hashrate on a given day, so the 30-day total is the 7-day total times h30/h7.
+    # Up to BEEST 1's last point the mitigation itself is a per-kWh offset that already moves with hashrate,
+    # so the share there is left as it is.
+    # The tonnage handed over at BEEST 1's last point is taken on the same 30-day basis, so the share runs on
+    # without a step where the two methods meet.
+    ma30 = dict(moving_average(daily, 30))
+    mit30_start = None
+    for r in rows:
+        d = date.fromisoformat(r["date"])
+        h30, h7 = ma30.get(r["date"]), r["hashrate_ehs_7d"]
+        r["hashrate_ehs_30d"] = round(h30, 1) if h30 else None
+        ratio = h30 / h7 if h30 and h7 else 1.0
+        if d <= b1_last:
+            r["gross_mt_30d"], r["mitigation_gas_mt_30d"] = r["gross_mt"], r["mitigation_gas_mt"]
+            mit30_start = r["mitigation_gas_mt"] * ratio
+        else:
+            r["gross_mt_30d"] = round(r["gross_mt"] * ratio, 2)
+            if d < LIVE_START and mit30_start is not None:
+                r["mitigation_gas_mt_30d"] = round(interp([(b1_last, mit30_start), (LIVE_START, live.MITIGATION_GAS)], d), 2)
+            else:
+                r["mitigation_gas_mt_30d"] = r["mitigation_gas_mt"]
     return {
         "generated": date.today().isoformat(),
         "hashrate_source": "mempool.space",
