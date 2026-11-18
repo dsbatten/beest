@@ -1,9 +1,14 @@
 // Draws the chart list on the right of every page from charts.json. Add a chart by adding a line to charts.json.
 (function () {
-  // Link text size, shared by every page. The panel keeps its 160px width; only the text grows.
+  // Panel look, shared by every page: a darker column (as on woocharts) at the same 160px width, with slightly larger text.
   var st = document.createElement("style");
-  st.textContent = ".nav a.nav-link { font-size: 17px !important; } .nav a.nav-link svg { width: 17px !important; height: 17px !important; }" +
-    "@media (max-width: 900px) { .nav a.nav-link { font-size: 15px !important; } .nav a.nav-link svg { width: 15px !important; height: 15px !important; } }";
+  st.textContent =
+    ".nav { background: #071932; border-left: 0 !important; padding: 18px 8px 28px 16px !important; align-self: stretch !important; position: relative !important; top: auto !important; }" +
+    ".nav .nav-inner { position: sticky; top: 16px; }" +
+    ".nav h2 { font-size: 12px !important; }" +
+    ".nav a.nav-link { font-size: 18px !important; } .nav a.nav-link svg { width: 18px !important; height: 18px !important; }" +
+    ".nav .nav-tip span { font-size: 14px !important; }" +
+    "@media (max-width: 900px) { .nav { padding: 14px 14px 18px !important; } .nav .nav-inner { position: static; } .nav a.nav-link { font-size: 16px !important; } .nav a.nav-link svg { width: 16px !important; height: 16px !important; } }";
   document.head.appendChild(st);
   var here = location.pathname.split("/").pop() || "index.html";
   // Line icons, drawn in the link colour. "leaf" for emissions charts, "chart" for other series, "doc" for the methodology.
@@ -48,8 +53,9 @@
     return a;
   }
   fetch("charts.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (charts) {
-    var nav = document.getElementById("nav");
-    if (!nav) return;
+    var outer = document.getElementById("nav");
+    if (!outer) return;
+    var nav = document.createElement("div"); nav.className = "nav-inner"; outer.appendChild(nav);
     var h = document.createElement("h2"); h.textContent = "BEEST 2 charts"; nav.appendChild(h);
     charts.forEach(function (c) {
       var a = document.createElement("a");
@@ -64,6 +70,7 @@
     var hr = document.createElement("hr");
     hr.style.cssText = "border:0;border-top:1px solid rgba(238,238,238,0.18);margin:12px 0;width:100%;";
     nav.appendChild(hr);
+    var h2 = document.createElement("h2"); h2.textContent = "More from Daniel"; nav.appendChild(h2);
     EXTERNAL.forEach(function (e) { nav.appendChild(link(e.href, e.icon, e.title)); });
     // Lightning tip jar: the cup's QR code encodes the same lightning: address as the link.
     var tip = document.createElement("a");
