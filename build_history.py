@@ -130,6 +130,17 @@ def price_all():
         return {}
 
 
+def supply_all():
+    """Coins in circulation (Coin Metrics SplyCur), used for market cap on the per-dollar chart."""
+    url = ("https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
+           "?assets=btc&metrics=SplyCur&frequency=1d&start_time=2019-08-01&page_size=10000")
+    try:
+        data = _get(url)["data"]
+        return {r["time"][:10]: float(r["SplyCur"]) for r in data}
+    except Exception:
+        return {}
+
+
 def build():
     cbeci = load_cbeci()
     scale = 40.7 / dict(cbeci)[date(2022, 6, 1)]
@@ -163,8 +174,6 @@ def build():
         last_price = prices.get(day, last_price)
         if d >= LIVE_START and day in live_rows:
             r = dict(live_rows[day])
-            r["clean_share"] = round(CAMBRIDGE_CLEAN, 4)
-            r["intensity_g_kwh"] = CAMBRIDGE_INTENSITY
             r["basis"] = "BEEST 2"
             if r.get("price_usd") is None and last_price:
                 r["price_usd"] = round(last_price)
@@ -199,10 +208,16 @@ def build():
             "clean_share": round(interp(clean_pts, d), 4),
             "basis": basis,
         })
+    # Coins in circulation; the latest day carries the previous day's figure until Coin Metrics publishes it.
+    supplies, last_supply = supply_all(), None
+    for r in rows:
+        last_supply = supplies.get(r["date"], last_supply)
+        r["supply_btc"] = round(last_supply) if last_supply else None
     return {
         "generated": date.today().isoformat(),
         "hashrate_source": "mempool.space",
         "price_source": "Coin Metrics community API (PriceUSD)" if prices else None,
+        "supply_source": "Coin Metrics community API (SplyCur)" if supplies else None,
         "inputs": {
             "network_factor": round(NETWORK_FACTOR, 4),
             "cbeci_scale_to_june_2022_survey": round(scale, 4),
