@@ -28,7 +28,7 @@ ul {{ padding-left:22px; }} li {{ margin:0 0 8px; }}
 </style></head><body><main>
 <a class="back" href="index.html">&larr; Back to the chart</a>
 {body}
-</main></body></html>"""
+</main><!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "56d83fe84b3246c2821499ad48e61025"}}'></script><!-- End Cloudflare Web Analytics --></body></html>"""
 html = html.replace("<table>", '<div class="tablewrap"><table>').replace("</table>", "</table></div>")
 open("methodology.html", "w", encoding="utf-8").write(html)
 print("ok", len(html))
