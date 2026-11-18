@@ -5,7 +5,7 @@
   st.textContent =
     ".nav { background: #071932; border-left: 0 !important; padding: 18px 8px 28px 16px !important; align-self: stretch !important; position: relative !important; top: auto !important; }" +
     ".nav .nav-inner { position: sticky; top: 16px; }" +
-    "@media (min-width: 901px) { .nav { box-shadow: 0 0 0 100vmax #071932; clip-path: inset(-100vmax -100vmax -100vmax 0); } }" +
+    "@media (min-width: 901px) { .nav { position: fixed !important; top: 0 !important; right: 0; bottom: 0; width: calc(184px + env(safe-area-inset-right, 0px)); box-sizing: border-box; padding: 26px max(8px, env(safe-area-inset-right, 0px)) 28px 16px !important; overflow-y: auto; z-index: 5; } .nav .nav-inner { position: static; } }" +
     ".nav h2 { font-size: 12px !important; }" +
     ".nav a.nav-link { font-size: 18px !important; } .nav a.nav-link svg { width: 18px !important; height: 18px !important; }" +
     ".nav .nav-tip span { font-size: 14px !important; }" +
