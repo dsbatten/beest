@@ -113,6 +113,7 @@
     <p>I set hashrate (7-day average), net emissions, total emissions and BTC price to 100 on 1 September 2019, the first day of the series, so you can see how far each has moved. A value of 200 means double its level on that day.</p>
     <ul>
       <li><b>Reading the chart</b>I use a log scale, so equal distances up the chart are equal percentage changes. The gap between hashrate and emissions is the security the network added without adding emissions to match. As I read it, that gap comes from more efficient machines, a cleaner energy mix and, for net emissions, methane destruction.</li>
+      <li><b>What the hover shows</b>When you hover over the chart, each series shows how far it has grown since 1 September 2019 relative to net emissions, so net emissions read 1.00×. A hashrate reading of 10.88× means hashrate has grown 10.88 times as much as net emissions over that period. The actual value sits beside it.</li>
       <li><b>Sources</b><ul><li>Hashrate, 7-day average: <a href="https://mempool.space/docs/api/rest#get-mining-hashrate" target="_blank" rel="noopener">mempool.space</a></li><li>Fleet efficiency: <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/" target="_blank" rel="noopener">Cambridge Digital Mining Industry Report, 2nd edition, preliminary results</a> (20.8 J/TH, December 2025 survey) and <a href="https://hashrateindex.com/blog/luxor-hashrate-lookback-series-july-2026/" target="_blank" rel="noopener">Luxor Hashrate Lookback, July 2026</a>; before December 2025, Cambridge's survey points with the <a href="https://ccaf.io/cbnsi/cbeci" target="_blank" rel="noopener">CBECI</a> hardware-efficiency series between them</li><li>Carbon intensity: <a href="https://docs.google.com/spreadsheets/d/1YSsIk2ghvPDHTcfUKkKo9cqg0XI_gSGh/edit?gid=270821339#gid=270821339" target="_blank" rel="noopener">BEEST 1</a> (September 2019 to October 2024) and <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/" target="_blank" rel="noopener">Cambridge Digital Mining Industry Report, 2nd edition, preliminary results</a> (252 gCO2e/kWh, December 2025)</li><li>Grid greening from December 2025: <a href="https://ember-energy.org/data/monthly-electricity-data/" target="_blank" rel="noopener">Ember monthly electricity data</a>, with the on-grid share from <a href="https://www.jbs.cam.ac.uk/wp-content/uploads/2025/04/2025-04-cambridge-digital-mining-industry-report.pdf" target="_blank" rel="noopener">Cambridge Digital Mining Industry Report, April 2025</a></li><li>Flare-gas mitigation: <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/" target="_blank" rel="noopener">Cambridge Digital Mining Industry Report, 2nd edition, preliminary results</a> (4.69 MtCO2e a year from 44 respondents) and, before December 2025, <a href="https://docs.google.com/spreadsheets/d/1YSsIk2ghvPDHTcfUKkKo9cqg0XI_gSGh/edit?gid=270821339#gid=270821339" target="_blank" rel="noopener">BEEST 1</a></li><li>Flare efficiency, 91.1%: <a href="https://www.science.org/doi/10.1126/science.abq0385" target="_blank" rel="noopener">Plant et al. 2022, Science</a>; warming potential of methane over 20 years: <a href="https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/" target="_blank" rel="noopener">IPCC AR6, Chapter 7</a></li><li>BTC price: <a href="https://coinmetrics.io/community-network-data/" target="_blank" rel="noopener">Coin Metrics</a></li></ul></li>
     </ul>
   </section>
@@ -120,18 +121,20 @@
 
 <script>
 const idx = (rows, f) => { const b = f(rows[0]); return rows.map((r) => 100 * f(r) / b); };
+// Hover: each series' growth since 1 September 2019 divided by net emissions' growth, so net emissions read 1.00.
+const rel = (rows, f) => { const n = idx(rows, (r) => r.net_mt), v = idx(rows, f); return v.map((x, i) => x / n[i]); };
 window.ESG = {
   file: "beest2-bitcoin-growth-vs-emissions",
   price: false,
   traces: (rows, css, lw) => [
     { name: "Total emissions", y: idx(rows, (r) => r.gross_mt), visible: "legendonly", line: { color: css("--gross"), width: lw(1.7), dash: "dash" },
-      customdata: rows.map((r) => [r.gross_mt]), hovertemplate: "%{y:.0f} · %{customdata[0]:.1f} MtCO2e/yr<extra>Total emissions</extra>" },
+      customdata: rel(rows, (r) => r.gross_mt).map((v, i) => [v, rows[i].gross_mt]), hovertemplate: "%{customdata[0]:.2f}× · %{customdata[1]:.1f} MtCO2e/yr<extra>Total emissions</extra>" },
     { name: "Net emissions", y: idx(rows, (r) => r.net_mt), line: { color: css("--net"), width: lw(2.2) },
-      customdata: rows.map((r) => [r.net_mt]), hovertemplate: "%{y:.0f} · %{customdata[0]:.1f} MtCO2e/yr<extra>Net emissions</extra>" },
+      customdata: rows.map((r) => [1, r.net_mt]), hovertemplate: "%{customdata[0]:.2f}× · %{customdata[1]:.1f} MtCO2e/yr<extra>Net emissions</extra>" },
     { name: "Hashrate (7d avg)", y: idx(rows, (r) => r.hashrate_ehs_7d), line: { color: css("--hash"), width: lw(2) },
-      customdata: rows.map((r) => [r.hashrate_ehs_7d]), hovertemplate: "%{y:,.0f} · %{customdata[0]:,.0f} EH/s<extra>Hashrate</extra>" },
+      customdata: rel(rows, (r) => r.hashrate_ehs_7d).map((v, i) => [v, rows[i].hashrate_ehs_7d]), hovertemplate: "%{customdata[0]:.2f}× · %{customdata[1]:,.0f} EH/s<extra>Hashrate</extra>" },
     { name: "BTC price", y: idx(rows, (r) => r.price_usd), line: { color: css("--price"), width: lw(2) },
-      customdata: rows.map((r) => [r.price_usd]), hovertemplate: "%{y:,.0f} · $%{customdata[0]:,.0f}<extra>BTC price</extra>" },
+      customdata: rel(rows, (r) => r.price_usd).map((v, i) => [v, rows[i].price_usd]), hovertemplate: "%{customdata[0]:.2f}× · $%{customdata[1]:,.0f}<extra>BTC price</extra>" },
   ],
   yaxis: () => ({ title: "Index: 1 Sep 2019 = 100", titleShort: "Index, Sep 2019 = 100",
     axis: { type: "log", range: [Math.log10(40), Math.log10(3000)], tickvals: [50, 100, 200, 500, 1000, 2000], ticktext: ["50", "100", "200", "500", "1,000", "2,000"] } }),
