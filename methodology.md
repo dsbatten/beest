@@ -200,69 +200,14 @@ Sources for this section: [BEEST 1 spreadsheet](https://docs.google.com/spreadsh
 
 ## The other charts
 
-Every chart on this site is drawn from the same daily series as the emissions chart. Each one divides or rescales figures already described above, so the inputs, sources and limits set out in the earlier sections apply to all of them. BTC price is shown on its own faint scale for context and plays no part in any calculation.
+Every chart on this site is drawn from the same daily series as the emissions chart. Each one divides or rescales figures already described above, so the inputs, sources and limits set out in the earlier sections apply to all of them. Notes on each chart, with its sources, sit beneath the chart itself. BTC price is shown on its own faint scale for context and plays no part in any calculation.
 
 | Chart | Calculation | Unit |
 |---|---|---|
 | Emissions mitigated | Emission mitigation (flare) ÷ total emissions | % of total emissions |
 | Emissions intensity | Total emissions ÷ electricity used, and net emissions ÷ electricity used | gCO2e per kWh |
 | Sustainable energy | Share of mining power from renewables (hydro, wind, solar and other) and nuclear, on the Cambridge Centre for Alternative Finance definition | % of mining power |
-| Hashrate vs emissions | Hashrate, net and total emissions and price, each divided by its value on 1 September 2019 and multiplied by 100 | index |
-
-### Emissions mitigated
-
-The share of the network's total emissions offset by methane destroyed at flare sites. At 100%, mitigation equals total emissions and the network is carbon neutral; above 100%, it is carbon negative. Landfill methane will be added as a second series when a sourced figure exists.
-
-The flare-gas mitigation is held at Cambridge's 4.69 MtCO2e a year between surveys, while total emissions move every day with hashrate, fleet efficiency and the energy mix. The share therefore rises when total emissions fall and falls when they rise, even with no change in flare-gas mining. Until 26 October 2024 the share comes from BEEST 1's dated estimates of mitigation and emissions per kilowatt-hour, joined by straight lines, which is why that part of the line moves in straight segments; it starts near zero in 2019. From 26 October 2024 mitigation is a yearly tonnage, rising in a straight line to Cambridge's 4.69 MtCO2e a year at December 2025, while total emissions change daily with hashrate, which is why the line becomes jagged.
-
-Sources:
-
-- Flare-gas mitigation: [Cambridge Digital Mining Industry Report, 2nd edition, preliminary results](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/) (4.69 MtCO2e a year from 44 respondents) and, before December 2025, [BEEST 1](https://docs.google.com/spreadsheets/d/1YSsIk2ghvPDHTcfUKkKo9cqg0XI_gSGh/edit?gid=270821339#gid=270821339)
-- Flare efficiency, 91.1%: [Plant et al. 2022, Science](https://www.science.org/doi/10.1126/science.abq0385); warming potential of methane over 20 years: [IPCC AR6, Chapter 7](https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/)
-- Hashrate, 7-day average: [mempool.space](https://mempool.space/docs/api/rest#get-mining-hashrate)
-- Fleet efficiency: [Cambridge Digital Mining Industry Report, 2nd edition, preliminary results](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/) (20.8 J/TH, December 2025 survey) and [Luxor Hashrate Lookback, July 2026](https://hashrateindex.com/blog/luxor-hashrate-lookback-series-july-2026/); before December 2025, Cambridge's survey points with the [CBECI](https://ccaf.io/cbnsi/cbeci) hardware-efficiency series between them
-- Carbon intensity: [BEEST 1](https://docs.google.com/spreadsheets/d/1YSsIk2ghvPDHTcfUKkKo9cqg0XI_gSGh/edit?gid=270821339#gid=270821339) (September 2019 to October 2024) and [Cambridge Digital Mining Industry Report, 2nd edition, preliminary results](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/) (252 gCO2e/kWh, December 2025)
-- Grid greening from December 2025: [Ember monthly electricity data](https://ember-energy.org/data/monthly-electricity-data/), with the on-grid share from [Cambridge Digital Mining Industry Report, April 2025](https://www.jbs.cam.ac.uk/wp-content/uploads/2025/04/2025-04-cambridge-digital-mining-industry-report.pdf)
-- BTC price: [Coin Metrics](https://coinmetrics.io/community-network-data/)
-
-### Emissions intensity
-
-Grams of CO2e per kilowatt-hour of electricity the network consumes. Total intensity is the carbon intensity of the mining energy mix described under [Carbon intensity](#carbon-intensity). Net intensity is net emissions divided by the same electricity, so the gap between the two lines is the flare-gas mitigation expressed per kilowatt-hour. Cambridge's 252 gCO2e/kWh is a snapshot from one survey. From December 2025 the total line moves with the world grid, as set out under [Grid greening](#grid-greening-since-december-2025). The world grid's carbon intensity fell by about 1.7% a year from 2019 to 2025 (522 to 472 gCO2e/kWh), and by 2.5% in the latest 12 months; at the long-run pace this lowers the mining figure by about 4 gCO2e/kWh a year until the next survey resets it (rates under [Grid greening](#grid-greening-since-december-2025)).
-
-Sources:
-
-- Carbon intensity: [BEEST 1](https://docs.google.com/spreadsheets/d/1YSsIk2ghvPDHTcfUKkKo9cqg0XI_gSGh/edit?gid=270821339#gid=270821339) (September 2019 to October 2024) and [Cambridge Digital Mining Industry Report, 2nd edition, preliminary results](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/) (252 gCO2e/kWh, December 2025)
-- Grid greening from December 2025: [Ember monthly electricity data](https://ember-energy.org/data/monthly-electricity-data/), with the on-grid share from [Cambridge Digital Mining Industry Report, April 2025](https://www.jbs.cam.ac.uk/wp-content/uploads/2025/04/2025-04-cambridge-digital-mining-industry-report.pdf)
-- Flare-gas mitigation: [Cambridge Digital Mining Industry Report, 2nd edition, preliminary results](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/) (4.69 MtCO2e a year from 44 respondents) and, before December 2025, [BEEST 1](https://docs.google.com/spreadsheets/d/1YSsIk2ghvPDHTcfUKkKo9cqg0XI_gSGh/edit?gid=270821339#gid=270821339)
-- Flare efficiency, 91.1%: [Plant et al. 2022, Science](https://www.science.org/doi/10.1126/science.abq0385); warming potential of methane over 20 years: [IPCC AR6, Chapter 7](https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/)
-- Hashrate, 7-day average: [mempool.space](https://mempool.space/docs/api/rest#get-mining-hashrate)
-- Fleet efficiency: [Cambridge Digital Mining Industry Report, 2nd edition, preliminary results](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/) (20.8 J/TH, December 2025 survey) and [Luxor Hashrate Lookback, July 2026](https://hashrateindex.com/blog/luxor-hashrate-lookback-series-july-2026/); before December 2025, Cambridge's survey points with the [CBECI](https://ccaf.io/cbnsi/cbeci) hardware-efficiency series between them
-- BTC price: [Coin Metrics](https://coinmetrics.io/community-network-data/)
-
-### Sustainable energy
-
-The share of mining power from low-carbon sources: renewables plus nuclear, on the Cambridge Centre for Alternative Finance definition. Before December 2025 the series follows BEEST 1's clean-energy share between its dated points; at December 2025 it is Cambridge's 59.4%. Cambridge's 59.4% is a snapshot from one survey. After it, the on-grid part moves with the world grid's clean share, as set out under [Grid greening](#grid-greening-since-december-2025). The world grid's clean share rose by about one percentage point a year from 2019 to 2025 (36.5% to 42.9%), and by 1.5 points in the latest 12 months; at the long-run pace this lifts the mining share by about 1.4 percentage points a year until the next survey resets it (rates under [Grid greening](#grid-greening-since-december-2025)). The adjustment does not capture new mining sites built on clean power, which only the next Cambridge survey will show.
-
-Sources:
-
-- Clean-energy share: [BEEST 1](https://docs.google.com/spreadsheets/d/1YSsIk2ghvPDHTcfUKkKo9cqg0XI_gSGh/edit?gid=270821339#gid=270821339) (September 2019 to October 2024) and [Cambridge Digital Mining Industry Report, 2nd edition, preliminary results](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/) (59.4% low-carbon, December 2025)
-- World grid clean share from December 2025: [Ember monthly electricity data](https://ember-energy.org/data/monthly-electricity-data/)
-- On-grid share (8.1% of mining power off-grid, 0.51 GW of it on flare gas): [Cambridge Digital Mining Industry Report, April 2025](https://www.jbs.cam.ac.uk/wp-content/uploads/2025/04/2025-04-cambridge-digital-mining-industry-report.pdf)
-- BTC price: [Coin Metrics](https://coinmetrics.io/community-network-data/)
-
-### Hashrate vs emissions
-
-Network hashrate (7-day average), net emissions, total emissions and BTC price, each set to 100 on 1 September 2019, the first day of the series. A value of 200 means double the level on that day. The chart uses a log scale, so equal distances on the vertical axis are equal percentage changes. The gap between the hashrate and emissions lines is the growth in security that came without a matching growth in emissions; it reflects fleet efficiency, the cleaner energy mix and, for net emissions, flare-gas mitigation.
-
-Sources:
-
-- Hashrate, 7-day average: [mempool.space](https://mempool.space/docs/api/rest#get-mining-hashrate)
-- Fleet efficiency: [Cambridge Digital Mining Industry Report, 2nd edition, preliminary results](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/) (20.8 J/TH, December 2025 survey) and [Luxor Hashrate Lookback, July 2026](https://hashrateindex.com/blog/luxor-hashrate-lookback-series-july-2026/); before December 2025, Cambridge's survey points with the [CBECI](https://ccaf.io/cbnsi/cbeci) hardware-efficiency series between them
-- Carbon intensity: [BEEST 1](https://docs.google.com/spreadsheets/d/1YSsIk2ghvPDHTcfUKkKo9cqg0XI_gSGh/edit?gid=270821339#gid=270821339) (September 2019 to October 2024) and [Cambridge Digital Mining Industry Report, 2nd edition, preliminary results](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/) (252 gCO2e/kWh, December 2025)
-- Grid greening from December 2025: [Ember monthly electricity data](https://ember-energy.org/data/monthly-electricity-data/), with the on-grid share from [Cambridge Digital Mining Industry Report, April 2025](https://www.jbs.cam.ac.uk/wp-content/uploads/2025/04/2025-04-cambridge-digital-mining-industry-report.pdf)
-- Flare-gas mitigation: [Cambridge Digital Mining Industry Report, 2nd edition, preliminary results](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/) (4.69 MtCO2e a year from 44 respondents) and, before December 2025, [BEEST 1](https://docs.google.com/spreadsheets/d/1YSsIk2ghvPDHTcfUKkKo9cqg0XI_gSGh/edit?gid=270821339#gid=270821339)
-- Flare efficiency, 91.1%: [Plant et al. 2022, Science](https://www.science.org/doi/10.1126/science.abq0385); warming potential of methane over 20 years: [IPCC AR6, Chapter 7](https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/)
-- BTC price: [Coin Metrics](https://coinmetrics.io/community-network-data/)
+| Growth vs emissions | Hashrate, net and total emissions and price, each divided by its value on 1 September 2019 and multiplied by 100 | index |
 
 ## Direction of drift
 
