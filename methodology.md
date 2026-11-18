@@ -160,6 +160,16 @@ Cambridge measured the mining energy mix once, in December 2025: 59.4% low-carbo
 - **Clean share:** the on-grid part of the 59.4% is multiplied by the world clean share now ÷ the base. The off-grid part (0.72 of the 1.23 GW off-grid on co-located, mostly renewable power; 0.51 GW on flare gas) stays fixed.
 - **Carbon intensity:** the on-grid part of the 252 gCO2e/kWh is multiplied by the world gCO2e/kWh now ÷ the base.
 
+How fast the world grid is greening, on Ember's data to September 2026:
+
+| Period | World grid clean share | World grid carbon intensity |
+|---|---|---|
+| 2019 to 2025, yearly average | +1.1 percentage points a year (36.5% to 42.9%) | −1.7% a year (522 to 472 gCO2e/kWh) |
+| Latest 12 months (to September 2026) against the 12 months before | +1.5 percentage points (42.4% to 43.9%) | −2.5% (477 to 465 gCO2e/kWh) |
+| Since the Cambridge survey (12 months to December 2025 against 12 months to September 2026) | +1.0 percentage point (42.9% to 43.9%), about 1.3 a year | −1.6% (472 to 465 gCO2e/kWh), about 2.1% a year |
+
+On the mining mix, the change since the survey so far takes the low-carbon share from 59.4% to 60.6% and the carbon intensity from 252 to 248.3 gCO2e/kWh.
+
 Ember publishes with a lag of one to three months. Between month ends the adjustment is interpolated, and after the latest published month it is held flat. When Cambridge publishes a new survey, its mix replaces the December 2025 base.
 
 ## Emission mitigation (flare)
@@ -217,7 +227,7 @@ Sources:
 
 ### Emissions intensity
 
-Grams of CO2e per kilowatt-hour of electricity the network consumes. Total intensity is the carbon intensity of the mining energy mix described under [Carbon intensity](#carbon-intensity). Net intensity is net emissions divided by the same electricity, so the gap between the two lines is the flare-gas mitigation expressed per kilowatt-hour. Cambridge's 252 gCO2e/kWh is a snapshot from one survey. From December 2025 the total line moves with the world grid, as set out under [Grid greening](#grid-greening-since-december-2025). The world grid's carbon intensity fell by about 1.7% a year from 2019 to 2025 (522 to 472 gCO2e/kWh), which at that pace lowers the mining figure by about 4 gCO2e/kWh a year until the next survey resets it.
+Grams of CO2e per kilowatt-hour of electricity the network consumes. Total intensity is the carbon intensity of the mining energy mix described under [Carbon intensity](#carbon-intensity). Net intensity is net emissions divided by the same electricity, so the gap between the two lines is the flare-gas mitigation expressed per kilowatt-hour. Cambridge's 252 gCO2e/kWh is a snapshot from one survey. From December 2025 the total line moves with the world grid, as set out under [Grid greening](#grid-greening-since-december-2025). The world grid's carbon intensity fell by about 1.7% a year from 2019 to 2025 (522 to 472 gCO2e/kWh), and by 2.5% in the latest 12 months; at the long-run pace this lowers the mining figure by about 4 gCO2e/kWh a year until the next survey resets it (rates under [Grid greening](#grid-greening-since-december-2025)).
 
 Sources:
 
@@ -231,7 +241,7 @@ Sources:
 
 ### Sustainable energy
 
-The share of mining power from low-carbon sources: renewables plus nuclear, on the Cambridge Centre for Alternative Finance definition. Before December 2025 the series follows BEEST 1's clean-energy share between its dated points; at December 2025 it is Cambridge's 59.4%. Cambridge's 59.4% is a snapshot from one survey. After it, the on-grid part moves with the world grid's clean share, as set out under [Grid greening](#grid-greening-since-december-2025). The world grid's clean share rose by about one percentage point a year from 2019 to 2025 (36.5% to 42.9%), which at that pace lifts the mining share by about 1.4 percentage points a year until the next survey resets it. The adjustment does not capture new mining sites built on clean power, which only the next Cambridge survey will show.
+The share of mining power from low-carbon sources: renewables plus nuclear, on the Cambridge Centre for Alternative Finance definition. Before December 2025 the series follows BEEST 1's clean-energy share between its dated points; at December 2025 it is Cambridge's 59.4%. Cambridge's 59.4% is a snapshot from one survey. After it, the on-grid part moves with the world grid's clean share, as set out under [Grid greening](#grid-greening-since-december-2025). The world grid's clean share rose by about one percentage point a year from 2019 to 2025 (36.5% to 42.9%), and by 1.5 points in the latest 12 months; at the long-run pace this lifts the mining share by about 1.4 percentage points a year until the next survey resets it (rates under [Grid greening](#grid-greening-since-december-2025)). The adjustment does not capture new mining sites built on clean power, which only the next Cambridge survey will show.
 
 Sources:
 
