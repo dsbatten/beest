@@ -1,6 +1,6 @@
 # BEEST 2 methodology
 
-BEEST 2 turns live network hashrate into Bitcoin's total, mitigated and net emissions, every day. This page sets out every input, every calculation and every assumption behind it, with the source for each. The live chart starts on 1 December 2025, the date of the Cambridge energy-mix survey behind its carbon intensity. The long chart runs the same chain back to September 2019. Last updated 15 November 2026.
+BEEST 2 (Bitcoin Energy & Emissions Sustainability Tracker) turns live network hashrate into Bitcoin's total, mitigated and net emissions, every day. This page sets out every input, every calculation and every assumption behind it, with the source for each. The live chart starts on 1 December 2025, the date of the Cambridge energy-mix survey behind its carbon intensity. The long chart runs the same chain back to September 2019. Last updated 18 November 2026.
 
 ## The chain
 
@@ -182,7 +182,7 @@ The figure in use is Cambridge's 4.69 MtCO2e a year for the 44 survey respondent
 
 ## History before December 2025
 
-The live chart starts on 1 December 2025 because that is the date of the Cambridge survey behind its carbon intensity. The long chart runs the same chain back to 1 September 2019, where [BEEST 1](https://docs.google.com/spreadsheets/d/1YSsIk2ghvPDHTcfUKkKo9cqg0XI_gSGh/edit?gid=270821339#gid=270821339), the spreadsheet model this tracker replaces, began, and from 1 December 2025 its rows are the live chart's rows, so the two join without a step. Before that date each input is built as follows. Every row carries a note saying which basis it rests on, shown in the hover.
+The live chart starts on 1 December 2025 because that is the date of the Cambridge survey behind its carbon intensity. The long chart runs the same chain back to 1 September 2019, where [BEEST 1](https://docs.google.com/spreadsheets/d/1YSsIk2ghvPDHTcfUKkKo9cqg0XI_gSGh/edit?gid=270821339#gid=270821339), the spreadsheet model this tracker replaces, began, and from 1 December 2025 its rows are the live chart's rows, so the two join without a step. Before that date each input is built as follows. Every row carries a note saying which basis it rests on, shown in the hover. BEEST 1's own method, and the gaps it filled in Cambridge's model at the time (off-grid mining, flare-gas mining, out-of-date country hashrate shares), are set out in full in the [BEEST 1 write-up](https://batcoinz.com/beest/). I first published BEEST 1's figures in February 2023, and the dynamic BEEST 1 charts built with Willy Woo went public on 7 March 2023.
 
 **Hashrate.** The 7-day average of the daily mempool.space figure, the same series the live chart uses, back to 2019.
 
@@ -192,7 +192,7 @@ The live chart starts on 1 December 2025 because that is the date of the Cambrid
 
 **Emission mitigation (flare).** BEEST 1's net intensity series differs from its Scope 2 series by the methane mitigation per kWh. That difference, times the electricity, is the mitigation in tonnes. It is scaled by 82.5 ÷ 84 to restate BEEST 1's GWP20 of 84 at the AR6 value, which lowers the deduction by 2% and raises net emissions by the same amount. From 26 October 2024 the figure runs on a straight line in tonnes to Cambridge's 4.69 Mt at 1 December 2025. Before 2021 the two BEEST 1 series are identical, so mitigation is zero.
 
-**Clean energy share.** BEEST 1's total sustainable (clean) energy share at its dated points, then a straight line to Cambridge's 59.4% at 1 December 2025, held after. It is carried in the series for a later chart and does not enter the emissions arithmetic, which uses the intensity directly.
+**Clean energy share.** BEEST 1's total sustainable (clean) energy share at its dated points, then a straight line to Cambridge's 59.4% at 1 December 2025, held after. It drives the Sustainable chart and does not enter the emissions arithmetic, which uses the intensity directly.
 
 **Price.** Coin Metrics' daily PriceUSD from 2019, context only.
 
