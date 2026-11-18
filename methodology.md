@@ -203,7 +203,7 @@ Every chart on this site is drawn from the same daily series as the emissions ch
 
 The share of the network's total emissions offset by methane destroyed at flare sites. At 100%, mitigation equals total emissions and the network is carbon neutral; above 100%, it is carbon negative. Landfill methane will be added as a second series when a sourced figure exists.
 
-The flare-gas mitigation is held at Cambridge's 4.69 MtCO2e a year between surveys, while total emissions move every day with hashrate, fleet efficiency and the energy mix. The share therefore rises when total emissions fall and falls when they rise, even with no change in flare-gas mining. Before December 2025 the series follows BEEST 1's mitigation history, which starts near zero in 2019.
+The flare-gas mitigation is held at Cambridge's 4.69 MtCO2e a year between surveys, while total emissions move every day with hashrate, fleet efficiency and the energy mix. The share therefore rises when total emissions fall and falls when they rise, even with no change in flare-gas mining. Until 26 October 2024 the share comes from BEEST 1's dated estimates of mitigation and emissions per kilowatt-hour, joined by straight lines, which is why that part of the line moves in straight segments; it starts near zero in 2019. From 26 October 2024 mitigation is a yearly tonnage, rising in a straight line to Cambridge's 4.69 MtCO2e a year at December 2025, while total emissions change daily with hashrate, which is why the line becomes jagged.
 
 Sources:
 
