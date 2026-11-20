@@ -104,7 +104,7 @@
     <b>author:</b> <a href="https://x.com/dsbatten" target="_blank" rel="noopener">@dsbatten</a> <span class="sep">|</span>
     <b>source:</b> <a href="methodology.html" target="_blank" rel="noopener">BEEST 2</a> <span class="sep">|</span>
     <b>data:</b> <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/" target="_blank" rel="noopener">Cambridge CCAF</a>, <a href="https://hashrateindex.com/blog/luxor-hashrate-lookback-series-july-2026/" target="_blank" rel="noopener">Luxor</a>, <a href="https://mempool.space/docs/api/rest#get-mining-hashrate" target="_blank" rel="noopener">mempool.space</a>, <a href="https://batcoinz.com/beest-methodology/" target="_blank" rel="noopener">BEEST 1</a>, <a href="https://ember-energy.org/data/monthly-electricity-data/" target="_blank" rel="noopener">Ember</a>, <a href="https://coinmetrics.io/community-network-data/" target="_blank" rel="noopener">Coin Metrics</a>
-    <span class="sep">|</span> <b>updated:</b> <span id="updated">–</span>
+    <span class="sep">|</span> <b>updated:</b> <span id="updated">20 Nov 2026</span><br><b>latest:</b> <span id="latest">11.1% of total emissions mitigated (4.69 MtCO2e a year)</span>
   </div>
 
   <div id="chart" role="img" aria-label="Share of the Bitcoin network's total emissions mitigated by flare-gas mining since September 2019, with bitcoin price on its own axis"></div>
@@ -132,10 +132,13 @@ window.ESG = {
       customdata: rows.map((r) => [r.mitigation_gas_mt_30d, r.gross_mt_30d]),
       hovertemplate: "%{y:.1f}% · %{customdata[0]:.1f} of %{customdata[1]:.1f} MtCO2e/yr<extra>Emissions mitigated</extra>" },
   ],
+  label: (rows) => { const now = rows[rows.length - 1]; const pct = 100 * now.mitigation_gas_mt_30d / now.gross_mt_30d;
+    return { big: pct.toFixed(1) + "%", small: "of total emissions mitigated · " + window.beestDate(now.date), color: "--gas" }; },
   yaxis: (rows) => { const m = Math.max(...rows.map((r) => 100 * r.mitigation_gas_mt_30d / r.gross_mt_30d));
     return { title: "Emissions mitigated: % of total emissions", titleShort: "Mitigated, % of total", axis: { range: [0, Math.ceil(m * 1.35 / 5) * 5], ticksuffix: "%" } }; },
 };
 </script>
+<script src="label.js"></script>
 <script src="esg.js"></script>
 <aside class="nav" id="nav" aria-label="Charts"></aside>
 </div>

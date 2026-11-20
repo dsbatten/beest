@@ -54,6 +54,7 @@
     };
     const config = { responsive: true, displaylogo: false, displayModeBar: !narrow, scrollZoom: false, doubleClick: narrow ? false : "reset",
       modeBarButtonsToRemove: ["select2d", "lasso2d", "autoScale2d", "toggleSpikelines"], toImageButtonOptions: { filename: spec.file, scale: 2 } };
+    if (spec.label && window.beestLabel) { const L = spec.label(rows); if (L) layout.annotations = [window.beestLabel(L.big, L.small, css(L.color), narrow, css)]; }
     Plotly.react("chart", traces, layout, config);
   }
 
