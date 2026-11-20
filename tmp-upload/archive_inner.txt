@@ -1,0 +1,33 @@
+<div class="bz-wrap">
+    <h1 class="bz-h1">The Bitcoin misinformation archive</h1>
+    <p class="bz-intro">From 2022 to 2025, much of my writing went into answering bad research on Bitcoin and energy. I'm relieved to say that work is no longer needed. As the data became overwhelming, the misinformation largely stopped.</p>
+    <p class="bz-intro">This page keeps that chapter on the record: the reports and articles that made the claims, and the responses that answered them. If you want to see what the debate looked like, it's all here.</p>
+    <div class="bz-grid" id="bz-grid" style="margin:28px 0 40px"></div>
+  </div>
+<script>
+(function () {
+  // Lists every post in the Misinformation archive category (id 39), newest first.
+  var UP = "/wp-content/uploads/2026/11/", FALLBACK = UP + "batcoinz-banner-five-paths-scaled.png";
+  var DESIGNED = { "fact-and-fiction-in-bitcoin-mining-reporting": UP + "article-fact-and-fiction.png", "bitcoin-coverage-as-a-litmus-test-for-media-reliability": UP + "article-litmus-test.png" };
+  var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var y = document.getElementById("bz-year"); if (y) y.textContent = new Date().getFullYear();
+  function fmt(d) { var t = new Date(d); return t.getDate() + " " + MONTHS[t.getMonth()] + " " + t.getFullYear(); }
+  function firstImage(html) { var m = /<img[^>]+src="([^"]+)"/i.exec(html || ""); return m ? m[1] : ""; }
+  fetch("/wp-json/wp/v2/posts?per_page=100&categories=39&_embed=wp:featuredmedia&_fields=slug,date,link,title,content,_links,_embedded")
+    .then(function (r) { return r.json(); })
+    .then(function (posts) {
+      var grid = document.getElementById("bz-grid");
+      posts.forEach(function (p) {
+        var fm = p._embedded && p._embedded["wp:featuredmedia"] && p._embedded["wp:featuredmedia"][0];
+        var img = (fm && fm.source_url) || DESIGNED[p.slug] || firstImage(p.content.rendered) || FALLBACK;
+        var a = document.createElement("a"); a.className = "bz-card"; a.href = p.link;
+        var im = document.createElement("img"); im.src = img; im.alt = ""; im.loading = "lazy";
+        im.onerror = function () { if (im.src.indexOf(FALLBACK) < 0) im.src = FALLBACK; };
+        var body = document.createElement("div"); body.className = "bz-card-body";
+        var d = document.createElement("span"); d.className = "bz-date"; d.textContent = fmt(p.date);
+        var h = document.createElement("h3"); h.innerHTML = p.title.rendered;
+        body.appendChild(d); body.appendChild(h); a.appendChild(im); a.appendChild(body); grid.appendChild(a);
+      });
+    });
+})();
+</script>
