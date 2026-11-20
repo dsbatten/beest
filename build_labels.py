@@ -45,6 +45,7 @@ def latest_texts(data):
         word = "down" if pct >= 0 else "up"
         texts["intensity.html"] = (f"net carbon intensity {net_intensity(now):.0f} gCO2e/kWh, "
                                    f"{word} {abs(pct)}% vs {fmt_date(then['date'])}")
+    texts["sustainable.html"] = f"sustainable energy share {100 * now['clean_share']:.1f}%"
     share = 100 * now["mitigation_gas_mt_30d"] / now["gross_mt_30d"]
     texts["mitigated.html"] = (f"{share:.1f}% of total emissions mitigated "
                                f"({now['mitigation_gas_mt_30d']:.2f} MtCO2e a year)")

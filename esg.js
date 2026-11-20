@@ -54,7 +54,13 @@
     };
     const config = { responsive: true, displaylogo: false, displayModeBar: !narrow, scrollZoom: false, doubleClick: narrow ? false : "reset",
       modeBarButtonsToRemove: ["select2d", "lasso2d", "autoScale2d", "toggleSpikelines"], toImageButtonOptions: { filename: spec.file, scale: 2 } };
-    if (spec.label && window.beestLabel) { const L = spec.label(rows); if (L) layout.annotations = [window.beestLabel(L.big, L.small, css(L.color), narrow, css)]; }
+    // Today's figure, drawn large on the chart for screenshots. Hidden until the reader switches it on from the toolbar.
+    let label = null;
+    if (spec.label && window.beestLabel) { const L = spec.label(rows); if (L) label = window.beestLabel(L.big, L.small, css(L.color), narrow, css, L.y); }
+    window.__beestLabelOn = !!window.__beestLabelOn;
+    layout.annotations = label && window.__beestLabelOn ? [label] : [];
+    if (label) config.modeBarButtonsToAdd = [{ name: "Show or hide today's figure", icon: { width: 1000, height: 1000, path: "M150 250h700v130h-700z M150 470h500v130h-500z M150 690h300v130h-300z" },
+      click: (gd) => { window.__beestLabelOn = !window.__beestLabelOn; Plotly.relayout(gd, { annotations: window.__beestLabelOn ? [label] : [] }); } }];
     Plotly.react("chart", traces, layout, config);
   }
 

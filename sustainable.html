@@ -104,7 +104,7 @@
     <b>author:</b> <a href="https://x.com/dsbatten" target="_blank" rel="noopener">@dsbatten</a> <span class="sep">|</span>
     <b>source:</b> <a href="methodology.html" target="_blank" rel="noopener">BEEST 2</a> <span class="sep">|</span>
     <b>data:</b> <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/" target="_blank" rel="noopener">Cambridge CCAF</a>, <a href="https://batcoinz.com/beest-methodology/" target="_blank" rel="noopener">BEEST 1</a>, <a href="https://ember-energy.org/data/monthly-electricity-data/" target="_blank" rel="noopener">Ember</a>, <a href="https://coinmetrics.io/community-network-data/" target="_blank" rel="noopener">Coin Metrics</a>
-    <span class="sep">|</span> <b>updated:</b> <span id="updated">20 Nov 2026</span>
+    <span class="sep">|</span> <b>updated:</b> <span id="updated">20 Nov 2026</span><br><b>latest:</b> <span id="latest">sustainable energy share 60.6%</span>
   </div>
 
   <div id="chart" role="img" aria-label="Share of Bitcoin mining powered by sustainable energy (renewables and nuclear) since September 2019, with bitcoin price on its own axis"></div>
@@ -139,9 +139,12 @@ window.ESG = {
       marker: { symbol: "circle", size: 12, color: css("--hash"), line: { color: css("--bg"), width: 2 } },
       hovertemplate: "%{y:.1f}%<extra>BEEST 1 estimate</extra>" },
   ],
+  label: (rows) => { const now = rows[rows.length - 1];
+    return { big: (100 * now.clean_share).toFixed(1) + "%", small: "sustainable energy share · " + window.beestDate(now.date), color: "--gas" }; },
   yaxis: () => ({ title: "Sustainable energy: % of mining power", titleShort: "Sustainable, % of power", axis: { range: [0, 100], ticksuffix: "%", dtick: 20 } }),
 };
 </script>
+<script src="label.js"></script>
 <script src="esg.js"></script>
 <aside class="nav" id="nav" aria-label="Charts"></aside>
 </div>
