@@ -45,6 +45,10 @@ def latest_texts(data):
         word = "down" if pct >= 0 else "up"
         texts["intensity.html"] = (f"net carbon intensity {net_intensity(now):.0f} gCO2e/kWh, "
                                    f"{word} {abs(pct)}% vs {fmt_date(then['date'])}")
+    first = rows[0]  # the growth chart indexes everything to its first day, 1 Sep 2019
+    if now.get("price_usd") and first.get("price_usd"):
+        texts["since-2019.html"] = (f"hashrate up {now['hashrate_ehs_7d'] / first['hashrate_ehs_7d']:.1f}x and BTC price up "
+                                    f"{now['price_usd'] / first['price_usd']:.1f}x since {fmt_date(first['date'])}")
     texts["sustainable.html"] = f"sustainable energy share {100 * now['clean_share']:.1f}%"
     share = 100 * now["mitigation_gas_mt_30d"] / now["gross_mt_30d"]
     texts["mitigated.html"] = (f"{share:.1f}% of total emissions mitigated "
