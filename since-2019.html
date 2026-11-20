@@ -101,7 +101,7 @@
     <b>author:</b> <a href="https://x.com/dsbatten" target="_blank" rel="noopener">@dsbatten</a> <span class="sep">|</span>
     <b>source:</b> <a href="methodology.html" target="_blank" rel="noopener">BEEST 2</a> <span class="sep">|</span>
     <b>data:</b> <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/" target="_blank" rel="noopener">Cambridge CCAF</a>, <a href="https://hashrateindex.com/blog/luxor-hashrate-lookback-series-july-2026/" target="_blank" rel="noopener">Luxor</a>, <a href="https://mempool.space/docs/api/rest#get-mining-hashrate" target="_blank" rel="noopener">mempool.space</a>, <a href="https://batcoinz.com/beest-methodology/" target="_blank" rel="noopener">BEEST 1</a>, <a href="https://ember-energy.org/data/monthly-electricity-data/" target="_blank" rel="noopener">Ember</a>, <a href="https://coinmetrics.io/community-network-data/" target="_blank" rel="noopener">Coin Metrics</a>
-    <span class="sep">|</span> <b>updated:</b> <span id="updated">20 Nov 2026</span><br><b>latest:</b> <span id="latest">hashrate up 13.1x and BTC price up 6.3x since 1 Sep 2019</span>
+    <span class="sep">|</span> <b>updated:</b> <span id="updated">20 Nov 2026</span><br><b>latest:</b> <span id="latest">since 1 Sep 2019, hashrate up 13.1x, BTC price up 6.3x, net emissions up 1.2x</span>
   </div>
 
   <div id="chart" role="img" aria-label="Bitcoin network hashrate, net and total emissions, and bitcoin price, each indexed to 100 on 1 September 2019, on a log scale"></div>
@@ -137,8 +137,12 @@ window.ESG = {
       customdata: rel(rows, (r) => r.price_usd).map((v, i) => [v, rows[i].price_usd]), hovertemplate: "%{customdata[0]:.2f}× · $%{customdata[1]:,.0f}<extra>BTC price</extra>" },
   ],
   label: (rows) => { const now = rows[rows.length - 1], then = rows[0]; /* the chart's own index start, 1 Sep 2019 */ if (!now.price_usd || !then.price_usd) return null;
-    const x = (a, b) => (a / b).toFixed(1) + "x";
-    return { big: "Hashrate up " + x(now.hashrate_ehs_7d, then.hashrate_ehs_7d), small: "BTC price up " + x(now.price_usd, then.price_usd) + " · since " + window.beestDate(then.date), color: "--hash" }; },
+    const ch = (a, b) => { const r = a / b; return r >= 1 ? "up " + r.toFixed(1) + "x" : "down " + Math.round((1 - r) * 100) + "%"; };
+    return { big: [{ text: "Hashrate " + ch(now.hashrate_ehs_7d, then.hashrate_ehs_7d), color: "--hash" },
+                   { text: "BTC price " + ch(now.price_usd, then.price_usd), color: "--price" },
+                   { text: "Net emissions " + ch(now.net_mt, then.net_mt), color: "--net" }],
+      small: "Since " + window.beestDate(then.date), color: "--hash", size: 26, smallFirst: true,
+      pos: { x: 0.01, y: 0.985, xanchor: "left", yanchor: "top", align: "left", bgcolor: "#092142", borderpad: 6 } }; }, // top left: the empty part of this chart; the background hides the gridlines behind the text
   yaxis: () => ({ title: "Index: 1 Sep 2019 = 100", titleShort: "Index, Sep 2019 = 100",
     axis: { type: "log", range: [Math.log10(40), Math.log10(3000)], tickvals: [50, 100, 200, 500, 1000, 2000], ticktext: ["50", "100", "200", "500", "1,000", "2,000"] } }),
 };
