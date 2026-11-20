@@ -22,6 +22,7 @@ jobs:
           python3 build_series.py --print
           python3 build_history.py --print
           python3 render_methodology.py
+          python3 build_labels.py
       - name: Check the new files before committing
         run: |
           python3 - <<'PY'
@@ -42,6 +43,6 @@ jobs:
         run: |
           git config user.name "beest-refresh"
           git config user.email "beest-refresh@users.noreply.github.com"
-          git add series.json history.json grid_greening.json methodology.html
+          git add series.json history.json grid_greening.json methodology.html index.html intensity.html mitigated.html sustainable.html since-2019.html
           git diff --cached --quiet || git commit -m "Data refresh $(date -u +%Y-%m-%d)"
           git push

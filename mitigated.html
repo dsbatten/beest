@@ -132,13 +132,10 @@ window.ESG = {
       customdata: rows.map((r) => [r.mitigation_gas_mt_30d, r.gross_mt_30d]),
       hovertemplate: "%{y:.1f}% · %{customdata[0]:.1f} of %{customdata[1]:.1f} MtCO2e/yr<extra>Emissions mitigated</extra>" },
   ],
-  label: (rows) => { const now = rows[rows.length - 1]; const pct = 100 * now.mitigation_gas_mt_30d / now.gross_mt_30d;
-    return { big: pct.toFixed(1) + "%", small: "of total emissions mitigated · " + window.beestDate(now.date), color: "--gas" }; },
   yaxis: (rows) => { const m = Math.max(...rows.map((r) => 100 * r.mitigation_gas_mt_30d / r.gross_mt_30d));
     return { title: "Emissions mitigated: % of total emissions", titleShort: "Mitigated, % of total", axis: { range: [0, Math.ceil(m * 1.35 / 5) * 5], ticksuffix: "%" } }; },
 };
 </script>
-<script src="label.js"></script>
 <script src="esg.js"></script>
 <aside class="nav" id="nav" aria-label="Charts"></aside>
 </div>

@@ -203,8 +203,16 @@
       yaxis3: { type: "log", overlaying: "y", side: "right", anchor: "free", position: 1, autoshift: true, shift: narrow ? 40 : 10, showgrid: false, zeroline: false, showline: false, ticks: "",
         tickfont: sideTick, range: priceRange, tickvals: priceTicks, ticktext: priceTicks.map((v) => v >= 1000 ? "$" + (v / 1000) + "k" : "$" + v), fixedrange: narrow, visible: hasPrice && !narrow },
     };
-    const config = { responsive: true, displaylogo: false, displayModeBar: !narrow, scrollZoom: false, doubleClick: narrow ? false : "reset", modeBarButtonsToRemove: ["select2d", "lasso2d", "autoScale2d", "toggleSpikelines"], toImageButtonOptions: { filename: "beest2-bitcoin-network-emissions", scale: 2 } };
-    if (window.beestLabel) { const now = rows[rows.length - 1]; const yr = layout.yaxis.range, zeroFrac = (0 - yr[0]) / (yr[1] - yr[0]); /* sit just above the zero line, in the clear space under the hashrate line */ const then = window.beestSameDayYearsAgo(rows, 7); if (then) { const pct = (now.net_mt / then.net_mt - 1) * 100; layout.annotations = [window.beestLabel((pct >= 0 ? "Up " : "Down ") + Math.abs(pct).toFixed(1) + "%", "net emissions vs " + window.beestDate(then.date), css("--net"), narrow, css, zeroFrac + 0.015)]; } }
+    // Today's figure, drawn large on the chart for screenshots. Hidden until the reader switches it on from the toolbar.
+    let label = null;
+    if (window.beestLabel) { const now = rows[rows.length - 1], then = window.beestSameDayYearsAgo(rows, 7);
+      if (then) { const yr = layout.yaxis.range, zeroFrac = (0 - yr[0]) / (yr[1] - yr[0]), pct = (now.net_mt / then.net_mt - 1) * 100;
+        label = window.beestLabel((pct >= 0 ? "Up " : "Down ") + Math.abs(pct).toFixed(1) + "%", "net emissions vs " + window.beestDate(then.date), css("--net"), narrow, css, zeroFrac + 0.015); } }
+    window.__beestLabelOn = !!window.__beestLabelOn;
+    layout.annotations = label && window.__beestLabelOn ? [label] : [];
+    const labelButton = { name: "Show or hide today's figure", icon: { width: 1000, height: 1000, path: "M150 250h700v130h-700z M150 470h500v130h-500z M150 690h300v130h-300z" },
+      click: (gd) => { window.__beestLabelOn = !window.__beestLabelOn; Plotly.relayout(gd, { annotations: label && window.__beestLabelOn ? [label] : [] }); } };
+    const config = { responsive: true, displaylogo: false, displayModeBar: !narrow, modeBarButtonsToAdd: label ? [labelButton] : [], scrollZoom: false, doubleClick: narrow ? false : "reset", modeBarButtonsToRemove: ["select2d", "lasso2d", "autoScale2d", "toggleSpikelines"], toImageButtonOptions: { filename: "beest2-bitcoin-network-emissions", scale: 2 } };
     Plotly.react("chart", traces, layout, config).then((gd) => {
       if (gd.__beestTitled) return;
       gd.__beestTitled = true;
