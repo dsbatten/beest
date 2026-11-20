@@ -1,0 +1,117 @@
+<h2>Setting the scene</h2>
+<p>You have probably heard about Bitcoin by now. Whether what you have heard makes sense, or is accurate, is less certain.</p>
+<p>Whatever understanding you come with, I invite you to put it to one side so we can start at the bottom: why Bitcoin was invented, what problem it solves that may be relevant to you, and what the research says.</p>
+<p>First, who am I and why am I writing this? The long answer is in <a href="https://open.spotify.com/episode/2UBIqi5982vkJL3hC4SRKQ">this podcast</a>. The short answer is that over the last 20 years I have been part of three communities: humanitarian work, founding and investing in technology companies, and environmental activism. In 2021, a technologist friend told me Bitcoin was a net positive for the environment. An environmentalist friend told me it was a net negative. I decided to do my own research to answer the question "What is its impact on humanity and our environment?" What unfolded was a story largely untold in the media, and one I believe everyone should know. So I decided to write about it.</p>
+
+<h2>First up: what is Bitcoin?</h2>
+<p>Bitcoin is simply a form of digital cash. For the first time in history, someone worked out how to make something scarce and impossible to copy on the Internet.</p>
+<p>It was also designed to fix weaknesses in the existing monetary system that caused social and moral injustice. Satoshi Nakamoto invented Bitcoin in response to the Global Financial Crisis, when quantitative easing saw the banks bailed out while people and small businesses were left behind.</p>
+<figure><img src="https://batcoinz.com/wp-content/uploads/2022/10/image.png" alt="The Genesis Block, with The Times headline of January 3, 2009"><figcaption>The "Genesis Block", the first block mined on the Bitcoin network on January 3, 2009, included that day's Times headline: "Chancellor on brink of second bailout". It was Satoshi's reference to the flaws in the financial system that Bitcoin was created to fix.</figcaption></figure>
+<p>Numerous studies have found that <a href="https://soundideas.pugetsound.edu/cgi/viewcontent.cgi?article=1115&amp;context=economics_theses">quantitative easing increases wealth inequality</a>. People with shares and real estate tend to prosper, at the expense of workers and small business owners.</p>
+<p>Bitcoin has two core features. The first is that it needs no trusted middleman. Banks can freeze assets, cut people off and come under political pressure, and while this happens most often in developing nations, the frozen bank accounts of donors to Canada's 2022 truckers' protest showed the West is not immune. Bitcoin replaces trust in a middleman with a simple rule: "Don't trust, verify." Transactions are checked by software, and nobody can freeze or censor an account because its owner holds views the state dislikes.</p>
+<p>The second is a fixed supply of 21 million bitcoin. Nobody can print more, so nobody can shift wealth from savers to those closest to the money printer. Bitcoin bypasses the need for Central Bankers.</p>
+
+<h2>Who uses Bitcoin, and why</h2>
+<p>Bitcoin's biggest users are in countries such as Nigeria, Vietnam, Turkey, Lebanon, Argentina and Ukraine: nations where high inflation, war or authoritarian rule are part of daily life. To millions of people in these countries, Bitcoin has been life-changing. In <a href="https://www.cnbc.com/2022/11/05/-in-bankrupt-lebanon-locals-mine-bitcoin-and-buy-groceries-with-tether.html">bankrupt Lebanon</a>, for example, people mine bitcoin to protect their earnings from a collapsing currency.</p>
+<p>On a meditation course in India, I met four people whose lives Bitcoin could have changed. They had saved for a whole year to attend. Their savings had been whittled away to 20% of their value against the Indian rupee, because their own currency had collapsed. Had they held bitcoin, this would not have happened. These are the first people Bitcoin protects and empowers.</p>
+<p>There are now <a href="https://x.com/DSBatten/article/2039727288355278997">21 documented uses of Bitcoin</a> already operating at scale, and 14 of them are humanitarian. Bitcoin has allowed <a href="https://www.da-ri.org/articles/bring-only-what-you-can-carry">329,000 refugees to re-establish a life with their savings intact</a>. It has helped <a href="https://bitcoinmagazine.com/culture/bitcoin-financial-freedom-in-afghanistan">Afghan women avoid state-level financial discrimination</a>. It helped <a href="https://bitcoinmagazine.com/culture/bitcoin-blockchain-is-fighting-fraud-in-guatemalas-presidential-elections">prevent fraud and ballot tampering in Guatemala's 2023 election</a>. And it is funding <a href="https://www.bbc.com/news/articles/cly4xe373p4o">renewable microgrids</a> that now deliver electricity to 28,000 rural villagers in Africa.</p>
+
+<h2>Bitcoin's accidental benefit: the environment</h2>
+<p>A scarce, secure, digital money that no central bank could debase was the only intended benefit of Bitcoin that we know of. There was a second, purely accidental benefit: its environmental one. When we look at the data, Bitcoin is on track to be net positive for our environment. So again, put aside whatever you think you know, and let's look at why.</p>
+
+<h3>Where emissions are today</h3>
+<figure><img src="https://batcoinz.com/wp-content/uploads/2026/11/bitcoin-network-emissions-hashrate-price-2019-2026.jpg" alt="Bitcoin network net emissions, hashrate and price, November 2019 to November 2026"><figcaption>Bitcoin network emissions since September 2019, from <a href="https://beest.batcoinz.com/">BEEST 2</a>, my tracker that updates daily.</figcaption></figure>
+<p>Bitcoin needs a network of computers (called miners) that check every transaction and keep the network secure. That uses energy, and a growing share of it is clean.</p>
+<p>The accidental benefit is that this new kind of energy user turns out to help with two of our most important climate missions: building out solar and wind, and destroying methane.</p>
+
+<h3>1. Building out the renewable grid</h3>
+<p>Unlike hospitals, steel mills or housing, Bitcoin mining can go anywhere with an internet connection: next to a landfill, in a desert, or beside a wind farm far from any city. It can also switch off in seconds when the grid needs power, and back on when there is surplus. That makes it a rare kind of customer for renewable energy.</p>
+<p>Solar and wind farms often produce power when nobody needs it, at the wrong time or in the wrong place, like solar at midday or wind at midnight. When that power cannot be used, it is switched off, or curtailed. Curtailment wastes clean energy, makes renewable projects less profitable, and slows how fast new ones get built. A Bitcoin miner buys that surplus power. One wind operator told a miner I spoke with, "Never in my wildest dreams would I have imagined such a perfect customer for wind."</p>
+<figure><img src="https://batcoinz.com/wp-content/uploads/2026/11/bitcoin-mining-sustainable-energy-share.jpg" alt="Share of Bitcoin mining powered by sustainable energy since 2019"><figcaption>Share of Bitcoin mining powered by renewables and nuclear, from <a href="https://beest.batcoinz.com/sustainable.html">BEEST 2</a>, updated daily.</figcaption></figure>
+<p>The research backs this up. There are now 32 peer-reviewed papers studying how Bitcoin mining interacts with renewable energy and the grid. In one, adding Bitcoin mining to a utility-scale solar farm cut the time to pay back the investment from 8.1 years to 3.5 years (<a href="https://www.cell.com/heliyon/fulltext/S2405-8440(24)15796-9">Hakimi et al., 2024</a>). A faster payback means more solar farms get built.</p>
+
+<h3>2. Destroying methane</h3>
+<p>Methane causes more than 80 times as much warming as CO2 over 20 years (<a href="https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/">IPCC</a>). The head of the UN Environment Programme, Inger Andersen, says <a href="https://commondreams.org/news/2021/05/06/new-un-report-highlights-absolutely-critical-need-dramatically-slash-global-methane">"cutting methane is the strongest lever we have to slow climate change over the next 25 years"</a>. Large quantities leak every year from oil and gas sites, landfills, farms and wastewater.</p>
+<p>Two of the hardest sources to deal with are oil fields that vent or flare gas, and landfills, where decaying organic waste releases methane. Both are usually far from any pipeline or power line, so there has been no economic way to use the gas. Because Bitcoin mining can sit anywhere, a generator can be placed on site to burn the methane that would otherwise escape and turn it into electricity for mining.</p>
+<p>This is no longer a pilot. Cambridge found that Bitcoin mining at flare sites now destroys methane equal to 4.7 Mt of CO2e a year, more than double the figure three years earlier. Landfill projects are now underway. For a detailed account, see <a href="https://batcoinz.com/quantifying-the-potential-impact-of-bitcoin-mining-on-global-methane-emissions/">this paper</a>, peer reviewed by two climate scientists.</p>
+
+<h3>Adding it up</h3>
+<figure><img src="https://batcoinz.com/wp-content/uploads/2026/11/1.jpeg" alt="Today's Bitcoin emissions and mitigations, central case"></figure>
+<p>Each block is mitigation already happening. Methane destroyed and wind and solar acceleration are the two benefits above. Gas peakers avoided comes from the same flexibility: a grid that can switch off Bitcoin mining at peak times needs fewer gas plants on standby. Digital gold and de-consumption come from Bitcoin's role as money.</p>
+
+<h2>Money and the environment</h2>
+<h3>Spending less, so less gets made</h3>
+<p>Money that loses value every year rewards spending it now. Money with a fixed supply rewards waiting. Research on Bitcoin holders shows that patience in action: people who hold bitcoin for the long term discount the future far less than people who hold it only for the short term (0.43 against 0.77 on a standard test, <a href="https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2023.1205814/full">El Haj and Moustafa, 2023</a>).</p>
+<p>The test offers a choice between a smaller sum now and a larger sum later, and a lower score means more willingness to wait. People who are more willing to wait are likely to buy less on impulse, keep what they own for longer, and save more of their income.</p>
+<p>When people buy less, less gets made, and every product carries the emissions of the factory, the shipping and the power that made it. Non-essential goods and services make up 22% of a developed-world consumer's carbon footprint of ~12.5 tCO2e a year (Starr et al., 2023). If 20 million Bitcoin savers cut that spending by 20%, they would remove ~8.3 Mt a year, 21% of the network's emissions, from behavior that costs nobody anything.</p>
+<h3>Decoupling money from oil</h3>
+<p>Since the 1970s, oil has been priced and traded in US dollars, an arrangement known as the <a href="https://www.lynalden.com/fraying-petrodollar-system/">petrodollar</a>. It links global demand for the dollar to the oil trade, and links the security of that trade to US military protection of shipping routes. The world's main reserve currency is tied to oil production.</p>
+<p>Bitcoin is the first working monetary system that depends on no commodity, government or central bank. Nobody can print more of it, and its value does not rest on oil being produced. For economic growth and falling emissions to coexist, that separation matters.</p>
+
+<p>So if it’s so good, why do I hear different things in some newspapers and from some environmental organizations?</p>
+
+<h2>Gaslighting: why it happens, where its from, and how its been very effective</h2>
+
+<p>To answer that we must go back to earlier point: &#8220;Bitcoin bypasses the need for Central Bankers.&#8221;</p>
+
+<p>Every disruptive technology will, well, disrupt. Cars disrupted the horse and cart industry. The Internet disrupted the print media. Bitcoin disrupts Central Bankers.</p>
+
+<p>Like the print industry and the horse-and-cart industry before them, Central Bankers are not peacefully consigning themselves to history. Like the disrupted before them, they will do everything they can to remain relevant. Part of this strategy requires them to attack the disruptive technology. Whether the messages are true or not is irrelevant. Whether they are effective is what matters. </p>
+
+<p>The attack vector that Central Bankers have predominantly chosen is bitcoin&#8217;s energy usage. This has been a good choice for them for two reasons</p>
+
+<ol>
+<li>It is a highly emotive issue (and rightly so)</li>
+
+<li>Bitcoin&#8217;s energy usage is very transparent. So its easy to attack, should one wish to</li>
+</ol>
+
+<p>Looking at it objectively, without the constant media backdrop of anti-bitcoin rhetoric, the attack makes no logical sense. Bitcoin is not only a tiny user of energy on the global scale (<a href="https://mawsoninc.com/bitcoin-mining-uses-less-energy-than-christmas-lights/" data-type="URL" data-id="https://mawsoninc.com/bitcoin-mining-uses-less-energy-than-christmas-lights/" target="_blank" rel="noreferrer noopener">less than Christmas lights</a>). It is also by one measure the <a href="https://youtu.be/bYoHCs_jDcM?t=521" data-type="URL" data-id="https://youtu.be/bYoHCs_jDcM?t=521" target="_blank" rel="noreferrer noopener">#1 user of zero emission energy in the world</a>. But again, logic is not what matters here, effectiveness of the attack is what matters.</p>
+
+<p>Attacking Bitcoin for its environmental track record is analogous to singling out New Zealand for its corruption track record. Does there exist corruption in New Zealand? Absolutely. Should New Zealanders be aiming to become less corrupt? Undoubtedly. However, just as bitcoin is the #1 user of zero-emission energy, New Zealand is by one measure the <a rel="noreferrer noopener" href="https://www.transparency.org.nz/corruption-perceptions-index" data-type="URL" data-id="https://www.transparency.org.nz/corruption-perceptions-index" target="_blank">#1 least corrupt country in the world</a>. So it would be not only unfair to single this one nation out, but it would be the least logical nation to single out.  </p>
+
+<p>But that doesn&#8217;t matter. If you have a vested interest in attacking New Zealand&#8217;s record on corruption and you have the power to control the media narrative, you could quite easily over time cause the bulk of the world&#8217;s population to believe that New Zealand has a corruption problem, irrespective of data or evidence to the contrary, which would simply go unreported in newspapers and media channels. </p>
+
+<p>This is exactly what has occurred with the anti-bitcoin narrative. </p>
+
+<p>The leading example of Central Banker misinformation is a website Digiconomist, authored by Dutch Central Bank employee Alex de Vries</p>
+
+<figure><img src="https://batcoinz.com/wp-content/uploads/2022/10/image-1.png" alt="Alex de Vries LinkedIn profile"><figcaption>de Vries&#8217; LinkedIn profile: <br>Data Scientist at the Central Bank of the Netherlands</figcaption></figure>
+
+<p>This website has become the most commonly cited source for enrivonment-related articles on Bitcoin by <a href="https://www.youtube.com/watch?v=9ISSe8A3pVc&amp;t=571s">news media sources including The Guardian, The Independent</a> and reports such as the Whitehouse’s own <a href="https://www.whitehouse.gov/ostp/news-updates/2022/09/08/fact-sheet-climate-and-energy-implications-of-crypto-assets-in-the-united-states/">OTSP report on Cryptomining</a>. In fact, de Vries/Digiconomist was cited 4 times as often as the neutral Cambridge Institute of Alternative Finance in the OTSP report. </p>
+
+<p>The site itself has been widely criticised <a href="https://bitcoinmagazine.com/culture/elon-musk-bitcoin-environment-wrong">within the Bitcoin community</a>. The reliability of the website, and the conflict of interest has to my knowledge been questioned not once. Imagine that the most common information source on climate change was a single website from a hobbyist who was a paid employee of Exxon, with no qualification in climate science. Imagine also that the media never called to question the validity of conflict of interest of this information source: this is how total the Central Bankers&#8217; victory has been in shutting out all data-based discussion on bitcoin and putting in its place its own narrative. </p>
+
+<p>So the reason environmental organizations have formed anti-bitcoin beliefs is that Central Banks understand very well that environmentalists are a powerful lobby-group and if they can be mobilized against bitcoin, then they can get on with creative their own CBDCs (Central Bank Digital Currencies), and promoting them as &#8220;good for the environment&#8221;, even though CBDCs give Central Bankers more control, and people less control, than ever before.</p>
+
+<p>Thus far, mainstream media and Central banks have worked in lock-step to:</p>
+
+<ol>
+<li>Minimize reporting on bitcoin&#8217;s positive impact on humanity while publishing many articles portraying it as <a rel="noreferrer noopener" href="https://www.fool.com/the-ascent/cryptocurrency/articles/why-peter-schiff-thinks-his-son-is-wrong-to-go-all-in-on-bitcoin/" data-type="URL" data-id="https://www.fool.com/the-ascent/cryptocurrency/articles/why-peter-schiff-thinks-his-son-is-wrong-to-go-all-in-on-bitcoin/" target="_blank">a speculative asset with no real </a>value.  </li>
+
+<li>Cherry-pick examples of where Bitcoin miners have behaved differently to the norm (just like cherry-picking examples of corruption within New Zealand). The mainstream media has played this tactic to extreme levels: a single case where<a rel="noreferrer noopener" href="https://www.bbc.com/news/av/technology-58020010" target="_blank">&nbsp;Bitcoin mining used an off-grid natural gas plant</a>&nbsp;has been&nbsp;<a rel="noreferrer noopener" href="https://www.google.com/search?q=Greenidge+Generation+coal+fire&amp;rlz=1C5CHFA_enUS997US997&amp;source=lnms&amp;sa=X&amp;ved=2ahUKEwif4JWdh4v7AhWhm2oFHR5JBt0Q_AUoAHoECAIQAg&amp;biw=1728&amp;bih=968&amp;dpr=2" target="_blank">amplified by</a>&nbsp;<a rel="noreferrer noopener" href="https://earthjustice.org/blog/2022-october/cleaning-up-crypto" target="_blank">continual regurgitation</a>, but the<a rel="noreferrer noopener" href="https://twitter.com/DSBatten/status/1586551380147249152?s=20&amp;t=s_Uf0UDTz47_bcknH1ci1w" target="_blank">&nbsp;31 cases</a>&nbsp;where Bitcoin mining operations use zero-emission power have gone unreported.</li>
+</ol>
+
+<p>It’s not that Central Bankers are bad people, in the same way that&nbsp; people in print media are not&nbsp; bad people. For the most part they are simply people playing their part in society, who like any of us would probably want to preserve something that they have grown comfortable and familiar with. However, it is essential that we do not fall victim to their tactics of disinformation.</p>
+
+<p>To do so runs the risk that the world could be deprived of potentially its most realistic hope of accelerating the renewable grid buildout and reducing methane emissions, whilst simultaneously reducing consumption and creating the conditions for a world where positive economics and negative emissions can co-exist.</p>
+
+
+<h2>Where it's heading</h2>
+<figure><img src="https://batcoinz.com/wp-content/uploads/2026/11/when-bitcoin-goes-carbon-negative.jpg" alt="When Bitcoin goes carbon negative"><figcaption>The projection holds emissions flat and grows each source of mitigation at its current rate.</figcaption></figure>
+<p>Carbon negative means the emissions Bitcoin mitigates are greater than the emissions it produces. The projection rules, and what would move each date, are in <a href="https://batcoinz.com/bitcoin-could-be-carbon-negative-by-2031-here-are-5-ways-it-gets-there/">Bitcoin could be carbon negative by 2031. Here are 5 ways it gets there</a>.</p>
+
+<h2>Summary</h2>
+<p>Bitcoin is a useful technology that reaches people in developing nations first. Its impact has already been felt by hundreds of millions of people around the globe. On top of that intended benefit, an unintended one arose from the fact that Bitcoin mining can sit anywhere and switch off at will: it helps build out renewables, and it destroys methane where other technologies have not been able to.</p>
+<p>Bitcoin is one part of the solution, and there is a strong case that it is an essential part.</p>
+
+<h2>Further resources</h2>
+<ul>
+<li><a href="https://beest.batcoinz.com/">BEEST 2</a>: Bitcoin network emissions, updated daily</li>
+<li><a href="https://batcoinz.com/bitcoin-could-be-carbon-negative-by-2031-here-are-5-ways-it-gets-there/">Bitcoin could be carbon negative by 2031. Here are 5 ways it gets there</a></li>
+<li><a href="https://x.com/DSBatten/article/2039727288355278997">21 Bitcoin use cases you probably aren't aware of</a></li>
+<li><a href="https://batcoinz.com/the-renewable-energy-cannot-happen-without-bitcoin-mining/">The renewable grid needs Bitcoin mining</a></li>
+<li><a href="https://batcoinz.com/how-bitcoin-mining-keeps-energy-prices-low/">How Bitcoin mining keeps energy prices low</a></li>
+</ul>
+<p>The author receives no funding for this work. It is intended as a resource for the community, to educate and inform.</p>
+<p>Acknowledgment: <a href="https://x.com/SimplestBTCBook">@SimplestBTCBook</a> for editorial assistance.</p>
