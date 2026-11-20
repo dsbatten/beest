@@ -1,0 +1,295 @@
+<!-- wp:html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&#038;family=Inter:wght@400;500;600&#038;display=swap" rel="stylesheet">
+<style>
+body{background:#0A1A2F!important}
+#bz-home{background:#0A1A2F;color:#EEF2F5;font-family:Inter,system-ui,sans-serif;font-size:16px;line-height:1.5}
+#bz-home *{box-sizing:border-box}
+#bz-home a{color:#8FDCA6;text-decoration:none}
+#bz-home a:hover{color:#B8EBC8;text-decoration:underline}
+#bz-home img{display:block;max-width:100%}
+#bz-home h1,#bz-home h2,#bz-home h3{font-family:Outfit,sans-serif;font-weight:500;color:#EEF2F5;margin:0;letter-spacing:0}
+#bz-home p{margin:0}
+#bz-home .bz-wrap{max-width:1200px;margin:0 auto;padding-left:32px;padding-right:32px}
+#bz-home .bz-header{border-bottom:1px solid rgba(238,242,245,.10)}
+#bz-home .bz-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:20px;padding-bottom:20px}
+#bz-home .bz-logo{font-family:Outfit,sans-serif;font-weight:600;font-size:32px;letter-spacing:.12em;color:#EEF2F5}
+#bz-home .bz-links{display:flex;flex-wrap:wrap;align-items:center;gap:28px;font-size:15px}
+#bz-home .bz-links a{color:#EEF2F5}
+#bz-home .bz-pill{background:#8FDCA6;color:#0A1A2F!important;font-weight:500;padding:10px 18px;border-radius:999px}
+#bz-home .bz-pill:hover{background:#B8EBC8;text-decoration:none}
+#bz-home .bz-byline{margin:32px 0 16px;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+#bz-home .bz-banner{width:100%;height:auto;aspect-ratio:5/2;object-fit:cover;border-radius:16px}
+#bz-home .bz-kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#8FDCA6}
+#bz-home .bz-h1{font-size:56px;line-height:1.1;max-width:820px;padding:48px 0 40px}
+#bz-home .bz-feature{display:block;background:#0F2440;border-radius:16px;color:#EEF2F5;padding:48px;margin-bottom:72px}
+#bz-home .bz-feature:hover{text-decoration:none;background:#132B4C}
+#bz-home .bz-feature-inner{max-width:820px;display:flex;flex-direction:column;gap:16px}
+#bz-home .bz-feature h2{font-size:34px;line-height:1.2}
+#bz-home .bz-feature p{font-size:17px;line-height:1.6;color:#B9C5D3}
+#bz-home .bz-more{font-size:15px;font-weight:500;color:#8FDCA6}
+#bz-home .bz-row{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:28px}
+#bz-home .bz-row h2{font-size:28px}
+#bz-home .bz-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:28px;margin-bottom:80px}
+#bz-home .bz-card{display:flex;flex-direction:column;background:#0F2440;border-radius:14px;overflow:hidden;color:#EEF2F5}
+#bz-home .bz-card:hover{text-decoration:none;background:#132B4C}
+#bz-home .bz-card img{width:100%;height:190px;object-fit:cover;object-position:top}
+#bz-home .bz-card-body{padding:22px 24px 26px;display:flex;flex-direction:column;gap:10px}
+#bz-home .bz-date{font-size:13px;color:#A9B6C6}
+#bz-home .bz-card h3{font-size:21px;line-height:1.3}
+#bz-home .bz-band{background:#0F2440;border-top:1px solid rgba(238,242,245,.08);border-bottom:1px solid rgba(238,242,245,.08)}
+#bz-home .bz-band-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;align-items:center;padding-top:56px;padding-bottom:56px}
+#bz-home .bz-stack{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+#bz-home .bz-band h2{font-size:30px;line-height:1.2}
+#bz-home .bz-chai{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:40px;padding-top:64px;padding-bottom:64px}
+#bz-home .bz-chai img{width:240px;height:240px;border-radius:16px}
+#bz-home .bz-chai-text{flex:0 1 460px;display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+#bz-home .bz-chai h2{font-size:30px;line-height:1.2}
+#bz-home .bz-chai p{font-size:16px;line-height:1.6;color:#B9C5D3}
+#bz-home .bz-tip{background:#E4F060;color:#0A1A2F!important;font-weight:500;padding:13px 24px;border-radius:999px}
+#bz-home .bz-tip:hover{text-decoration:none;background:#EEF59A}
+#bz-home .bz-footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:14px;color:#A9B6C6;padding-top:36px;padding-bottom:48px}
+@media (max-width:700px){
+#bz-home .bz-wrap{padding-left:16px;padding-right:16px}
+#bz-home .bz-logo{font-size:26px}
+#bz-home .bz-links{gap:16px}
+#bz-home .bz-h1{font-size:38px;padding:32px 0 28px}
+#bz-home .bz-feature{padding:28px}
+#bz-home .bz-feature h2{font-size:27px}
+#bz-home .bz-grid{grid-template-columns:1fr}
+}
+</style>
+<div id="bz-home">
+  <header class="bz-header">
+    <nav class="bz-wrap bz-nav">
+      <a class="bz-logo" href="/">BATCOINZ</a>
+      <div class="bz-links">
+        <a href="/start-here/">Start here</a>
+        <a href="/articles/">Articles</a>
+        <a href="https://beest.batcoinz.com/">BEEST tracker</a>
+        <a href="/media/">Media</a>
+        <a href="/about/">About</a>
+        <a href="https://www.danielbatten.co">Bitcoiner coaching</a>
+        <a class="bz-pill" href="https://www.batcoinz.com/">Newsletter</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="bz-wrap">
+    <p class="bz-byline"><span style="color:#8FDCA6;font-weight:600">Research by Daniel Batten</span><span style="color:#5FB984"> · Author, Climatetech Investor</span></p>
+    
+    <img decoding="async" class="bz-banner" src="https://batcoinz.com/wp-content/uploads/2026/11/batcoinz-banner-five-paths-scaled.png" alt="Line drawings of a methane flare, a gas peaker plant, a wind turbine, a gold bar and a Bitcoin savings jar">
+    <h1 class="bz-h1">Bitcoin, energy and the environment</h1>
+    <p class="bz-start">New to Bitcoin and energy? <a href="/start-here/">Start here →</a></p>
+<section class="bz-viz">
+  <div class="bz-viz-grid">
+    <div class="bz-viz-chart"><div class="bz-stack bz-beest">
+        <a class="bz-beest-chart" href="https://beest.batcoinz.com/sustainable.html" aria-label="Open the BEEST tracker: share of Bitcoin mining powered by sustainable energy since September 2019">
+          <svg id="bz-beest-svg" viewBox="0 0 480 350" role="img" aria-label="Share of Bitcoin mining powered by sustainable energy since September 2019"></svg>
+        </a>
+        
+        
+      </div>
+<style>
+#bz-home .bz-beest{gap:10px;align-items:stretch}
+#bz-home .bz-beest > a:last-child{align-self:flex-start}
+#bz-home .bz-beest-chart{display:block;width:100%;border-radius:10px;background:#092142;border:1px solid rgba(238,242,245,.08);padding:10px 8px 4px}
+#bz-home .bz-beest-chart svg{display:block;width:100%;height:auto}
+#bz-home .bz-beest-title{font-size:17px;font-weight:600;color:#EEF2F5;margin-top:6px}
+</style>
+<script>
+(function () {
+  // Live mini chart: sustainable energy share from the BEEST tracker's daily-rebuilt history.json.
+  var svg = document.getElementById("bz-beest-svg");
+  if (!svg) return;
+  var NS = "http://www.w3.org/2000/svg";
+  function el(tag, attrs, text) {
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    svg.appendChild(e);
+    return e;
+  }
+  fetch("https://beest.batcoinz.com/history.json", { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (d) {
+      var rows = d.rows.filter(function (r, i) { return r.clean_share != null && (i % 5 === 0 || i === d.rows.length - 1); });
+      var W = 480, H = 350, L = 62, R = 14, T = 34, B = 30, GREEN = "#5CC971";
+      var t0 = Date.parse(rows[0].date), t1 = Date.parse(rows[rows.length - 1].date);
+      var x = function (t) { return L + (t - t0) / (t1 - t0) * (W - L - R); };
+      var y = function (v) { return T + (1 - v / 100) * (H - T - B); };
+      var font = "font-family:inherit";
+      el("text", { x: L, y: 17, fill: "#EEEEEE", "font-size": 17, "font-weight": 600, style: font }, "Bitcoin sustainable energy use");
+      el("text", { x: 11, y: (T + H - B) / 2, fill: "#B8C0CC", "font-size": 11, "text-anchor": "middle", transform: "rotate(-90 11 " + ((T + H - B) / 2) + ")", style: font }, "% of mining power");
+      for (var v = 0; v <= 100; v += 20) {
+        el("line", { x1: L, x2: W - R, y1: y(v), y2: y(v), stroke: v === 0 ? "rgba(238,238,238,0.4)" : "rgba(238,238,238,0.09)", "stroke-width": v === 0 ? 1.5 : 1 });
+        el("text", { x: L - 8, y: y(v) + 4, fill: "#B8C0CC", "font-size": 13, "text-anchor": "end", style: font }, v + "%");
+      }
+      var y0 = new Date(t0).getUTCFullYear() + 1, y1 = new Date(t1).getUTCFullYear();
+      for (var yr = y0; yr <= y1; yr++) {
+        el("text", { x: x(Date.UTC(yr, 0, 1)), y: H - 8, fill: "#B8C0CC", "font-size": 13, "text-anchor": "middle", style: font }, yr);
+      }
+      var dpath = rows.map(function (r, i) { return (i ? "L" : "M") + x(Date.parse(r.date)).toFixed(1) + " " + y(r.clean_share * 100).toFixed(1); }).join(" ");
+      el("path", { d: dpath, fill: "none", stroke: GREEN, "stroke-width": 2.6, "stroke-linejoin": "round" });
+      var last = rows[rows.length - 1], lv = last.clean_share * 100, lx = x(t1), ly = y(lv);
+      el("circle", { cx: lx, cy: ly, r: 5, fill: GREEN, stroke: "#092142", "stroke-width": 2 });
+      el("text", { x: lx, y: ly + 24, fill: "#EEEEEE", "font-size": 17, "font-weight": 700, "text-anchor": "end", style: font }, lv.toFixed(1) + "%");
+    })
+    .catch(function () { svg.parentNode.style.display = "none"; });
+})();
+</script></div>
+    <div class="bz-figs">
+      <div class="bz-fig"><span class="bz-fig-g"><svg viewBox="0 0 90 90" width="90" height="90" aria-hidden="true"><circle cx="45" cy="45" r="34" fill="none" stroke="#3A4D6B" stroke-width="12"/><circle cx="45" cy="45" r="34" fill="none" stroke="#6AA84F" stroke-width="12" stroke-dasharray="126.0 213.6" transform="rotate(-90 45 45)"/></svg></span><span class="bz-fig-b"><span class="bz-fig-n">59%</span><span class="bz-fig-t">of Bitcoin's emissions offset</span><a class="bz-tell" href="/bitcoin-could-be-carbon-negative-by-2031-here-are-5-ways-it-gets-there/">Tell me more →</a></span></div>
+      <div class="bz-fig"><span class="bz-fig-g"><span style="display:flex;flex-direction:column;align-items:center;gap:6px"><svg viewBox="0 0 150 40" width="150" height="40" aria-hidden="true"><g transform="translate(0,0)"><g fill="none" stroke="#8FDCA6" stroke-width="1.6" stroke-linejoin="round"><path d="M2 12h24M4 12l2-5h12l4 5M7 7l1.5-3h8l2.5 3"/><circle cx="8" cy="13.5" r="2" fill="#0F2440"/><circle cx="20" cy="13.5" r="2" fill="#0F2440"/></g></g><g transform="translate(30,0)"><g fill="none" stroke="#8FDCA6" stroke-width="1.6" stroke-linejoin="round"><path d="M2 12h24M4 12l2-5h12l4 5M7 7l1.5-3h8l2.5 3"/><circle cx="8" cy="13.5" r="2" fill="#0F2440"/><circle cx="20" cy="13.5" r="2" fill="#0F2440"/></g></g><g transform="translate(60,0)"><g fill="none" stroke="#8FDCA6" stroke-width="1.6" stroke-linejoin="round"><path d="M2 12h24M4 12l2-5h12l4 5M7 7l1.5-3h8l2.5 3"/><circle cx="8" cy="13.5" r="2" fill="#0F2440"/><circle cx="20" cy="13.5" r="2" fill="#0F2440"/></g></g><g transform="translate(90,0)"><g fill="none" stroke="#8FDCA6" stroke-width="1.6" stroke-linejoin="round"><path d="M2 12h24M4 12l2-5h12l4 5M7 7l1.5-3h8l2.5 3"/><circle cx="8" cy="13.5" r="2" fill="#0F2440"/><circle cx="20" cy="13.5" r="2" fill="#0F2440"/></g></g><g transform="translate(120,0)"><g fill="none" stroke="#8FDCA6" stroke-width="1.6" stroke-linejoin="round"><path d="M2 12h24M4 12l2-5h12l4 5M7 7l1.5-3h8l2.5 3"/><circle cx="8" cy="13.5" r="2" fill="#0F2440"/><circle cx="20" cy="13.5" r="2" fill="#0F2440"/></g></g><g transform="translate(0,20)"><g fill="none" stroke="#8FDCA6" stroke-width="1.6" stroke-linejoin="round"><path d="M2 12h24M4 12l2-5h12l4 5M7 7l1.5-3h8l2.5 3"/><circle cx="8" cy="13.5" r="2" fill="#0F2440"/><circle cx="20" cy="13.5" r="2" fill="#0F2440"/></g></g><g transform="translate(30,20)"><g fill="none" stroke="#8FDCA6" stroke-width="1.6" stroke-linejoin="round"><path d="M2 12h24M4 12l2-5h12l4 5M7 7l1.5-3h8l2.5 3"/><circle cx="8" cy="13.5" r="2" fill="#0F2440"/><circle cx="20" cy="13.5" r="2" fill="#0F2440"/></g></g><g transform="translate(60,20)"><g fill="none" stroke="#8FDCA6" stroke-width="1.6" stroke-linejoin="round"><path d="M2 12h24M4 12l2-5h12l4 5M7 7l1.5-3h8l2.5 3"/><circle cx="8" cy="13.5" r="2" fill="#0F2440"/><circle cx="20" cy="13.5" r="2" fill="#0F2440"/></g></g><g transform="translate(90,20)"><g fill="none" stroke="#8FDCA6" stroke-width="1.6" stroke-linejoin="round"><path d="M2 12h24M4 12l2-5h12l4 5M7 7l1.5-3h8l2.5 3"/><circle cx="8" cy="13.5" r="2" fill="#0F2440"/><circle cx="20" cy="13.5" r="2" fill="#0F2440"/></g></g><g transform="translate(120,20)"><g fill="none" stroke="#8FDCA6" stroke-width="1.6" stroke-linejoin="round"><path d="M2 12h24M4 12l2-5h12l4 5M7 7l1.5-3h8l2.5 3"/><circle cx="8" cy="13.5" r="2" fill="#0F2440"/><circle cx="20" cy="13.5" r="2" fill="#0F2440"/></g></g></svg><span style="font-size:12px;color:#B8C4D0">~1 million cars' exhaust</span></span></span><span class="bz-fig-b"><span class="bz-fig-n">4.7 Mt</span><span class="bz-fig-t">CO2e a year destroyed at flare sites</span><a class="bz-tell" href="/bitcoin-could-be-carbon-negative-by-2031-here-are-5-ways-it-gets-there/">Tell me more →</a></span></div>
+      <div class="bz-fig"><span class="bz-fig-g"><svg viewBox="0 0 128 72" width="128" height="72" aria-hidden="true"><g transform="translate(0,0)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(16,0)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(32,0)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(48,0)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(64,0)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(80,0)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(96,0)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(112,0)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(0,18)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(16,18)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(32,18)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(48,18)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(64,18)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(80,18)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(96,18)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(112,18)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(0,36)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(16,36)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(32,36)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(48,36)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(64,36)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(80,36)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(96,36)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(112,36)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(0,54)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(16,54)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(32,54)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(48,54)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(64,54)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(80,54)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(96,54)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g><g transform="translate(112,54)"><g><path d="M0 0h7l3 3v11H0z" fill="#6AA84F"/><path d="M2 6h6M2 8.5h6M2 11h4" stroke="#0F2440" stroke-width="1"/></g></g></svg></span><span class="bz-fig-b"><span class="bz-fig-n">32</span><span class="bz-fig-t">peer-reviewed papers show Bitcoin's environmental benefits</span><a class="bz-tell" href="/the-changing-narrative-on-bitcoin-mining/">Tell me more →</a></span></div>
+      <div class="bz-fig"><span class="bz-fig-g"><span style="display:flex;flex-direction:column;align-items:flex-start;gap:6px"><svg viewBox="0 0 143 48" width="143" height="48" aria-hidden="true"><g transform="translate(0,0)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(13,0)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(26,0)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(39,0)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(52,0)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(65,0)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(78,0)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(91,0)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(104,0)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(117,0)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(130,0)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(0,16)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(13,16)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(26,16)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(39,16)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(52,16)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(65,16)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(78,16)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(91,16)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(104,16)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(117,16)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(130,16)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(0,32)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(13,32)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(26,32)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(39,32)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(52,32)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(65,32)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(78,32)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(91,32)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(104,32)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(117,32)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g><g transform="translate(130,32)"><g fill="#E4F060"><circle cx="5" cy="3" r="2.6"/><path d="M0.5 13c0-3.2 2-5.2 4.5-5.2s4.5 2 4.5 5.2z"/></g></g></svg><span style="font-size:12px;color:#B8C4D0">1 icon = 10,000 people</span></span></span><span class="bz-fig-b"><span class="bz-fig-n">329,000</span><span class="bz-fig-t">refugees kept their savings with Bitcoin</span><a class="bz-tell" href="https://x.com/DSBatten/article/2039727288355278997">21 humanitarian benefits →</a></span></div>
+    </div>
+    <a class="bz-viz-more" href="https://beest.batcoinz.com/">More Bitcoin and energy live charts →</a>
+  </div>
+  
+</section>
+<style>
+#bz-home .bz-viz{margin:0 0 48px}
+#bz-home .bz-viz-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:24px;align-items:stretch}
+#bz-home .bz-viz-chart .bz-beest{height:100%}
+#bz-home .bz-viz-chart .bz-beest-chart{height:100%;display:flex;align-items:center}
+#bz-home .bz-figs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#bz-home .bz-fig{display:flex;flex-direction:column;gap:6px;background:#0F2440;border:1px solid rgba(238,242,245,.08);border-radius:12px;padding:20px;color:#EEF2F5;text-decoration:none}
+#bz-home .bz-fig:hover{border-color:#8FDCA6}
+#bz-home .bz-fig-n{font-family:Outfit,Inter,sans-serif;font-size:44px;font-weight:600;line-height:1;color:#8FDCA6}
+#bz-home .bz-fig-t{font-size:15px;line-height:1.4;color:#C9D3DE}
+#bz-home .bz-compare{display:flex;align-items:center;gap:16px;margin-top:20px;background:#0F2440;border:1px solid rgba(238,242,245,.08);border-radius:12px;padding:16px 20px}
+#bz-home .bz-compare p{margin:0;font-size:17px;color:#EEF2F5}
+#bz-home .bz-viz-foot{margin:14px 0 0;font-size:14px;color:#B8C4D0}
+@media (max-width:820px){#bz-home .bz-viz-grid{grid-template-columns:1fr}#bz-home .bz-fig-n{font-size:36px}}
+#bz-home .bz-figs{display:grid;grid-template-columns:1fr;gap:14px}
+#bz-home .bz-fig{flex-direction:row;align-items:center;gap:20px;padding:16px 20px}
+#bz-home .bz-fig-g{flex:0 0 150px;display:flex;justify-content:center}
+#bz-home .bz-fig-b{display:flex;flex-direction:column;gap:4px;min-width:0}
+#bz-home .bz-fig-n{font-size:38px}
+#bz-home .bz-viz-chart{display:flex;flex-direction:column;gap:12px}
+#bz-home .bz-viz-more{font-size:15px;font-weight:500;color:#8FDCA6}
+@media (max-width:820px){#bz-home .bz-fig-g{flex-basis:110px}#bz-home .bz-fig-g svg{max-width:110px;height:auto}}
+
+#bz-home .bz-tell{font-size:14px;font-weight:600;color:#8FDCA6;margin-top:4px}
+#bz-home .bz-feature-inner{max-width:none}
+#bz-home .bz-feature h2 a{color:#EEF2F5}
+#bz-home .bz-feature-links{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+#bz-home .bz-feature-links a:last-child{font-size:16px}
+#bz-home .bz-viz-more{font-size:19px!important;font-weight:600!important;color:#B4F5C6!important}
+#bz-home .bz-band-grid{align-items:center}
+#bz-home .bz-chai-band{justify-content:flex-end;padding:0;gap:24px;flex-wrap:nowrap}
+#bz-home .bz-chai-band img{width:150px;height:150px}
+#bz-home .bz-chai-band .bz-chai-text{flex:0 1 340px}
+#bz-home .bz-chai-band h2{font-size:22px}
+@media (max-width:700px){#bz-home .bz-chai-band{justify-content:flex-start;flex-wrap:wrap}}
+
+#bz-home .bz-figs{grid-template-columns:1fr 1fr!important}
+#bz-home .bz-fig{flex-direction:column!important;align-items:flex-start!important;gap:10px!important;padding:16px!important}
+#bz-home .bz-fig-g{flex:0 0 auto!important;justify-content:flex-start!important;height:74px;align-items:center}
+#bz-home .bz-fig-n{font-size:34px!important}
+#bz-home .bz-fig-t{font-size:14px!important}
+@media (min-width:821px){#bz-home .bz-viz-grid{grid-template-columns:1.1fr 1fr!important}}
+@media (max-width:820px){#bz-home .bz-viz-grid{grid-template-columns:1fr!important}#bz-home .bz-figs{gap:10px!important}#bz-home .bz-fig{min-width:0}#bz-home .bz-fig-g svg{max-width:100%;height:auto}#bz-home .bz-fig-n{font-size:28px!important}}
+#bz-home .bz-viz-chart .bz-beest-chart{height:auto!important}
+#bz-home .bz-chai-band > a{flex:0 0 150px}
+@media (max-width:820px){#bz-home .bz-figs{grid-template-columns:1fr 1fr!important}}
+@media (max-width:700px){#bz-home .bz-band-grid{gap:28px}#bz-home .bz-chai-band{flex-wrap:nowrap!important;align-items:flex-start;gap:14px}#bz-home .bz-chai-band > a{flex:0 0 96px}#bz-home .bz-chai-band img{width:96px;height:96px}#bz-home .bz-chai-band h2{font-size:19px}}
+#bz-home .bz-chai-band .bz-chai-text{min-width:0}#bz-home .bz-chai-band p span{overflow-wrap:anywhere}
+#bz-home .bz-figs{grid-template-rows:1fr 1fr}
+#bz-home .bz-fig{padding:14px 16px!important;gap:8px!important}
+#bz-home .bz-fig-g{height:60px!important}
+#bz-home .bz-viz-grid > .bz-viz-more{grid-column:1;margin-top:-8px}
+@media (max-width:820px){#bz-home .bz-viz-grid > .bz-viz-more{grid-row:2}}
+#bz-home .bz-h1{padding-bottom:14px!important}#bz-home .bz-start{margin:0 0 32px;font-size:18px;color:#C9D3DE}#bz-home .bz-start a{color:#0A1A2F;background:#8FDCA6;border-radius:999px;padding:7px 16px;margin-left:8px;font-weight:600;font-size:16px;white-space:nowrap;display:inline-block}
+@media (max-width:820px){
+#bz-home .bz-figs{grid-template-columns:1fr!important;grid-template-rows:none!important;gap:10px!important}
+#bz-home .bz-fig{flex-direction:row!important;align-items:center!important;gap:14px!important;padding:12px 14px!important}
+#bz-home .bz-fig-g{flex:0 0 112px!important;height:auto!important;justify-content:center!important}
+#bz-home .bz-fig-g svg{max-width:112px;height:auto}
+#bz-home .bz-fig-g span{font-size:11px!important}
+#bz-home .bz-fig-b{gap:2px!important;min-width:0}
+#bz-home .bz-fig-n{font-size:28px!important}
+#bz-home .bz-fig-t{font-size:14px!important}
+}
+@media (max-width:700px){
+#bz-home .bz-feature{margin-bottom:32px!important}
+#bz-home .bz-band-grid{padding-top:36px!important;padding-bottom:40px!important}
+#bz-home .bz-chai-band{display:grid!important;grid-template-columns:80px 1fr;column-gap:14px;row-gap:12px;align-items:center;border-top:1px solid rgba(238,242,245,.12);padding-top:28px!important}
+#bz-home .bz-chai-band > a:first-child{grid-column:1;grid-row:1}
+#bz-home .bz-chai-band img{width:80px!important;height:80px!important}
+#bz-home .bz-chai-band .bz-chai-text{display:contents}
+#bz-home .bz-chai-band h2{grid-column:2;grid-row:1;font-size:19px}
+#bz-home .bz-chai-band p{grid-column:1/3;grid-row:2;margin:0}
+#bz-home .bz-chai-band .bz-tip{grid-column:1/3;grid-row:3;justify-self:start}
+#bz-home .bz-chai-band p span{overflow-wrap:normal!important;white-space:nowrap}
+}
+</style>
+
+
+    <div class="bz-feature" id="bz-feature">
+      <div class="bz-feature-inner">
+        <span class="bz-kicker" id="bz-feature-date">Latest</span>
+        <h2><a id="bz-feature-title" href="/articles/">Latest article</a></h2>
+        <p id="bz-feature-excerpt"></p>
+        <div class="bz-feature-links"><a class="bz-more" id="bz-feature-link" href="/articles/">Read the article →</a><a class="bz-more" id="bz-others" href="/articles/">Read other articles →</a></div>
+      </div>
+    </div>
+
+    
+  </div>
+
+  <section class="bz-band">
+    <div class="bz-wrap bz-band-grid">
+      
+      <div class="bz-stack">
+        <span class="bz-kicker">Newsletter</span>
+        <h2>New research in your inbox</h2>
+        <a class="bz-pill" href="https://www.batcoinz.com/" style="font-size:16px;padding:13px 24px">Subscribe on Substack</a>
+      </div>
+      <div class="bz-chai bz-chai-band">
+    <a href="lightning:soakedbobcat96@walletofsatoshi.com"><img decoding="async" src="https://batcoinz.com/wp-content/uploads/2026/11/buy-me-a-chai-lightning.png" alt="Chai cup with a Lightning QR code"></a>
+    <div class="bz-chai-text">
+      <h2>If you got value from this research, buy me a chai</h2>
+      <p>Scan the cup with any Lightning wallet, or send sats to <span style="color:#EEF2F5">soakedbobcat96@walletofsatoshi.com</span></p>
+      <a class="bz-tip" href="lightning:soakedbobcat96@walletofsatoshi.com">Tip with Lightning</a>
+    </div>
+  </div>
+    </div>
+  </section>
+
+  
+
+  <footer class="bz-wrap bz-footer">
+    <span>© <span id="bz-year">2026</span> Batcoinz</span>
+    <span><a href="https://www.danielbatten.co">Bitcoiner coaching</a> · <a href="https://beest.batcoinz.com/">BEEST tracker</a> · <a href="https://www.batcoinz.com/">Newsletter</a> · <a href="/misinformation-archive/">Misinformation archive</a></span>
+  </footer>
+</div>
+<script>
+(function () {
+  // Fills the latest-article box from the WordPress REST API and counts the other listed articles.
+  // Archive (39) and unlisted (41) posts are left out.
+  var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var yel = document.getElementById("bz-year"); if (yel) yel.textContent = new Date().getFullYear();
+  function fmt(d) { var t = new Date(d); return t.getDate() + " " + MONTHS[t.getMonth()] + " " + t.getFullYear(); }
+  function text(html) { var el = document.createElement("div"); el.innerHTML = html; return (el.textContent || "").replace(/\s+/g, " ").trim(); }
+  fetch("/wp-json/wp/v2/posts?per_page=1&categories_exclude=39,41&_fields=date,link,title,excerpt")
+    .then(function (r) {
+      var total = +r.headers.get("X-WP-Total");
+      if (total > 1) document.getElementById("bz-others").textContent = "Read other articles (" + (total - 1) + ") →";
+      return r.json();
+    })
+    .then(function (posts) {
+      if (!posts.length) return;
+      var f = posts[0];
+      document.getElementById("bz-feature-date").textContent = "Latest · " + fmt(f.date);
+      var t = document.getElementById("bz-feature-title"); t.innerHTML = f.title.rendered; t.href = f.link;
+      document.getElementById("bz-feature-link").href = f.link;
+      var ex = text(f.excerpt.rendered).replace(/^Summary\s+/i, "").replace(/\s*(\[…\]|…|\.\.\.)\s*$/, "");
+      if (ex.length > 220) ex = ex.slice(0, 220).replace(/\s+\S*$/, "");
+      document.getElementById("bz-feature-excerpt").textContent = ex + "…";
+    })
+    .catch(function () {});
+})();
+</script>
+<!-- /wp:html -->
