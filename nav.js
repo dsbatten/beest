@@ -25,7 +25,7 @@
   // Links to Daniel's other sites. Kept below a divider so they are not read as more charts.
   var EXTERNAL = [
     { title: "Articles", href: "https://batcoinz.com/", icon: "articles" },
-    { title: "Newsletter", href: "https://www.batcoinz.com/", icon: "mail" },
+    { title: "Newsletter", href: "https://newsletter.batcoinz.com/", icon: "mail" },
     { title: "DARI", href: "https://www.da-ri.org/", icon: "institute" },
     { title: "Coaching", href: "https://www.danielbatten.co", icon: "person" }
   ];
