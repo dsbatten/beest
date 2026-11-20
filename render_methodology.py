@@ -6,7 +6,7 @@ body = re.sub(r'<a href="(http[^"]+)"', r'<a href="\1" target="_blank" rel="noop
 # Bare URLs (as in the References list) become links too; only text not already inside a tag or an existing link.
 body = re.sub(r'(?<![="\'>/\w])(https?://[^\s<]+?)(?=[.,;)]?(?:\s|<|$))', r'<a href="\1" target="_blank" rel="noopener">\1</a>', body)
 html = f"""<!doctype html>
-<html lang="en"><head><link rel="canonical" href="https://batcoinz.com/beest/methodology.html"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<html lang="en"><head><link rel="canonical" href="https://batcoinz.com/beest/methodology.html"><link rel="icon" href="https://batcoinz.com/wp-content/uploads/2026/11/batcoinz-site-icon-150x150.png" sizes="32x32"><link rel="icon" href="https://batcoinz.com/wp-content/uploads/2026/11/batcoinz-site-icon-300x300.png" sizes="192x192"><link rel="apple-touch-icon" href="https://batcoinz.com/wp-content/uploads/2026/11/batcoinz-site-icon-300x300.png"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>BEEST 2 methodology</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap">
 <style>
