@@ -1,0 +1,30 @@
+# Keeps danielbatten.co's page cache warm.
+# The site takes ~3s to build a page when LiteSpeed has no cached copy (and far longer when the
+# shared host is busy). LiteSpeed's own crawler, which would re-cache pages after a purge, is
+# disabled by the host, so this job does the same thing from outside: every 3 hours it requests
+# every address in the site's sitemaps, one at a time, so visitors get the cached copy.
+# It has nothing to do with BEEST; it lives here because this repo already runs scheduled jobs.
+name: Warm danielbatten.co cache
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+jobs:
+  warm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Request every sitemap address (desktop and phone)
+        run: |
+          set -u
+          urls=$(curl -s https://danielbatten.co/sitemap_index.xml | grep -o '<loc>[^<]*' | sed 's/<loc>//' \
+            | while read sm; do curl -s "$sm" | grep -o '<loc>[^<]*' | sed 's/<loc>//'; done | sort -u)
+          urls=$(printf '%s\nhttps://danielbatten.co/\n' "$urls" | sort -u)
+          for u in $urls; do
+            for ua in "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36" \
+                      "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148"; do
+              curl -s -o /dev/null -m 60 -A "$ua" -D /tmp/h -w "%{http_code} %{time_starttransfer}s " "$u" || true
+              echo "$(grep -i '^x-litespeed-cache:' /tmp/h | tr -d '\r') $u"
+              sleep 2
+            done
+          done
