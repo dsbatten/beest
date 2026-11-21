@@ -45,7 +45,7 @@
       dragmode: narrow ? false : "zoom",
       hoverlabel: { bgcolor: "#0D2B55", bordercolor: "rgba(238,238,238,0.2)", font: { family: css("--font"), color: css("--ink"), size: narrow ? 12 : 14 } },
       legend: { orientation: "h", x: 0.5, xanchor: "center", y: narrow ? -0.13 : -0.16, yanchor: "top", font: { size: fs, color: css("--ink-muted") }, itemclick: "toggle", itemdoubleclick: "toggleothers", traceorder: "normal" },
-      xaxis: { type: "date", showgrid: false, zeroline: false, tickformat: "%b %Y", ticks: "outside", tickcolor: css("--ink-muted"), tickfont: { color: css("--ink-muted") }, linecolor: css("--grid"), hoverformat: "%-d %b %Y" },
+      xaxis: { type: "date", range: [x[0], x[x.length - 1]], showgrid: false, zeroline: false, tickformat: "%b %Y", ticks: "outside", tickcolor: css("--ink-muted"), tickfont: { color: css("--ink-muted") }, linecolor: css("--grid"), hoverformat: "%-d %b %Y" },
       yaxis: Object.assign({ gridcolor: css("--grid"), zeroline: false, tickfont: { color: css("--ink-muted") }, fixedrange: narrow,
         title: { text: narrow ? y.titleShort : y.title, font: { color: css("--ink-muted"), size: narrow ? Math.max(7, fs - 1) : 15 }, standoff: narrow ? 4 : 10 } }, y.axis),
       yaxis3: { type: "log", overlaying: "y", side: "right", showgrid: false, zeroline: false, showline: false, ticks: "",
