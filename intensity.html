@@ -134,9 +134,23 @@ window.ESG = {
       line: { color: css("--bank"), width: lw(2), dash: "dot" },
       hovertemplate: "%{y:.0f} gCO2e/kWh<extra>Banking sector (world grid average)</extra>" },
   ],
-  label: (rows) => { const now = rows[rows.length - 1], then = window.beestSameDayYearsAgo(rows, 7); if (!then) return null;
-    const ni = (r) => r.net_mt * 1000 / r.electricity_twh_yr; const pct = Math.round((1 - ni(now) / ni(then)) * 100);
-    return { big: (pct >= 0 ? "Down " : "Up ") + Math.abs(pct) + "%", small: "net carbon intensity vs " + window.beestDate(then.date), color: "--net" }; },
+  // The toolbar switch turns this into a Bitcoin vs banking comparison: the banking line comes into view, each
+  // line gets today's figure just beneath its right-hand end, and the page title changes to match.
+  toggle: (rows, css, narrow) => {
+    const now = rows[rows.length - 1];
+    const btc = now.net_mt * 1000 / now.electricity_twh_yr, bank = now.grid_g_kwh;
+    const size = narrow ? 12 : 24;
+    const tag = (word, val, color) => ({ xref: "x", yref: "y", x: now.date, y: val, xanchor: "right", yanchor: "top", yshift: -6,
+      showarrow: false, align: "right", bgcolor: "rgba(0,0,0,0)",
+      text: "<span style='font-size:" + size + "px;font-weight:700;color:" + color + "'>" + word + ": " + Math.round(val) + " gCO2e/kWh</span>" });
+    const h1 = document.querySelector("h1"); if (h1 && !h1.dataset.base) h1.dataset.base = h1.textContent;
+    return {
+      name: "Show or hide Bitcoin vs banking",
+      show: ["Banking sector"],
+      annotations: [tag("Banking", bank, css("--bank")), tag("Bitcoin", btc, css("--net"))],
+      onChange: (on) => { if (h1) h1.textContent = on ? "Bitcoin vs Banking Emission Intensity" : h1.dataset.base; },
+    };
+  },
   yaxis: (rows) => { const m = Math.max(...rows.map((r) => r.intensity_g_kwh));
     return { title: "Emissions intensity: gCO2e per kWh", titleShort: "gCO2e/kWh", axis: { range: [0, Math.ceil(m * 1.3 / 100) * 100] } }; },
 };

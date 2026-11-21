@@ -59,10 +59,25 @@
     if (spec.label && window.beestLabel) { const L = spec.label(rows);
       if (L) { label = window.beestLabel(Array.isArray(L.big) ? L.big.map((l) => ({ text: l.text, color: css(l.color) })) : L.big, L.small, css(L.color), narrow, css, L.y, { size: L.size, smallFirst: L.smallFirst });
         if (L.pos) Object.assign(label, L.pos); } }
+    // A page can replace the single figure with its own switch (spec.toggle): extra annotations, traces it
+    // brings into view, and a hook for anything outside the plot, such as the page title.
+    const tog = spec.toggle ? spec.toggle(rows, css, narrow) : null;
     window.__beestLabelOn = !!window.__beestLabelOn;
-    layout.annotations = label && window.__beestLabelOn ? [label] : [];
-    if (label) config.modeBarButtonsToAdd = [{ name: "Show or hide today's figure", icon: { width: 1000, height: 1000, path: "M150 250h700v130h-700z M150 470h500v130h-500z M150 690h300v130h-300z" },
-      click: (gd) => { window.__beestLabelOn = !window.__beestLabelOn; Plotly.relayout(gd, { annotations: window.__beestLabelOn ? [label] : [] }); } }];
+    const on = window.__beestLabelOn;
+    const annFor = (state) => state ? (tog ? tog.annotations : (label ? [label] : [])) : [];
+    layout.annotations = annFor(on);
+    if (tog) {
+      traces.forEach((t) => { if (tog.show.includes(t.name)) t.visible = on ? true : "legendonly"; });
+      if (tog.onChange) tog.onChange(on);
+    }
+    if (label || tog) config.modeBarButtonsToAdd = [{ name: tog ? tog.name : "Show or hide today's figure", icon: { width: 1000, height: 1000, path: "M150 250h700v130h-700z M150 470h500v130h-500z M150 690h300v130h-300z" },
+      click: (gd) => { window.__beestLabelOn = !window.__beestLabelOn; const st = window.__beestLabelOn;
+        if (tog) {
+          const idx = gd.data.map((t, i) => tog.show.includes(t.name) ? i : -1).filter((i) => i >= 0);
+          if (idx.length) Plotly.restyle(gd, { visible: st ? true : "legendonly" }, idx);
+          if (tog.onChange) tog.onChange(st);
+        }
+        Plotly.relayout(gd, { annotations: annFor(st) }); } }];
     Plotly.react("chart", traces, layout, config);
   }
 
