@@ -148,11 +148,12 @@ window.ESG = {
     // Both changes run from the first month with a banking figure, so the two percentages share a start date.
     const start = rows.find((r) => r.grid_g_kwh != null);
     const btc = ni(now), bank = now.grid_g_kwh;
-    const size = narrow ? 12 : 24, small = narrow ? 11 : 22;
+    const size = narrow ? 12 : 24, unit = narrow ? 8 : 14, small = narrow ? 12 : 26;
     const change = (a, b) => { const p = Math.round((1 - a / b) * 100); return (p >= 0 ? "Down " : "Up ") + Math.abs(p) + "%"; };
     const tag = (word, val, ch, color) => ({ xref: "x", yref: "y", x: now.date, y: val, xanchor: "right", yanchor: "top", yshift: -6,
       showarrow: false, align: "right", bgcolor: "rgba(0,0,0,0)", font: { size: size },
-      text: "<span style='font-size:" + size + "px;font-weight:700;color:" + color + "'>" + word + ": " + Math.round(val) + " gCO2e/kWh</span><br>" +
+      text: "<span style='font-size:" + size + "px;font-weight:700;color:" + color + "'>" + word + ": " + Math.round(val) + "</span>" +
+        "<span style='font-size:" + unit + "px;color:" + color + "'>g CO<sub>2</sub>e/kWh</span><br>" +
         "<span style='font-size:" + small + "px;color:" + color + "'>" + ch + "</span>" });
     const h1 = document.querySelector("h1"); if (h1 && !h1.dataset.base) h1.dataset.base = h1.textContent;
     return {
