@@ -213,6 +213,20 @@ def build():
     for r in rows:
         last_supply = supplies.get(r["date"], last_supply)
         r["supply_btc"] = round(last_supply) if last_supply else None
+    # World grid carbon intensity (Ember, 12 months to each month), for the banking-sector comparison on the
+    # intensity chart: banks are taken to run entirely on grid electricity at the world average. Each day takes
+    # its month's figure; days after Ember's latest month carry that month's figure forward.
+    try:
+        grid = {m: g for m, _, g in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "grid_greening.json")))["rows"]}
+    except (OSError, ValueError, KeyError):
+        grid = {}
+    last_grid = None
+    first_month = min(grid) if grid else None
+    for r in rows:
+        m = r["date"][:7]
+        if m in grid:
+            last_grid = grid[m]
+        r["grid_g_kwh"] = round(last_grid, 1) if (last_grid is not None and first_month and m >= first_month) else None
     # Mitigated chart only: total emissions on a 30-day hashrate average. Flare-gas mining is off-grid and runs
     # near-continuously, so it does not rise and fall with the grid-price swings that move the network's hashrate
     # week to week; a 30-day average keeps those short swings out of the mitigated share. Total emissions scale
