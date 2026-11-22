@@ -20,3 +20,10 @@ window.__applyArticle=async(id,afterParas,dry)=>{const p=await (await fetch('/wp
   out=out.replace(x[1]+x[2]+x[3],x[1]+neu+x[3])}
  window.__out=out;if(!dry){const r=await fetch('/wp-json/wp/v2/posts/'+id+'?_fields=id',{method:'POST',headers:{'X-WP-Nonce':__n,'Content-Type':'application/json'},body:JSON.stringify({content:out})});report.push('SAVE '+r.status)}return report.join('\n')};
 'ok'
+window.__build=(marked,attrs)=>{const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');let h=esc(marked);h=h.replace(/\[\[(\d+)\|([^\]]+)\]\]/g,(m,n,txt)=>'<a'+attrs[+n]+'>'+txt+'</a>');h=h.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');return h};
+window.__applyMarked=async(id,marked,dry,skip)=>{const p=await (await fetch('/wp-json/wp/v2/posts/'+id+'?context=edit&_fields=content',{headers:{'X-WP-Nonce':__n}})).json();const raw=p.content.raw;const attrs=[...raw.matchAll(/<a\b([^>]*)>/g)].map(m=>m[1]);
+ const ps=[...raw.matchAll(/(<p\b[^>]*>)([\s\S]*?)(<\/p>)/g)].filter(x=>{const t=__plainP(x[2]);return t&&!(skip&&skip(t))});if(ps.length!==marked.length)return 'count '+ps.length+' vs '+marked.length;
+ let out=raw;const rep=[];ps.forEach((x,i)=>{const neu=__build(marked[i],attrs);out=out.replace(x[1]+x[2]+x[3],x[1]+neu+x[3])});
+ const before=[...raw.matchAll(/<a\b[^>]*>/g)].length,after=[...out.matchAll(/<a\b[^>]*>/g)].length;rep.push('links '+before+'->'+after);
+ const hb=[...raw.matchAll(/href="([^"]*)"/g)].map(m=>m[1]).sort().join('|'),ha=[...out.matchAll(/href="([^"]*)"/g)].map(m=>m[1]).sort().join('|');rep.push('same hrefs '+(hb===ha));rep.push('figures '+(raw.match(/<figure/g)||[]).length+'->'+(out.match(/<figure/g)||[]).length);
+ window.__out=out;if(!dry){const r=await fetch('/wp-json/wp/v2/posts/'+id+'?_fields=id',{method:'POST',headers:{'X-WP-Nonce':__n,'Content-Type':'application/json'},body:JSON.stringify({content:out})});rep.push('SAVE '+r.status)}return rep.join(' | ')};
