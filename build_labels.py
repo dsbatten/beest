@@ -61,10 +61,39 @@ def latest_texts(data):
     return texts
 
 
+def descriptions(data):
+    """The search description for each page, carrying the day's figure.
+
+    Search results and AI tools quote the description, so it states today's figure with its date,
+    and names BEEST 2 and its author, rather than describing the chart in general terms.
+    """
+    rows = data["rows"]
+    now, first = rows[-1], rows[0]
+    day = fmt_date(data["generated"])
+    then = same_day_years_ago(rows, 7)
+    d = {"index.html": f"Bitcoin's net emissions on {day}: {now['net_mt']:.1f} MtCO2e a year. "
+                       "Live daily tracker of Bitcoin network emissions and energy consumption (BEEST 2), by Daniel Batten."}
+    share = 100 * now["mitigation_gas_mt_30d"] / now["gross_mt_30d"]
+    d["mitigated.html"] = (f"On {day}, Bitcoin mining on flare gas canceled out {share:.1f}% of the network's emissions "
+                           f"({now['mitigation_gas_mt_30d']:.2f} MtCO2e a year). Live daily chart from BEEST 2, by Daniel Batten.")
+    if then:
+        pct = round((1 - net_intensity(now) / net_intensity(then)) * 100)
+        d["intensity.html"] = (f"Bitcoin's net carbon intensity on {day}: {net_intensity(now):.0f} gCO2e/kWh, "
+                               f"{'down' if pct >= 0 else 'up'} {abs(pct)}% in seven years. Live daily chart from BEEST 2, by Daniel Batten.")
+    d["sustainable.html"] = (f"On {day}, {100 * now['clean_share']:.1f}% of Bitcoin mining power came from sustainable sources. "
+                             "Live daily chart from BEEST 2, by Daniel Batten.")
+    if now.get("price_usd") and first.get("price_usd"):
+        d["since-2019.html"] = (f"Since 1 Sep 2019, Bitcoin's hashrate has grown {now['hashrate_ehs_7d'] / first['hashrate_ehs_7d']:.1f}x "
+                                f"and its price {now['price_usd'] / first['price_usd']:.1f}x, while net emissions have stayed "
+                                "statistically static. Live daily chart from BEEST 2.")
+    return d
+
+
 def main():
     data = json.load(open("history.json"))
     updated = fmt_date(data["generated"])
     texts = latest_texts(data)
+    descs = descriptions(data)
     for page in ["index.html", "intensity.html", "mitigated.html", "sustainable.html", "since-2019.html"]:
         html = open(page).read()
         # The update date, so the static page no longer shows a dash before the chart's code runs.
@@ -75,6 +104,12 @@ def main():
             html = re.sub(r'(?: <span class="sep">\|</span> |<br>)<b>latest:</b> <span id="latest">[^<]*</span>', '', html, count=1)
             html = html.replace(f'<span id="updated">{updated}</span>',
                                 f'<span id="updated">{updated}</span><br><b>latest:</b> {latest}', 1)
+        if page in descs:
+            desc = descs[page].replace('"', "&quot;")
+            for attr in ('name="description"', 'property="og:description"', 'name="twitter:description"'):
+                html = re.sub(r'<meta ' + attr + r' content="[^"]*">', f'<meta {attr} content="{desc}">', html, count=1)
+        # The dataset label's last-modified date follows the data.
+        html = re.sub(r'"dateModified": "[^"]*"', f'"dateModified": "{data["generated"]}"', html, count=1)
         open(page, "w").write(html)
         print(page, "->", texts.get(page, "(date only)"))
 

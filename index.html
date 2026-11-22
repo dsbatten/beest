@@ -2,13 +2,27 @@
 <html lang="en"><head><link rel="canonical" href="https://batcoinz.com/beest/"><link rel="icon" href="https://batcoinz.com/wp-content/uploads/2026/11/batcoinz-site-icon-150x150.png" sizes="32x32"><link rel="icon" href="https://batcoinz.com/wp-content/uploads/2026/11/batcoinz-site-icon-300x300.png" sizes="192x192"><link rel="apple-touch-icon" href="https://batcoinz.com/wp-content/uploads/2026/11/batcoinz-site-icon-300x300.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>BEEST 2: Bitcoin emissions tracker, updated daily</title>
-<meta name="description" content="Live charts of Bitcoin network emissions, energy use and sustainable energy share, updated daily. By environmental campaigner Daniel Batten.">
-<meta property="og:title" content="BEEST 2: Bitcoin emissions tracker, updated daily">
-<meta property="og:description" content="Live charts of Bitcoin network emissions, energy use and sustainable energy share, updated daily. By environmental campaigner Daniel Batten.">
+<title>Bitcoin emissions and energy consumption, live | BEEST 2</title>
+<meta name="description" content="Bitcoin's net emissions on 22 Nov 2026: 39.7 MtCO2e a year. Live daily tracker of Bitcoin network emissions and energy consumption (BEEST 2), by Daniel Batten.">
+<meta property="og:title" content="Bitcoin emissions and energy consumption, live | BEEST 2">
+<meta property="og:description" content="Bitcoin's net emissions on 22 Nov 2026: 39.7 MtCO2e a year. Live daily tracker of Bitcoin network emissions and energy consumption (BEEST 2), by Daniel Batten.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.35.0/plotly.min.js"></script>
 <style>img{max-width:100%}[hidden]{display:none!important}</style>
+
+<!-- seo:start -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://batcoinz.com/beest/">
+<meta property="og:image" content="https://batcoinz.com/beest/og/emissions.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Line chart of Bitcoin network total and net emissions since September 2019">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bitcoin emissions and energy consumption, live | BEEST 2">
+<meta name="twitter:description" content="Bitcoin's net emissions on 22 Nov 2026: 39.7 MtCO2e a year. Live daily tracker of Bitcoin network emissions and energy consumption (BEEST 2), by Daniel Batten.">
+<meta name="twitter:image" content="https://batcoinz.com/beest/og/emissions.jpg">
+<script type="application/ld+json" id="beest-ld">{"@context": "https://schema.org", "@type": "Dataset", "name": "Bitcoin network emissions (BEEST 2)", "description": "Daily estimate of the Bitcoin network's electricity use and its total, mitigated and net greenhouse gas emissions in MtCO2e a year, from September 2019, built from hashrate, fleet efficiency, the mining energy mix and flare-gas methane mitigation.", "url": "https://batcoinz.com/beest/", "creator": {"@type": "Person", "name": "Daniel Batten", "url": "https://danielbatten.co/"}, "publisher": {"@type": "Organization", "name": "Batcoinz", "url": "https://batcoinz.com/"}, "isAccessibleForFree": true, "temporalCoverage": "2019-09-01/..", "dateModified": "2026-11-22", "variableMeasured": ["Bitcoin network electricity use (TWh a year)", "Total emissions (MtCO2e a year)", "Emissions mitigated by flare-gas mining (MtCO2e a year)", "Net emissions (MtCO2e a year)"], "isPartOf": {"@type": "WebSite", "name": "BEEST 2: Bitcoin Energy & Emissions Sustainability Tracker", "url": "https://batcoinz.com/beest/"}, "isBasedOn": ["https://ccaf.io/", "https://mempool.space/", "https://ember-energy.org/", "https://coinmetrics.io/"], "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://batcoinz.com/beest/history.json"}], "image": "https://batcoinz.com/beest/og/emissions.jpg"}</script>
+<!-- seo:end -->
 </head><body>
 <style>
   /* Layout: navy canvas in the woocharts manner. Centred light headline, one line of sources beneath it, one Plotly chart with three overlaid axes and a clickable legend, a footnote. Single-theme by design. */
@@ -116,6 +130,7 @@
     <p>BEEST 2 (Bitcoin Energy & Emissions Sustainability Tracker) is my tracker of the Bitcoin network's emissions, updated daily since September 2019. It shows total emissions from the electricity the network uses, the methane miners destroy at oil-well flares, and the net of the two. Hashrate and BTC price sit on their own faint scales for context. I set out every input and its source in the full <a href="methodology.html" target="_blank" rel="noopener">methodology</a>; here is the short version.</p>
     <ul>
       <li><b>The story this chart tells</b>Since September 2019, the computing power securing Bitcoin has grown more than tenfold. Net emissions have stayed statistically static. Along the way they dropped to about 16 Mt in mid-2021, when China banned mining. Two changes kept them static. Mining machines now use about a quarter of the energy they needed in 2019 for the same work. And each kilowatt-hour the network uses produces less than half the emissions it did then, due to the network using more sustainable energy sources.</li>
+      <li><b>Why most of Bitcoin's emissions are indirect</b>Bitcoin mining connected to the grid (91.9% of the network) has no direct emissions, because it uses electricity, not fossil fuels, for power. Like electric vehicles, when that electricity comes from non-sustainable sources, there are indirect emissions (also called scope 2 emissions). This chart measures those, plus the emissions from off-grid sites that generate their own power from gas.</li>
       <li><b>How I calculate it</b>Each day I multiply the network's hashrate (7-day average) by the fleet's efficiency to get electricity use (<a href="methodology.html#hashrate" target="_blank" rel="noopener">hashrate</a>, <a href="methodology.html#network-efficiency-jth" target="_blank" rel="noopener">network efficiency</a>). I multiply that by the carbon intensity of the mining energy mix to get total emissions (<a href="methodology.html#carbon-intensity" target="_blank" rel="noopener">carbon intensity</a>), then subtract the methane destroyed at flare sites to get net emissions (<a href="methodology.html#emission-mitigation-flare" target="_blank" rel="noopener">emission mitigation</a>).</li>
       <li><b>Fleet efficiency</b>I estimate the network runs at ~19.3 J/TH at the facility meter in November 2026, within a range of 17.3 to 22.2 depending on the assumptions. I built that figure from Luxor's and Cambridge's 2026 fleet data (<a href="methodology.html#network-efficiency-jth" target="_blank" rel="noopener">how the efficiency figure is built</a>).</li>
       <li><b>Energy mix</b>I start from Cambridge's December 2025 survey, which puts the mining mix at 59.4% low-carbon and 252 gCO2e/kWh. Since then I move the grid-connected part with the world grid each month (<a href="methodology.html#grid-greening-since-december-2025" target="_blank" rel="noopener">grid greening</a>).</li>
