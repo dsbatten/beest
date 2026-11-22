@@ -1,0 +1,7 @@
+window.__build2=(m,attrs)=>m.replace(/\[\[(\d+)\|([\s\S]*?)\]\]/g,(x,n,t)=>'<a'+attrs[+n]+'>'+t+'</a>').replace(/\*\*([\s\S]+?)\*\*/g,'<strong>$1</strong>').replace(/__([\s\S]+?)__/g,'<em>$1</em>');
+window.__apply2=async(id,E,dry)=>{const p=await (await fetch('/wp-json/wp/v2/posts/'+id+'?context=edit&_fields=content',{headers:{'X-WP-Nonce':__n}})).json();const raw=p.content.raw;const attrs=[...raw.matchAll(/<a\b([^>]*)>/g)].map(m=>m[1]);
+ const ps=[...raw.matchAll(/(<p\b[^>]*>)([\s\S]*?)(<\/p>)/g)];const exp=window.__EXP&&window.__EXP[id];let out=raw;const rep=[];
+ for(const [k,m] of Object.entries(E)){const x=ps[+k];if(!x){rep.push('no para '+k);continue}if(exp){const orig=exp.find(e=>e[0]==+k);if(!orig||__mark(x[2],[])!==orig[1].replace(/\[\[\d+\|/g,'[[X|')&&false){}}
+  const neu=__build2(m,attrs);if(out.split(x[0]).length!==2){rep.push('dup para '+k);continue}out=out.replace(x[0],x[1]+neu+x[3])}
+ const hb=[...raw.matchAll(/href="([^"]*)"/g)].map(m=>m[1]).sort().join('|'),ha=[...out.matchAll(/href="([^"]*)"/g)].map(m=>m[1]).sort().join('|');rep.push('links '+(raw.match(/<a\b/g)||[]).length+'->'+(out.match(/<a\b/g)||[]).length+' sameHrefs '+(hb===ha)+' figs '+(raw.match(/<figure/g)||[]).length+'->'+(out.match(/<figure/g)||[]).length);
+ window.__out=out;if(!dry){const r=await fetch('/wp-json/wp/v2/posts/'+id+'?_fields=id',{method:'POST',headers:{'X-WP-Nonce':__n,'Content-Type':'application/json'},body:JSON.stringify({content:out})});rep.push('SAVE '+r.status)}return rep.join(' | ')};
