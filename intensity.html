@@ -155,7 +155,7 @@ window.ESG = {
         visible: "legendonly", marker: { size: lw(13), color, line: { color: css("--bg"), width: 2 } } });
       return [dots("Banking dots", s.grid_g_kwh, e.grid_g_kwh, css("--bank")), dots("Bitcoin dots", ni(s), ni(e), css("--net"))]; })(),
   ],
-  // The toolbar switch turns this into a Bitcoin vs banking comparison: start and end dots appear on both lines, each
+  // The toolbar switch turns this into a Bitcoin vs banking comparison: the banking line and start and end dots are shown, each
   // line gets today's figure just beneath its right-hand end, and the page title changes to match.
   toggle: (rows, css, narrow) => {
     const now = rows[rows.length - 1];
@@ -173,7 +173,7 @@ window.ESG = {
     const h1 = document.querySelector("h1"); if (h1 && !h1.dataset.base) h1.dataset.base = h1.textContent;
     return {
       name: "Show or hide Bitcoin vs banking",
-      show: ["Banking dots", "Bitcoin dots"],
+      show: ["Banking sector", "Banking dots", "Bitcoin dots"], defaultOn: true,
       annotations: [tag("Banking", bank, change(bank, start.grid_g_kwh), css("--bank")), tag("Bitcoin", btc, change(btc, ni(start)), css("--net"))],
       onChange: (on) => { if (h1) h1.textContent = on ? "Bitcoin vs Banking Emission Intensity" : h1.dataset.base; },
     };

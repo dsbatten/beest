@@ -62,7 +62,8 @@
     // A page can replace the single figure with its own switch (spec.toggle): extra annotations, traces it
     // brings into view, and a hook for anything outside the plot, such as the page title.
     const tog = spec.toggle ? spec.toggle(rows, css, narrow) : null;
-    window.__beestLabelOn = !!window.__beestLabelOn;
+    // A switch can start switched on (defaultOn); after the first render the reader's choice is kept.
+    if (window.__beestLabelOn === undefined) window.__beestLabelOn = !!(tog && tog.defaultOn);
     const on = window.__beestLabelOn;
     const annFor = (state) => state ? (tog ? tog.annotations : (label ? [label] : [])) : [];
     layout.annotations = annFor(on);
