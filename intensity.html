@@ -119,7 +119,7 @@
     <span class="sep">|</span> <b>updated:</b> <span id="updated">22 Nov 2026</span><br><b>latest:</b> <span id="latest">net carbon intensity 222 gCO2e/kWh, down 63% vs 22 Nov 2019</span>
   </div>
 
-  <div id="chart" role="img" aria-label="Bitcoin network total and net emissions per kilowatt-hour consumed, in grams of CO2e, since September 2019, with an optional banking-sector line at the world grid average and bitcoin price on its own axis"></div>
+  <div id="chart" role="img" aria-label="Bitcoin network total and net emissions per kilowatt-hour consumed, in grams of CO2e, since September 2019, with a banking-sector line at the world grid average and bitcoin price on its own axis"></div>
 
   <div class="status" id="status" hidden></div>
   <hr class="notes-rule">
@@ -127,10 +127,10 @@
     <h3>Bitcoin Network Emissions Intensity</h3>
     <p>In this chart I track the emissions from each kilowatt-hour the network uses. The dashed line is the carbon intensity of the mining energy mix. The solid line deducts the methane miners destroy, so the gap between the two is that mitigation per kilowatt-hour.</p>
     <ul>
-      <li><b>The story this chart tells</b>This chart takes out how much electricity Bitcoin uses and asks a simpler question: how clean is each kilowatt-hour? Since 2019, Bitcoin's net carbon intensity has fallen by more than half. Over 2019 to 2025, the world grid's fell by about a tenth, from 522 to 472 gCO2e/kWh. So each kilowatt-hour Bitcoin uses has been getting cleaner much faster than the average kilowatt-hour on the world grid. To compare Bitcoin with banks, click "Banking sector" in the key.</li>
+      <li><b>The story this chart tells</b>This chart takes out how much electricity Bitcoin uses and asks a simpler question: how clean is each kilowatt-hour? Since 2019, Bitcoin's net carbon intensity has fallen by more than half. Over 2019 to 2025, the world grid's fell by about a tenth, from 522 to 472 gCO2e/kWh. So each kilowatt-hour Bitcoin uses has been getting cleaner much faster than the average kilowatt-hour on the world grid. The dotted line shows the banking sector.</li>
       <li><b>How I calculate it</b>I divide total emissions, and net emissions, by the electricity the network uses each day.</li>
       <li><b>Cambridge's figure is a snapshot</b>Cambridge's 252 gCO2e/kWh comes from a single survey, in December 2025. Since then I move the grid-connected part of mining (91.9%) with the world grid's carbon intensity, and hold off-grid mining as surveyed (<a href="methodology.html#grid-greening-since-december-2025" target="_blank" rel="noopener">Grid greening</a>). The world grid's carbon intensity fell by ~1.7% a year from 2019 to 2025 (522 to 472 gCO2e/kWh), by 2.5% in the 12 months to September 2026, and by 1.6% since the Cambridge survey (~2.1% a year). At the long-run pace that takes ~4 gCO2e/kWh off the mining figure each year until Cambridge's next survey resets it. So far it has moved from 252 to 248.3.</li>
-      <li><b>Banking sector</b>Click "Banking sector" in the key to add it. For the banking sector I assume 100% grid electricity at the world average carbon intensity (<a href="https://ember-energy.org/data/monthly-electricity-data/" target="_blank" rel="noopener">Ember</a>, 12 months to each month, from December 2019), which makes the comparison slightly conservative. In reality the banking sector's figure is higher, because banks also burn fossil fuels directly: diesel backup generators at data centers and branches, gas and oil boilers heating offices and branches, on-site gas-fired combined heat and power, company cars and cash-transport vehicles, and business flights. It also leaves out banks' scope 3 emissions from financing fossil fuel industries.</li>
+      <li><b>Banking sector</b>Click "Banking sector" in the key to hide it. For the banking sector I assume 100% grid electricity at the world average carbon intensity (<a href="https://ember-energy.org/data/monthly-electricity-data/" target="_blank" rel="noopener">Ember</a>, 12 months to each month, from December 2019), which makes the comparison slightly conservative. In reality the banking sector's figure is higher, because banks also burn fossil fuels directly: diesel backup generators at data centers and branches, gas and oil boilers heating offices and branches, on-site gas-fired combined heat and power, company cars and cash-transport vehicles, and business flights. It also leaves out banks' scope 3 emissions from financing fossil fuel industries.</li>
       <li><b>Before December 2025</b>Before December 2025 I use <a href="https://batcoinz.com/beest-methodology/" target="_blank" rel="noopener">BEEST 1</a>'s estimates, from 597 gCO2e/kWh in September 2019 to 261 in October 2024, with straight lines between its dated points, then a straight line to Cambridge's 252.</li>
       <li><b>Sources</b><ul><li>Carbon intensity: <a href="https://batcoinz.com/beest-methodology/" target="_blank" rel="noopener">BEEST 1</a> (September 2019 to October 2024) and <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/" target="_blank" rel="noopener">Cambridge Digital Mining Industry Report, 2nd edition, preliminary results</a> (252 gCO2e/kWh, December 2025)</li><li>Grid greening from December 2025: <a href="https://ember-energy.org/data/monthly-electricity-data/" target="_blank" rel="noopener">Ember monthly electricity data</a>, with the on-grid share from <a href="https://www.jbs.cam.ac.uk/wp-content/uploads/2025/04/2025-04-cambridge-digital-mining-industry-report.pdf" target="_blank" rel="noopener">Cambridge Digital Mining Industry Report, April 2025</a></li><li>Flare-gas mitigation: <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/" target="_blank" rel="noopener">Cambridge Digital Mining Industry Report, 2nd edition, preliminary results</a> (4.69 MtCO2e a year from 44 respondents) and, before December 2025, <a href="https://batcoinz.com/beest-methodology/" target="_blank" rel="noopener">BEEST 1</a></li><li>Flare efficiency, 91.1%: <a href="https://www.science.org/doi/10.1126/science.abq0385" target="_blank" rel="noopener">Plant et al. 2022, Science</a>; warming potential of methane over 20 years: <a href="https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/" target="_blank" rel="noopener">IPCC AR6, Chapter 7</a></li><li>Hashrate, 7-day average: <a href="https://mempool.space/docs/api/rest#get-mining-hashrate" target="_blank" rel="noopener">mempool.space</a></li><li>Fleet efficiency: <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/" target="_blank" rel="noopener">Cambridge Digital Mining Industry Report, 2nd edition, preliminary results</a> (20.8 J/TH, December 2025 survey) and <a href="https://hashrateindex.com/blog/luxor-hashrate-lookback-series-july-2026/" target="_blank" rel="noopener">Luxor Hashrate Lookback, July 2026</a>; before December 2025, Cambridge's survey points with the <a href="https://ccaf.io/cbnsi/cbeci" target="_blank" rel="noopener">CBECI</a> hardware-efficiency series between them</li><li>BTC price: <a href="https://coinmetrics.io/community-network-data/" target="_blank" rel="noopener">Coin Metrics</a></li><li>Banking sector, world grid carbon intensity: <a href="https://ember-energy.org/data/monthly-electricity-data/" target="_blank" rel="noopener">Ember monthly electricity data</a>, world totals (CC BY 4.0), 12 months to each month</li></ul></li>
     </ul>
@@ -145,7 +145,7 @@ window.ESG = {
       hovertemplate: "%{y:.0f} gCO2e/kWh<extra>Total emissions intensity</extra>" },
     { name: "Net emissions intensity", y: rows.map((r) => r.net_mt * 1000 / r.electricity_twh_yr), line: { color: css("--net"), width: lw(2.2) },
       hovertemplate: "%{y:.0f} gCO2e/kWh<extra>Net emissions intensity</extra>" },
-    { name: "Banking sector", y: rows.map((r) => r.grid_g_kwh), visible: "legendonly", connectgaps: false,
+    { name: "Banking sector", y: rows.map((r) => r.grid_g_kwh), connectgaps: false,
       line: { color: css("--bank"), width: lw(2), dash: "dot" },
       hovertemplate: "%{y:.0f} gCO2e/kWh<extra>Banking sector (world grid average)</extra>" },
     // Start and end dots for the Bitcoin vs banking switch: the change in each label runs from one dot to the other.
@@ -155,7 +155,7 @@ window.ESG = {
         visible: "legendonly", marker: { size: lw(13), color, line: { color: css("--bg"), width: 2 } } });
       return [dots("Banking dots", s.grid_g_kwh, e.grid_g_kwh, css("--bank")), dots("Bitcoin dots", ni(s), ni(e), css("--net"))]; })(),
   ],
-  // The toolbar switch turns this into a Bitcoin vs banking comparison: the banking line comes into view, each
+  // The toolbar switch turns this into a Bitcoin vs banking comparison: start and end dots appear on both lines, each
   // line gets today's figure just beneath its right-hand end, and the page title changes to match.
   toggle: (rows, css, narrow) => {
     const now = rows[rows.length - 1];
@@ -173,7 +173,7 @@ window.ESG = {
     const h1 = document.querySelector("h1"); if (h1 && !h1.dataset.base) h1.dataset.base = h1.textContent;
     return {
       name: "Show or hide Bitcoin vs banking",
-      show: ["Banking sector", "Banking dots", "Bitcoin dots"],
+      show: ["Banking dots", "Bitcoin dots"],
       annotations: [tag("Banking", bank, change(bank, start.grid_g_kwh), css("--bank")), tag("Bitcoin", btc, change(btc, ni(start)), css("--net"))],
       onChange: (on) => { if (h1) h1.textContent = on ? "Bitcoin vs Banking Emission Intensity" : h1.dataset.base; },
     };
