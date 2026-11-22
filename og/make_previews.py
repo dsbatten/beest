@@ -62,7 +62,7 @@ ni=[r['intensity_g_kwh']*r['net_mt']/r['gross_mt'] for r in rows]
 gi=[(d,r['grid_g_kwh']) for d,r in zip(D,rows) if r.get('grid_g_kwh')]
 ax.plot([a for a,b in gi],[b for a,b in gi],color=C['bank'],lw=2.6)
 ax.plot(D,ni,color=C['net'],lw=3.4); ax.set_ylim(0,650)
-endlabel(ax,last,gi[-1][1],f"World grid {gi[-1][1]:.0f}",C['bank'],fs=22)
+endlabel(ax,last,gi[-1][1],f"Banking sector {gi[-1][1]:.0f}",C['bank'],fs=22)
 endlabel(ax,last,ni[-1],f"Bitcoin (net) {ni[-1]:.0f}",C['net'],fs=22)
 save(fig,'og-intensity')
 
