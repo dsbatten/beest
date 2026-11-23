@@ -57,13 +57,17 @@ endlabel(ax,last,sh[-1],f"{sh[-1]:.1f}%",C['gas'])
 save(fig,'og-mitigated')
 
 # 3 Intensity
-fig,ax=base('Bitcoin carbon intensity','g CO2e per kWh')
+fig,ax=base('Bitcoin vs Banking Emission Intensity','g CO2e per kWh')
 ni=[r['intensity_g_kwh']*r['net_mt']/r['gross_mt'] for r in rows]
 gi=[(d,r['grid_g_kwh']) for d,r in zip(D,rows) if r.get('grid_g_kwh')]
 ax.plot([a for a,b in gi],[b for a,b in gi],color=C['bank'],lw=2.6)
 ax.plot(D,ni,color=C['net'],lw=3.4); ax.set_ylim(0,650)
-endlabel(ax,last,gi[-1][1],f"World grid {gi[-1][1]:.0f}",C['bank'],fs=22)
-endlabel(ax,last,ni[-1],f"Bitcoin (net) {ni[-1]:.0f}",C['net'],fs=22)
+# Same labels and start/end dots as the live chart's Bitcoin vs banking view: both changes run from the first month with a banking figure.
+s=next(i for i,r in enumerate(rows) if r.get('grid_g_kwh'))
+chg=lambda a,b: ('Down ' if a<=b else 'Up ')+f"{abs(round((1-a/b)*100))}%"
+for x,y,col in [(D[s],gi[0][1],C['bank']),(D[s],ni[s],C['net'])]: ax.plot([x],[y],'o',color=col,ms=9,zorder=5)
+endlabel(ax,last,gi[-1][1],f"Banking: {gi[-1][1]:.0f}\n{chg(gi[-1][1],gi[0][1])}",C['bank'],fs=22)
+endlabel(ax,last,ni[-1],f"Bitcoin: {ni[-1]:.0f}\n{chg(ni[-1],ni[s])}",C['net'],fs=22)
 save(fig,'og-intensity')
 
 # 4 Growth (indexed, log)
