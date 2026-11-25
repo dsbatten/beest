@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24",
+ "generated": "2026-11-25",
  "hashrate_source": "mempool.space",
  "price_source": "Coin Metrics community API (PriceUSD)",
  "supply_source": "Coin Metrics community API (SplyCur)",
@@ -52847,14 +52847,34 @@
    "mitigation_gas_mt": 4.69,
    "mitigation_landfill_mt": null,
    "net_mt": 39.34,
-   "price_usd": 61253,
+   "price_usd": 59791,
    "intensity_g_kwh": 248.3,
    "clean_share": 0.6061,
    "basis": "BEEST 2",
-   "supply_btc": 20116429,
+   "supply_btc": 20116873,
    "grid_g_kwh": 465.0,
    "hashrate_ehs_30d": 1013.2,
    "gross_mt_30d": 42.51,
+   "mitigation_gas_mt_30d": 4.69
+  },
+  {
+   "date": "2026-11-25",
+   "hashrate_ehs_7d": 1040.7,
+   "efficiency_jth": 19.29,
+   "power_gw": 20.07,
+   "electricity_twh_yr": 175.8,
+   "gross_mt": 43.67,
+   "mitigation_gas_mt": 4.69,
+   "mitigation_landfill_mt": null,
+   "net_mt": 38.98,
+   "price_usd": 59791,
+   "intensity_g_kwh": 248.3,
+   "clean_share": 0.6061,
+   "basis": "BEEST 2",
+   "supply_btc": 20116873,
+   "grid_g_kwh": 465.0,
+   "hashrate_ehs_30d": 1008.4,
+   "gross_mt_30d": 42.31,
    "mitigation_gas_mt_30d": 4.69
   }
  ]
